@@ -1,0 +1,42 @@
+<%- include('ek/header', {kodlarr, bot, user, path}) %>
+<style>
+.alert { 
+padding: 20px;
+  background-color: LIGHTGRAY;
+  color: black;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+}
+</style>  
+<div align="center"><br><br>
+            <h2><center>İşte Ritarary Code Kodları!</center></h2><br><br><br>
+              <% var kodlar = kodlarr %>
+              <% kodlar.forEach(a => { %>
+              <div class="card text-white bg-light mb-3" style="display: inline-block; width: 17rem;">
+    <div class="card-header"><a href="<%= a.giflink %>"> <img src="<%= a.giflink %>" style="width: 100%;"></a></div>
+       <div class="card-body">
+            <h5 class="card-title">
+              <p style="color: black">
+                <%= a.name %></p>
+                  </h5>
+                  <button type="button" onclick="window.location.href='kodlar/<%= a.n2 %>'" class="btn btn-primary" style="display: inline-block; width: auto;">Kodu Al</button>
+                </div>
+              </div> 
+    <% }) %>
+            <br>
+          </div>
+<%- include('./ek/footer') %>

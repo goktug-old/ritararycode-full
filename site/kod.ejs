@@ -1,0 +1,21 @@
+<%- include('ek/header', {fs, kod ,kodisim, bot, user, path}) %>
+<% fs.appendFile('././alınmalar.txt', user.username + "#" + user.discriminator + "  "+ kodisim + " kodunu aldı\n", function (err) {
+    if(err){
+        throw err;
+    }}) %> 
+
+<br><br><br>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto"><br>
+            <ul>
+               <%- kod %>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>    
+        
+<%- include('./ek/footer') %>

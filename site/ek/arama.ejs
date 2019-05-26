@@ -1,0 +1,13 @@
+<div class="input-group">
+<input type="text" id="araa" class="form-control" placeholder="Bot ara...">
+<button class="btn btn-danger" type="button" onclick="ara()"><i class="fa fa-search"></i> Ara</button>
+</div>
+
+<script> 
+function ara() {
+let veri = $("#araa").val()
+window.location = `/botlar/ara/${veri.toLowerCase()}`
+event.preventDefault()
+return
+};
+</script>

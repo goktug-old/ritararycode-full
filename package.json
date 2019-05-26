@@ -1,0 +1,36 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "8.4.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-fetch": "^2.5.0",
+    "btoa": "^1.2.1",
+    "request": "^2.88.0",
+    "fs": "^0.0.2",
+    "html-tags": "^3.0.0",
+    "useful-tools": "^0.2.6",
+    "cheerio": "^0.22.0",
+    "discord.js": "^11.4.2",
+    "generate-password": "^1.4.1",
+    "ejs": "^2.6.1",
+    "path": "^0.12.7",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.2.2",
+    "passport": "^0.4.0",
+    "express-session": "^1.16.1",
+    "level-session-store": "^2.2.0",
+    "passport-discord": "^0.1.3",
+    "helmet": "^3.16.0",
+    "marked": "^0.6.2",
+    "child-process-promise": "^2.2.1",
+    "ms": "^2.1.1",
+    "enmap": "^4.8.4",
+    "chalk": "^2.4.1",
+    "jimp": "^0.6.1",
+    "quick.db": "^6.3.2"
+  }
+}

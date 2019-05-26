@@ -1,0 +1,17 @@
+<%- include('ek/header', {bot, kisi, path}) %>
+<div class="container"><br><br><br><br>
+  <div align="center">
+<% var user = kisi %>
+       <img src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>.png?size=512" class="rounded-circle panell" align="left" height=300 width="300"><br>
+       <h3 style="top: 29px; margin-left: 1%;"><%=user.username%>#<%=user.discriminator%></h3><br>
+
+       <% if (bot.profil[user.id]) { %>
+        <h6 style="color:BLACK"><strong>İsim:</strong> <%= bot.profil[user.id].isim || "Bilinmiyor" %></h6><br>
+        <h6 style="color:BLACK"><strong>Yaş:</strong> <%= bot.profil[user.id].yas || "Bilinmiyor" %></h6><br>
+        <h6 style="color:BLACK"><strong>Biyografi:</strong> <%= bot.profil[user.id].biyo || "Bilinmiyor" %></h6>
+       <% } else { %>
+        <h6 style="color:BLACK">Profil bilgisi ayarlanmamış</h6>
+       <% } %>
+
+  </div><br><br><br><br><br><br><br>
+<% include ./ek/footer %>

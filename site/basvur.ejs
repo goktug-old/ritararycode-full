@@ -1,0 +1,21 @@
+<%- include("./ek/header", {bot,user,path}) %>
+
+<br><br><br><br>
+
+<form name="form" method="post">
+  
+      <b>İsim:</b><br>
+      <input type="text" required="true" name="isim"><br><br>
+  
+      <b>Js veya Commando bilginiz:</b><br>
+      <input name="bilgi" required="true" type="text"><br><br>
+  
+      <b>Discord Tag</b><br>
+      <%=user.username +"#" + user.discriminator%><br><br>
+
+  <input type="submit" name="gonder" value="Gönder"><br><br>
+
+
+</form>
+
+<% include ./ek/footer %>

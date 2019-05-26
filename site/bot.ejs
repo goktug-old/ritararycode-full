@@ -1,0 +1,27 @@
+<%- include('ek/header', {bot, user, path, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum}) %>
+
+    <section id="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto"><br><br><br><br><br><br><br>
+                            <img src="<%- avatar %>" width="300" height="300" class="rounded-circle" align="left"><div align="center"><h3> <%- botaı %> </h3></div>
+                          
+
+<button style="top: 29px; margin-left: 3%;" class="prefix btn btn-primary">Prefix: <%- prefix %></button><br><br>
+<button style="top: 29px; margin-left: 3%;" class="prefix btn btn-primary">Dil: <%- dil %></button><br><br>
+<button style="top: 25px; margin-left: 3%;" class="prefix btn btn-primary">Yapımcı: <img src="<%- sahipavatar %>" width="23" height="23"> <%- sahip %> </button><br><br>
+<%- sertifikadurum %>
+
+                   
+<br><br><br><br>                           
+<br><br><br><div class="jumbotron" style="background-image: none; color: #FFFFFF; background-color: #bc520b;" align="center"><br><%- acikla %>
+  </div></div>
+            
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<% include ./ek/footer %>
