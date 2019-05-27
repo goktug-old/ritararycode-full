@@ -858,3 +858,5 @@ spajki#6578  sunucular kodunu aldı
 spajki#6578  sunucukur kodunu aldı
 spajki#6578  davetcikar kodunu aldı
 spajki#6578  bot-uyeotorol kodunu aldı
+spajki#6578  notsistem kodunu aldı
+spajki#6578  notsistem kodunu aldı
