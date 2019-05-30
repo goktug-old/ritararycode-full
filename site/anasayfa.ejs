@@ -1,6 +1,6 @@
 <%- include('ek/header', {bot, user, db, path}) %>
 
-<%
+<%                                              
 const help = {};
 	bot.guilds.get("530744872328626197").members.forEach((command) => {
   if(!command.user.bot) return;
