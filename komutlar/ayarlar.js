@@ -28,7 +28,6 @@ else {
    db.set(`sertifika_${bot}`, `${açıklama}`) 
     message.channel.send(`**${bott.tag}** adlı botun sertifika durumu **${açıklama}**`)
   } else if(args[1] === "prefix") {
-    if(message.author.id !== "495825025207894016") return;
     var açıklama = args[2]
     if(!açıklama) return message.channel.send("Lütfen Bir Açıklama Girin")
    db.set(`prefix_${bot}`, `${açıklama}`) 
