@@ -147,28 +147,16 @@ app.get("/autherror", (req,res) => {
 })
 
 app.get("/", (req, res) => {
-const help = {}
-client.guilds.get("530744872328626197").members.forEach((command) => {
+const a = []
+client.guilds.get("530744872328626197").members.forEach(command => {
   if(!command.user.bot) return;
-  if(command.user.id === "518717000487534593" || command.user.id === "436527843959111681" || command.user.id === "552860386727165980" || command.user.id === "235088799074484224" || command.user.id === "531018863882797056" || command.user.id === "553270538034741248" || command.user.id === "551841231961849878" || command.user.id === "473284664711446529" || command.user.id === "540902460747677716" || command.user.id === "518145591860264961" || command.user.id === "540978976617660416" || command.user.id === "436527843959111681" || command.user.id === "351611743018942464" || command.user.id === "294882584201003009" || command.user.id === "548149568681017367" || command.user.id === "172002275412279296" || command.user.id === "275813801792634880" || command.user.id === "422087909634736160" || command.user.id === "500297618505859072" || command.user.id === "527858318786691092" || command.user.id === "409875566800404480")return;
-    const cat = command.user.id;
-    if(!cat) return;
-		if (!help.hasOwnProperty(cat)) help[cat] = [];
-		help[cat].push(command);
-	});
-	String.prototype.capitalize = function() {
-		return this.charAt(0).toUpperCase() + this.slice(1);
-	}
-var aa = []
-  for (const kategori in help) { 
-			 for (const command of help[kategori]) { 
+  //if(command.user.id === "518717000487534593" || command.user.id === "436527843959111681" || command.user.id === "552860386727165980" || command.user.id === "235088799074484224" || command.user.id === "531018863882797056" || command.user.id === "553270538034741248" || command.user.id === "551841231961849878" || command.user.id === "473284664711446529" || command.user.id === "540902460747677716" || command.user.id === "518145591860264961" || command.user.id === "540978976617660416" || command.user.id === "436527843959111681" || command.user.id === "351611743018942464" || command.user.id === "294882584201003009" || command.user.id === "548149568681017367" || command.user.id === "172002275412279296" || command.user.id === "275813801792634880" || command.user.id === "422087909634736160" || command.user.id === "500297618505859072" || command.user.id === "527858318786691092" || command.user.id === "409875566800404480")return;
 db.fetch(`sertifika_${command.user.id}`).then(ab => {
-  if(ab === "aktif") return aa.push(command.user.id)
-})}}
-  var a = JSON.(aa)
- console.log(a)
+  if(ab === "aktif") { a.push(command.user.id) }
+})})
+console.log( a )
 renderTemplate(res, req, "anasayfa.ejs", { a });
-});
+})
 
 app.get("/botlar", (req, res) => {
 renderTemplate(res, req, "botlar.ejs");
