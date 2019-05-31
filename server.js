@@ -142,13 +142,6 @@ res.redirect("/");
 });
 });
 
-app.get('/api/cokgizli/sertifika/:id/:ap', (req,res) => {
-  var id = req.params.id
-  var ap = req.params.ap
-  db.set('sertifika_' + id, ap)
-  res.send('tm')
-})
-
 app.get("/autherror", (req,res) => {
   res.redirect("/")
 })
@@ -166,13 +159,14 @@ client.guilds.get("530744872328626197").members.forEach((command) => {
 	String.prototype.capitalize = function() {
 		return this.charAt(0).toUpperCase() + this.slice(1);
 	}
-var a = []
+var aa = []
   for (const kategori in help) { 
 			 for (const command of help[kategori]) { 
-db.fetch(`sertifika_${command.user.id}`).then(a => {
-  if(a !== "aktif") return;
-  else a.push(command.user.id)
+db.fetch(`sertifika_${command.user.id}`).then(ab => {
+  if(ab === "aktif") return aa.push(command.user.id)
 })}}
+  var a = JSON.(aa)
+ console.log(a)
 renderTemplate(res, req, "anasayfa.ejs", { a });
 });
 

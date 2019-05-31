@@ -8,8 +8,8 @@
 <%- include ./ek/arama %>
 <br><br>
 </center>
-	<% a.forEach(comman => {  %6
-   < var command = bot.users.get(comman) %>
+	<% a.forEach(comman => {  %>
+   <% var command = bot.users.get(comman) %>
 <div class="card text-white bg-light mb-3" style="display: inline-block; width: 17rem;">
           <div class="card-header"><a href="/bot/<%= command.id %>"><img src="<%= command.avatarURL %>" style="width: 100%;"></a></div>
     
