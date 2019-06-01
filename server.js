@@ -225,6 +225,7 @@ const kodlar = {
   "gyardim": `<p><a href="https://turkkod.cf/~5c9cfbf5d50477006779732b">komutlar/yardım.js</a></p>`,
   "hesapgen": `<p><a href="https://turkkod.cf/~5ca1b52180716e00664ebc43">komutlar/hesap.js</a></p>`,
   "yedeksistem": `<p><a href="https://glitch.com/edit/#!/yedekbotu">Tıkla Banağ </a></p>`,
+  "cekilis": `<p><a href="https://www.turkkod.cf/~5cf2a8a3f6a532007870359f">komulatr/cekilis.js</a></p><p><a href="https://www.turkkod.cf/~5cf2a8cef6a53200787035a0">komutlar/reroll.js</p>`,
 }
 
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
