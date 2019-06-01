@@ -151,6 +151,7 @@ setTimeout(() => {
   member.guild.channels.get("553995171772235776").send("Hooop bilader yönetici yetkili bot geldi attım **(" + member.user.tag + ")**")
 }, 500)
 })
+
   
   client.on("messageReactionAdd", (reaction,user) => {
     if(reaction.message.id !== "570234460142829608") return console.log("Testtir bu")
