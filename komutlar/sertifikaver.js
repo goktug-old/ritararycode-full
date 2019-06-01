@@ -12,6 +12,8 @@ exports.run = function(client, message, args) {
         bot = args[0];
     }
   
+  db.set(`sertifika_${bot}`, "atifk")
+  
     db.fetch(`sahip_${bot}`).then(i => {
     
     
