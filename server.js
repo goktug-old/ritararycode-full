@@ -86,16 +86,8 @@ extended: true
 
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-request({
-  url: `https://discordapp.com/api/v7/guilds/530744872328626197/users/${req.user.id}`,
-  headers: {
-    "Authorization": `Bot ${client.token}`
-  }
-},(error, response, body) => {
-  if(error) return console.log(error)
-  else return console.log( body )
-})
-return next();
+if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return req.user.guilds.join("https://discord.gg/8CqPzjp")
+else return next();
 }
 req.session.backURL = req.url;
 res.redirect("/giris");
