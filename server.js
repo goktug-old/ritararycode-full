@@ -269,10 +269,8 @@ web.send(new Discord.RichEmbed()
          .addField("Bilgi:",bilgi)
          .addField("Discord Kullanici adi:",req.user.username + "#" + req.user.tag)
          )
-         
-alert("Basvurunu aldim!").then(() => {
 res.redirect("/")
-})})
+})
 
 app.post("/kullanici/:userID/ayarla", checkAuth, (req, res) => {
 
