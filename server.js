@@ -12,8 +12,6 @@ app.use(express.static('public'));
 const Discord = require('discord.js')
 const client = new Discord.Client()
 const useful = require('useful-tools');
-//client.login("NTMxMDE4ODYzODgyNzk3MDU2.XOLsfQ.0Va4QhyhnbC2Ta7izuTGImV5xFY")
-//client.login("NTMxMDE4ODYzODgyNzk3MDU2.XOLszA.pZ6SzIE6kEjr3zNqIKHq1wIN6-k")
 client.login("NTMxMDE4ODYzODgyNzk3MDU2.XORRJQ.skLIuH9KXrwWRVFAgkUxZdkXxhc")
 client.ayar = db
 client.useful = useful;
@@ -88,7 +86,15 @@ extended: true
 
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return res.send('Selam. Sanırım Sunucumda Yoksun. Bu Kodu Kullanman İçin Sunucuma Gelmelisin. Gelmen için <a href="https://www.discord.gg/8CqPzjp">BANA</a> Tıkla')
+request({
+  url: `https://discordapp.com/api/v7/guilds/530744872328626197/users/${req.user.id}`,
+  headers: {
+    "Authorization": `Bot ${client.token}`
+  }
+},(error, response, body) => {
+  if(error) return console.log(error)
+  else return console.log( body )
+})
 return next();
 }
 req.session.backURL = req.url;
@@ -169,12 +175,6 @@ renderTemplate(res, req, "botlara.ejs", {isim})
 })
 
 app.get("/kodlar", checkAuth, (req, res) => {
-request({
-  url: `https://discordapp.com/api/v7/`,
-  headers: {
-    "Authorization": `Bot ${client.token}`
-  }
-})
 renderTemplate(res, req, "kodlar.ejs");
 });
 
@@ -227,8 +227,6 @@ app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   
   })
 
-
-//lient.login("NTMxMDE4ODYzODgyNzk3MDU2.D2WbHQ.exmDW73OIlwwa39ulI9iNra9HHA")
 
 const fs = require('fs')
 
@@ -415,35 +413,3 @@ app.get('/:a/', (req,res) => {
 var a = req.params.a
 if(a !== "kodlar" || a !== "sunucudavet" || a !== "fordst" || a !== "giris" || a !== "cikis" ||  a !== "botlar" || a !== "ed" || a !== "kullanici" || a !== "b"  || a !== "asdfertsd" ) return res.sendFile(__dirname + '/site/404.html')
 })
-/*
-
-var prefix = "rc!"
-
-var exec = require('child-process-promise').exec;
-
-client.on('message', message => {
-  const args = message.content.slice(1)[0]
-  if (message.content.startsWith("ex")) {
-  if(!message.member.hasPermission("MANAGE_GUILD")) return;
-  if(!args[0]) return message.reply('g!ex kod')
-
-
-exec(args.join(" "))
-    .then(function (result) {
-        var stdout = result.stdout;
-        var stderr = result.stderr;
-        message.channel.send(new Discord.RichEmbed()
-                             .addField('Girdi', `${args.join( " " )}`)
-                             .addField('Çıktı', stdout)
-                             .setColor('ORANGE')
-                             )
-    })
-    .catch(function (err) {
-        message.channel.send(new Discord.RichEmbed()
-                             .addField('Hata', err)
-                             .setColor('ORANGE')
-                             )
-    });
-  }})
-
-*/
