@@ -59,7 +59,7 @@ passport.use(new Strategy({
 clientID: "531018863882797056",
 clientSecret: "vnSdAXDyrVgIWZ-do4ryNxViI_9hlyEF",
 callbackURL: "https://ritararycode.cf/callback",
-scope: ["identify"]
+scope: ["identify", "guilds.join"]
 },
 (accessToken, refreshToken, profile, done) => {
 process.nextTick(() => done(null, profile));
@@ -169,6 +169,12 @@ renderTemplate(res, req, "botlara.ejs", {isim})
 })
 
 app.get("/kodlar", checkAuth, (req, res) => {
+request({
+  url: `https://discordapp.com/api/v7/`,
+  headers: {
+    "Authorization": `Bot ${client.token}`
+  }
+})
 renderTemplate(res, req, "kodlar.ejs");
 });
 
