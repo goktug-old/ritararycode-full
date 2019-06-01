@@ -93,7 +93,8 @@ if(!client.guilds.get("530744872328626197").members.get(req.user.id)) {
             {
               method: 'PUT',
               headers: {
-                Authoraztion: `Bot ${client.token}`,
+                "Authorization": `Bot ${client.token}`,
+                "Content-Type": "application/json",
               },
             });
             setTimeout(() => {
