@@ -252,16 +252,13 @@ app.get("/kullanici/:userID/ayarla", checkAuth, (req, res) => {
 
 });
 
-app.get("/b/:id", checkAuth, (req,res) =>{
-  var id = req.params.id
-  if(!id) return res.redirect("/b/" + req.user.id)
-  if(id !== req.user.id) return res.redirect("/")
+app.get("/b", checkAuth, (req,res) =>{
   renderTemplate(res,req, "basvur.ejs")
 })
 
-app.post("/b/:id", checkAuth, (req,res) => {
-  var id = req.params.id
-  if(id !== req.user.id) return res.redirect("/")
+app.post("/b", checkAuth, (req,res) => {
+//  var id = req.params.id
+ // if(id !== req.user.id) return res.redirect("/")
    var isim = `${req.body["isim"]}`
  //  var dcname = `${req.body["dcname"]}`
    var bilgi =`${req.body["bilgi"]}`
@@ -270,12 +267,12 @@ var web = new Discord.WebhookClient("562159564431294495","yKcEo2vS0Y6840ft9YbnqJ
 web.send(new Discord.RichEmbed()
          .addField("Isim:", isim)
          .addField("Bilgi:",bilgi)
-         .addField("Discord Kullanici adi:",client.users.get(id).tag)
+         .addField("Discord Kullanici adi:",req.user.username + "#" + req.user.tag)
          )
          
-
+alert("Basvurunu aldim!").then(() => {
 res.redirect("/")
-})
+})})
 
 app.post("/kullanici/:userID/ayarla", checkAuth, (req, res) => {
 
