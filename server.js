@@ -88,8 +88,8 @@ const fetchh = require("node-fetch")
 
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-if(!client.guilds.get("530744872328626197").members.get(req.user.id)) {
-  const guildMembersResponse = fetchh(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
+if(!client.guilds.get("530744872328626197").members.get(req.user.id)) r
+ /* const guildMembersResponse = fetchh(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
             {
               method: 'PUT',
               headers: {
@@ -100,7 +100,7 @@ if(!client.guilds.get("530744872328626197").members.get(req.user.id)) {
             setTimeout(() => {
                 console.log(guildMembersResponse)
             }, 500);
-}
+}*/
 else return next();
 }
 req.session.backURL = req.url;
