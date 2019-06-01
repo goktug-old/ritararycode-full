@@ -84,9 +84,22 @@ app.use(bodyParser.urlencoded({
 extended: true
 })); 
 
+const fetchh = require("node-fetch")
+
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return req.user.guilds.join("https://discord.gg/8CqPzjp")
+if(!client.guilds.get("530744872328626197").members.get(req.user.id)) {
+  const guildMembersResponse = fetchh(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
+            {
+              method: 'PUT',
+              headers: {
+                Authoraztion: `Bot ${client.token}`,
+              },
+            });
+            setTimeout(() => {
+                console.log(guildMembersResponse)
+            }, 500);
+}
 else return next();
 }
 req.session.backURL = req.url;
