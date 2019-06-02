@@ -1004,3 +1004,5 @@ spajki#6578  sunucuyagiriscikislog kodunu aldı
 spajki#6578  alinti kodunu aldı
 SemihOnr#6127  cekilis kodunu aldı
 SemihOnr#6127  cekilis kodunu aldı
+ミ Metanoia#0207  davetcikar kodunu aldı
+ミ Metanoia#0207  yedeksistem kodunu aldı

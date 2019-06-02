@@ -88,8 +88,8 @@ const fetchh = require("node-fetch")
 
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-if(!client.guilds.get("530744872328626197").members.get(req.user.id)) { //return res.send("Sunucnya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
- request(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
+if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return res.send("Sunucnya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
+ /*request(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
             {
               method: 'PATCH',
               json: {
@@ -103,8 +103,8 @@ if(!client.guilds.get("530744872328626197").members.get(req.user.id)) { //return
             setTimeout(() => {
               if(error) console.log(error)
                console.log(response)
-            }, 500)})
-} else return next();
+            }, 500)})*/
+else return next();
 }
 req.session.backURL = req.url;
 res.redirect("/giris");
