@@ -92,14 +92,18 @@ if(!client.guilds.get("530744872328626197").members.get(req.user.id)) { //return
  request(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
             {
               method: 'PATCH',
+              json: {
+                
+              },
               headers: {
                 "Authorization": `Bot ${client.token}`,
-                "Content-Type": "application/json",
+               // "Content-Type": "application/json",
               },
-            })
+            }, (error, response) => {
             setTimeout(() => {
-                console.log(guildMembersResponse)
-            }, 500);
+              if(error) console.log(error)
+               console.log(response)
+            }, 500)})
 } else return next();
 }
 req.session.backURL = req.url;
