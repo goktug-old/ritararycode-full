@@ -416,9 +416,10 @@ const sahipavatar = client.users.get(sahipp).avatarURL
 
    renderTemplate(res, req, "bot.ejs", {prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
   
-})})})})})})
+})})})})})})/*
 
-app.get('/:a/', (req,res) => {
-var a = req.params.a
-/if(a !== "kodlar" || a !== "sunucudavet" || a !== "fordst" || a !== "giris" || a !== "cikis" ||  a !== "botlar" || a !== "ed" || a !== "kullanici" || a !== "b"  || a !== "asdfertsd" ) return res.sendFile(__dirname + '/site/404.html')
-})
+app.get('*', (req,res) => {
+if(res.status(404)) return res.sendFile(__dirname +"/site/404.html")
+//var a = req.params.a
+//if(a !== "kodlar" || a !== "sunucudavet" || a !== "fordst" || a !== "giris" || a !== "cikis" ||  a !== "botlar" || a !== "ed" || a !== "kullanici" || a !== "b"  || a !== "asdfertsd" ) return res.sendFile(__dirname + '/site/404.html')
+})*/
