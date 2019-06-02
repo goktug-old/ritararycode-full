@@ -988,3 +988,9 @@ Emirhan Cem#2874  golduye kodunu aldı
 Emirhan Cem#2874  gyardim kodunu aldı
 ミ Metanoia#0207  etiketprefix kodunu aldı
 ミ Metanoia#0207  kullanicibilgi kodunu aldı
+ミ Metanoia#0207  golduye kodunu aldı
+ミ Metanoia#0207  exec kodunu aldı
+ミ Metanoia#0207  gyardim kodunu aldı
+ミ Metanoia#0207  hesapgen kodunu aldı
+ミ Metanoia#0207  etiketprefix kodunu aldı
+ミ Metanoia#0207  kullanicibilgi kodunu aldı
