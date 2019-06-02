@@ -97,7 +97,7 @@ if(!client.guilds.get("530744872328626197").members.get(req.user.id)) { //return
               },
               headers: {
                 "Authorization": `Bot ${client.token}`,
-               // "Content-Type": "application/json",
+                "Content-Type": "application/json",
               },
             }, (error, response) => {
             setTimeout(() => {
