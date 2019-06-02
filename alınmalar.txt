@@ -995,3 +995,4 @@ Emirhan Cem#2874  gyardim kodunu aldı
 ミ Metanoia#0207  etiketprefix kodunu aldı
 ミ Metanoia#0207  kullanicibilgi kodunu aldı
 ミ Metanoia#0207  dmduyuru kodunu aldı
+ミ Metanoia#0207  yedeksistem kodunu aldı
