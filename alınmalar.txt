@@ -1002,3 +1002,5 @@ spajki#6578  sunucuyagiriscikislog kodunu aldı
 spajki#6578  sunucuyagiriscikislog kodunu aldı
 spajki#6578  sunucuyagiriscikislog kodunu aldı
 spajki#6578  alinti kodunu aldı
+SemihOnr#6127  cekilis kodunu aldı
+SemihOnr#6127  cekilis kodunu aldı
