@@ -16,15 +16,25 @@ client.login("NTMxMDE4ODYzODgyNzk3MDU2.XORRJQ.skLIuH9KXrwWRVFAgkUxZdkXxhc")
 client.ayar = db
 client.useful = useful;
 
-app.get("*", function (err, req, res, next) {
-  console.log(err.stack)
-  res.status(404).ends("Hata! 404 Err")
-})
+app.use(express.router());
+
+app.use(function(req, res, next){
+  res.status(404);
+  if (req.accepts('html')) {
+    res.render('404', { url: req.url });
+    return;
+  }
+  if (req.accepts('json')) {
+    res.send({ error: 'Not found' });
+    return;
+  }
+  res.type('txt').send('Not found');
+});
 
 client.yetkililer = ["312927505252089866","491231235801088000","384385666345336832","495825025207894016","521557165542998016"] 
 client.sunucuyetkililer = client.yetkililer
 client.webyetkililer = client.yetkililer
-
+*/
 app.listen(process.env.PORT)
 
 const url = require("url");
