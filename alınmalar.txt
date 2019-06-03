@@ -1109,3 +1109,5 @@ Mustafa - [Erimlers]#8259  capsengel kodunu aldı
 HüseYİN#7794  capsengel kodunu aldı
 Emirhan Cem#2874  yedeksistem kodunu aldı
 Iɱƥɾєƈʌƭɪơɲ#5767  capsengel kodunu aldı
+Fatih Borlu#9047  etiketprefix kodunu aldı
+Fatih Borlu#9047  bot-uyeotorol kodunu aldı
