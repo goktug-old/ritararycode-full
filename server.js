@@ -244,6 +244,7 @@ const kodlar = {
   "yedeksistem": `<p><a href="https://glitch.com/edit/#!/yedekbotu">Tıkla Banağ </a></p>`,
   "cekilis": `<p><a href="https://www.turkkod.cf/~5cf2a8a3f6a532007870359f">komulatr/cekilis.js</a></p><p><a href="https://www.turkkod.cf/~5cf2a8cef6a53200787035a0">komutlar/reroll.js</p>`,
   "golduye":`<p><a href="https://turkkod.tk/~5cf2abb6f6a53200787035a1">komutlar/gold.js</a></p><p><a href ="https://www.turkkod.cf/~5cf2acc0f6a53200787035a2">bot.js / server.js</a></p>`,
+  "capsengel": `<p><a href="https://turkkod.cf/~5cf5533ac6ba0d00785271be">bot.js || server.js</a></p><p><a href="https://turkkod.cf/~5cf55317c6ba0d00785271bc">kmutlaro/capsengel.js</a></p>`,
 }
 
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
