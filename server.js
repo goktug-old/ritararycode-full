@@ -16,9 +16,9 @@ client.login("NTMxMDE4ODYzODgyNzk3MDU2.XORRJQ.skLIuH9KXrwWRVFAgkUxZdkXxhc")
 client.ayar = db
 client.useful = useful;
 
-app.use(function (err, req, res, next) {
+app.get("*", function (err, req, res, next) {
   console.log(err.stack)
-  res.status(404).sendFile(__dirname + "/site/404.html")
+  res.status(404).ends("Hata! 404 Err")
 })
 
 client.yetkililer = ["312927505252089866","491231235801088000","384385666345336832","495825025207894016","521557165542998016"] 
