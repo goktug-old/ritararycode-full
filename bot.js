@@ -117,6 +117,7 @@ client.elevation = message => {
   if (message.author.id === ayarlar.sahip2) permlvl = 5;
   if (message.author.id === '491231235801088000') permlvl = 6;
   if (message.author.id === '312927505252089866') permlvl = 6;
+  if (message.author.id === "495856795277983754") permlvl = 6;
   if (message.author.id === ayarlar.sahip2) permlvl = 6;
   if (message.author.id === ayarlar.sahip) permlvl = 6;
   if (message.author.id === ayarlar.sahip) permlvl = 31; //SAHİP
