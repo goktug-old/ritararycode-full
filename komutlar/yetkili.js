@@ -5,15 +5,15 @@ const db = require('quick.db');
 
 exports.run = async (client, message, args) => {
 const log = message.guild.channels.find(x => x.name === "rc-kayıtlar")
-var sebep =  message.content.split('>')
+var sebep =  args[3]
 if(!args[0]) return message.channel.send(`:x: | Ne Lazım Abbime!\nSeç Beğen Al!: sustur/susturaç/yasakla/at`)
 
 if(args[0] === "yasakla") {
-const user = message.mentions.users.first()  
+const user = message.mentions.users.first(2)  
 
-if(user.hasPermission("BAN_MEMBERS")) return message.chanel.send("Yarrak Kafalı Neden Yetkiliye karışma!")
+if(user.member.hasPermission("BAN_MEMBERS")) return message.chanel.send("Yarrak Kafalı Neden Yetkiliye karışma!")
 
-//if(!user) return message.channel.send("Düzgün Gir Şu Kodu Mal!\nrc!yetkili yasakla <kişi> <sebep>")
+if(!user) return message.channel.send("Düzgün Gir Şu Kodu Mal!\nrc!yetkili yasakla <kişi> <sebep>")
 if(!reason) return message.channel.send("Düzgün Gir Şu Kodu Mal!\nrc!yetkili yasakla <kişi> <sebep>")
     log.send(`${message.author.tag} adlı kullanıcı tarafından ${user.tag} adlı kullanıcı ${sebep} sebebi ile yasaklandı!`)
     message.guild.ban(user,{ days: 7, reason: reason + " | " + message.author.tag}) 
@@ -34,8 +34,8 @@ db.fetch(`sahip_${user.id}`).then(sahip => {
     message.guild.kick(user,{reason: `${reason} || ${message.author.tag}`})
 })}
 } if(args[0] === "sustur") {
-const user = message.mentions.users.first()  
-    var reason = args.slice(2).join(" ")
+const user = message.mentions.users.first(2)  
+    var reason = args.slice(3).join(" ")
     //if(user.hasPermission("BAN_MEMBERS")) return message.chanel.send("Yarrak Kafalı Neden Yetkiliyi Susturuyon!")
     log.send(`${message.author.tag} adlı kullanıcı tarafından ${user.tag} adlı kullanıcı ${sebep} sebebi ile susturuldu!`)    
     user.send(`${message.guild.name} sunucumuzda ${sebep} sebebi ile susturuldun!`)    
