@@ -1160,3 +1160,5 @@ Samet albayrak#4636  ultrasohbettemizleyici kodunu aldı
 BIRAKTI#7287  golduye kodunu aldı
 HüseYİN#7794  prefix-calismakanal kodunu aldı
 Iɱƥɾєƈʌƭɪơɲ#5767  basvuru kodunu aldı
+HüseYİN#7794  notsistem kodunu aldı
+HüseYİN#7794  otorol kodunu aldı
