@@ -1203,3 +1203,4 @@ Dogan#1988  yedeksistem kodunu aldı
 Dogan#1988  hesapgen kodunu aldı
 Dogan#1988  golduye kodunu aldı
 FBEKER#5232  golduye kodunu aldı
+WindTR#0870  cekilis kodunu aldı
