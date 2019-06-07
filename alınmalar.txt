@@ -1210,3 +1210,13 @@ Fatih Borlu#9047  sureliduyuru kodunu aldı
 Fatih Borlu#9047  sunucular kodunu aldı
 Fatih Borlu#9047  kaydol kodunu aldı
 Fatih Borlu#9047  gyardim kodunu aldı
+Redux#5951  golduye kodunu aldı
+Redux#5951  alinti kodunu aldı
+Redux#5951  sor kodunu aldı
+Redux#5951  karaliste kodunu aldı
+Redux#5951  konustur kodunu aldı
+Redux#5951  oyverdim kodunu aldı
+Redux#5951  konustur kodunu aldı
+Redux#5951  kullanicibilgi kodunu aldı
+Redux#5951  gozetle kodunu aldı
+Redux#5951  snipe kodunu aldı
