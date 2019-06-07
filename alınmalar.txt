@@ -1244,3 +1244,5 @@ Redux#5951  alinti kodunu aldı
 Redux#5951  dmduyuru kodunu aldı
 Redux#5951  sor kodunu aldı
 Redux#5951  otorol kodunu aldı
+Kıllı Mahmut#2489  basvuru kodunu aldı
+Kıllı Mahmut#2489  jsrol kodunu aldı
