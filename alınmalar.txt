@@ -1239,3 +1239,8 @@ Redux#5951  oyverdim kodunu aldı
 busecan#9396  sureliduyuru kodunu aldı
 busecan#9396  hesapgen kodunu aldı
 busecan#9396  notsistem kodunu aldı
+HüseYİN#7794  capsengel kodunu aldı
+Redux#5951  alinti kodunu aldı
+Redux#5951  dmduyuru kodunu aldı
+Redux#5951  sor kodunu aldı
+Redux#5951  otorol kodunu aldı
