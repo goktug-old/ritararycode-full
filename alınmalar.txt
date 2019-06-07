@@ -1220,3 +1220,6 @@ Redux#5951  konustur kodunu aldı
 Redux#5951  kullanicibilgi kodunu aldı
 Redux#5951  gozetle kodunu aldı
 Redux#5951  snipe kodunu aldı
+SpeedDeveloper#9224  sunucuyagiriscikislog kodunu aldı
+SpeedDeveloper#9224  bot-uyeotorol kodunu aldı
+SpeedDeveloper#9224  bot-uyeotorol kodunu aldı
