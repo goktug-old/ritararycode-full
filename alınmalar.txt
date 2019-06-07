@@ -1249,3 +1249,6 @@ Kıllı Mahmut#2489  jsrol kodunu aldı
 Emirhan Cem#2874  golduye kodunu aldı
 Emirhan Cem#2874  yedeksistem kodunu aldı
 hades.#1959  bot-uyeotorol kodunu aldı
+hades.#1959  sunucuyagiriscikislog kodunu aldı
+hades.#1959  yedeksistem kodunu aldı
+hades.#1959  bot-uyeotorol kodunu aldı
