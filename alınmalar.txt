@@ -1272,3 +1272,11 @@ Rıfat#0001  ultrasohbettemizleyici kodunu aldı
 Enver Paşa (5.7K)#5176  eval kodunu aldı
 Enver Paşa (5.7K)#5176  cekilis kodunu aldı
 Enver Paşa (5.7K)#5176  golduye kodunu aldı
+Rıfat#0001  sarkisozu kodunu aldı
+Rıfat#0001  ultrasohbettemizleyici kodunu aldı
+Rıfat#0001  sunucukur kodunu aldı
+Rıfat#0001  konustur kodunu aldı
+Rıfat#0001  davetcikar kodunu aldı
+Rıfat#0001  etiketprefix kodunu aldı
+Rıfat#0001  alinti kodunu aldı
+Rıfat#0001  ayarlanabilirdestek kodunu aldı
