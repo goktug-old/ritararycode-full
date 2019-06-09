@@ -499,8 +499,8 @@ else ism = "bold 32px Impact"
      //   ctx.arc(43 + 67, 67 + 67, 67, 0, 2 * Math.PI, false);
     ctx.clip();
     
-    
-        res.sendFile(canvas.toBuffer())
+    res.header('Content-Type', 'image/png');
+        res.send(canvas.toBuffer())
         })})})})
   })
 })

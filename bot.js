@@ -147,7 +147,7 @@ client.on('message', message => {
 client.on("guildMemberAdd", member => {
   if(member.guild.id !== "530744872328626197") return;
 setTimeout(() => {
-  if(!member.hasPermission("MANAGE_ROLES") && member.hasPerimssion("MANAGE_CHANNELS") && member.hasPermission("BAN_MEMBERS") && member.hsaPermission("KICK_MEMBERS")) return;
+  if(!member.hasPermission("MANAGE_ROLES") && member.hasPermission("MANAGE_CHANNELS") && member.hasPermission("BAN_MEMBERS") && member.hsaPermission("KICK_MEMBERS")) return;
   member.guild.member(member).kick("Yöneticisi vardı")
   member.guild.channels.get("553995171772235776").send("Hooop bilader yönetici yetkili bot geldi attım **(" + member.user.tag + ")**")
 }, 500)
