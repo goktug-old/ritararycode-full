@@ -1313,3 +1313,9 @@ Eray0#3421  golduye kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680  prefix-calismakanal kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680  cekilis kodunu aldı
 Imam </>#5374  yedeksistem kodunu aldı
+! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680  bot-uyeotorol kodunu aldı
+Imam </>#5374  golduye kodunu aldı
+Imam </>#5374  cekilis kodunu aldı
+Imam </>#5374  exec kodunu aldı
+Imam </>#5374  kullanicibilgi kodunu aldı
+Imam </>#5374  dmduyuru kodunu aldı
