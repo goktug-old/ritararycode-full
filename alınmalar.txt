@@ -1286,3 +1286,7 @@ Rıfat#0001  ayarlanabilirdestek kodunu aldı
 ! ☍ | BeRK#0061  sunucuyagiriscikislog kodunu aldı
 Bulut#9269  sunucuyagiriscikislog kodunu aldı
 ! ☍ | BeRK#0061  yenile kodunu aldı
+ミ Metanoia#0706  etiketprefix kodunu aldı
+Imam </>#5374  golduye kodunu aldı
+Imam </>#5374  cekilis kodunu aldı
+Imam </>#5374  yedeksistem kodunu aldı
