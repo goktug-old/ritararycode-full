@@ -466,8 +466,8 @@ if(!sahip) return res.sendFile(__dirname +"/site/404.html")
 var sertifika;
 if(serttfika === null) sertifika = "pasif"
 else sertifika = "aktif"
-          
-  var avatar2 = await loadImage(await requestt.get(sahip.displayAvatarURL))        
+  const { boddy } = await requestt.get(sahip.avatarURL)
+  var avatar2 = await loadImage(boddy)        
         
 ctx.drawImage(arkabg, 0, 0, 1280, 720);
           
