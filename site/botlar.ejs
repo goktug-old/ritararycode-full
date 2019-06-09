@@ -30,7 +30,7 @@ const help = {};
   else if(durum === "idle") durume = "https://cdn.discordapp.com/emojis/566624163859660800.png"
   %>
 <div class="card text-white bg-light mb-3" style="display: inline-block; width: 17rem;">
-          <div class="card-header"><a href="/bot/<%= command.user.id %>"><img src="<%= command.user.avatarURL %>" style="width: 100%;"></a></div>
+          <div class="card-header"><a href="/bot/<%= command.user.id %>"><img src="<%= command.user.displayAvatarURL %>" style="width: 100%;"></a></div>
     
        <div class="card-body">
             <h5 class="card-title">

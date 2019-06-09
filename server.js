@@ -425,7 +425,7 @@ if(!sertifika) sertifika = "Sertifika Yok"
 var sertifikadurum;
 if(sertifika === "aktif") sertifikadurum = `<button style="top: 25px; margin-left: 3%;" class="prefix btn btn-primary">✅ Sertifikalı </button>`
 else sertifikadurum = ""
-const avatar = client.users.get(id).avatarURL
+const avatar = client.users.get(id).displayAvatarURL
 const botaı = client.users.get(id).username
 const sahipavatar = client.users.get(sahipp).avatarURL
 
