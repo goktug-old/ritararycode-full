@@ -1285,3 +1285,4 @@ Rıfat#0001  ayarlanabilirdestek kodunu aldı
 ! ☍ | BeRK#0061  sureliduyuru kodunu aldı
 ! ☍ | BeRK#0061  sunucuyagiriscikislog kodunu aldı
 Bulut#9269  sunucuyagiriscikislog kodunu aldı
+! ☍ | BeRK#0061  yenile kodunu aldı
