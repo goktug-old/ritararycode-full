@@ -33,6 +33,7 @@
     "jimp": "^0.6.1",
     "quick.db": "^6.3.2",
     "node-superfetch": "^0.1.9",
-    "canvas": "^2.5.0"
+    "canvas": "^2.5.0",
+    "canvas-constructor": "^3.0.0"
   }
 }

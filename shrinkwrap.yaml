@@ -1,6 +1,7 @@
 dependencies:
   btoa: 1.2.1
   canvas: 2.5.0
+  canvas-constructor: 3.0.3
   chalk: 2.4.2
   cheerio: 0.22.0
   child-process-promise: 2.2.1
@@ -612,6 +613,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs=
+  /canvas-constructor/3.0.3:
+    dev: false
+    engines:
+      node: '>=8.6.0'
+    peerDependencies:
+      canvas: '*'
+    resolution:
+      integrity: sha512-AbtpTT7YVJf5UxlgoUQVUCf5ZdfcnTyTp4zYJj2h3KnL9SMmZuBo3du0fyAhpetXuHW9qI13zMcn1+Ltam+a4g==
   /canvas/2.5.0:
     dependencies:
       nan: 2.14.0
@@ -2817,6 +2826,7 @@ shrinkwrapVersion: 3
 specifiers:
   btoa: ^1.2.1
   canvas: ^2.5.0
+  canvas-constructor: ^3.0.0
   chalk: ^2.4.1
   cheerio: ^0.22.0
   child-process-promise: ^2.2.1

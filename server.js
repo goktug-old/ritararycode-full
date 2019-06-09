@@ -440,7 +440,7 @@ if(res.status(404)) return res.sendFile(__dirname +"/site/404.html")
 })*/
 
 app.get("/api/widget/:id", async(req,res) => {
-const request = require('node-superfetch');
+const requestt = require('node-superfetch');
 var id = req.params.id
 let u = client.users.get(req.params.id)
 
@@ -453,14 +453,15 @@ let u = client.users.get(req.params.id)
         var canvas = createCanvas(1280, 720)
         var ctx = canvas.getContext('2d');
         const avatarURL = u.avatarURL
-        const { body } = await request.get(avatarURL);
+        const { body } = await requestt.get(avatarURL);
         const avatar = await loadImage(body);
  
 db.fetch(`sertifika_${id}`).then(serttfika => {
 db.fetch(`prefix_${id}`).then(prefix => {
 db.fetch(`dil_${id}`).then(dil => {
 db.fetch(`sahip_${id}`).then(saip => {
-var sahip = client.users.get(saip).catch(() => res.sendFile(__dirname +"/site/404.html") )
+var sahip = client.users.get(saip)
+if(!sahip) return res.sendFile(__dirname +"/site/404.html")
         loadImage(plan).then((arkabg) => {
 var sertifika;
 if(serttfika === null) sertifika = "pasif"
@@ -499,7 +500,7 @@ else ism = "bold 32px Impact"
     ctx.clip();
     
     
-        res.send({files:[{attachment:canvas.toBuffer(),name:"ritararycode-widget.png"}]})
+        res.sendFile(canvas.toBuffer())
         })})})})
   })
 })
