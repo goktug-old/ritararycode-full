@@ -443,6 +443,7 @@ app.get("/api/widget/:id", async(req,res) => {
 const requestt = require('node-superfetch');
 var id = req.params.id
 let u = client.users.get(req.params.id)
+if(!u) return res.sendFile(__dirname + "/site/404.html")
 
   var plan = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png"
   
@@ -501,7 +502,7 @@ else ism = "bold 32px Impact"
      //   ctx.arc(43 + 67, 67 + 67, 67, 0, 2 * Math.PI, false);
     ctx.clip();
     
-    res.header('Content-Type', 'image/png');
+       res.header('Content-Type', 'image/png');
         res.send(canvas.toBuffer())
         })})})})
   })
