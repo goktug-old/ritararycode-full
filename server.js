@@ -441,7 +441,7 @@ if(res.status(404)) return res.sendFile(__dirname +"/site/404.html")
 
 app.get("/api/widget/:id", async(req,res) => {
 const request = require('node-superfetch');
-
+var id = req.params.id
 let u = client.users.get(req.params.id)
 
   var plan = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png"
@@ -456,13 +456,16 @@ let u = client.users.get(req.params.id)
         const { body } = await request.get(avatarURL);
         const avatar = await loadImage(body);
  
-db.fetch(``).then(serttfika => {
-db.fetch(``).then(prefix => {
-db.fetch(``).then(dil => {
-db.fetch(``).then(saip => {
+db.fetch(`sertifika_${id}`).then(serttfika => {
+db.fetch(`prefix_${id}`).then(prefix => {
+db.fetch(`dil_${id}`).then(dil => {
+db.fetch(`sahip_${id}`).then(saip => {
 var sahip = client.users.get(saip).catch(() => res.sendFile(__dirname +"/site/404.html") )
         loadImage(plan).then((arkabg) => {
-  
+var sertifika;
+if(serttfika === null) sertifika = "pasif"
+else sertifika = "aktif"
+          
 ctx.drawImage(arkabg, 0, 0, 1280, 720);
           
 ctx.drawImage(avatar, 250, 165, 150, 150);
@@ -481,12 +484,12 @@ else ism = "bold 32px Impact"
   ctx.fillStyle = `#fcfdff`;
   ctx.font = ism
         ctx.textAlign = "right";
-        ctx.fillText(`${u.tag}`, 865, 250)
-        ctx.fillText(`${u.tag}`, 1250, 250)
+        ctx.fillText(`${client.users.get(id).tag}`, 865, 250)
+        ctx.fillText(`${sahip.tag}`, 1250, 250)
   ctx.font = 'bold 36px Impact';
-        ctx.fillText(`discord.js`, 325, 475)
-        ctx.fillText(`${pref`, 710, 475)
-        ctx.fillText(`pasif`, 1125, 475)
+        ctx.fillText(`${dil}`, 325, 475)
+        ctx.fillText(`${prefix}`, 710, 475)
+        ctx.fillText(`${sertifika}`, 1125, 475)
        // ctx.fillText(``,325, 475)
         ctx.beginPath();
         ctx.lineWidth = 8;
