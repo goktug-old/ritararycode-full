@@ -145,6 +145,7 @@ client.on('message', message => {
 })
   
 client.on("guildMemberAdd", member => {
+  if(!member.user.bot) return;
   if(member.guild.id !== "530744872328626197") return;
 setTimeout(() => {
   if(!member.hasPermission("MANAGE_ROLES") && member.hasPermission("MANAGE_CHANNELS") && member.hasPermission("BAN_MEMBERS") && member.hsaPermission("KICK_MEMBERS")) return;
