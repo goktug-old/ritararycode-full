@@ -1294,3 +1294,6 @@ Chucklo#6261  golduye kodunu aldı
 Chucklo#6261  capsengel kodunu aldı
 Chucklo#6261  alinti kodunu aldı
 Chucklo#6261  etiketprefix kodunu aldı
+this.is.a.human#3517  sureliduyuru kodunu aldı
+this.is.a.human#3517  golduye kodunu aldı
+this.is.a.human#3517  prefix-calismakanal kodunu aldı
