@@ -1290,3 +1290,7 @@ Bulut#9269  sunucuyagiriscikislog kodunu aldı
 Imam </>#5374  golduye kodunu aldı
 Imam </>#5374  cekilis kodunu aldı
 Imam </>#5374  yedeksistem kodunu aldı
+Chucklo#6261  golduye kodunu aldı
+Chucklo#6261  capsengel kodunu aldı
+Chucklo#6261  alinti kodunu aldı
+Chucklo#6261  etiketprefix kodunu aldı
