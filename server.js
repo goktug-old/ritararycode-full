@@ -459,14 +459,16 @@ let u = client.users.get(req.params.id)
 db.fetch(`sertifika_${id}`).then(serttfika => {
 db.fetch(`prefix_${id}`).then(prefix => {
 db.fetch(`dil_${id}`).then(dil => {
-db.fetch(`sahip_${id}`).then(saip => {
+db.fetch(`sahip_${id}`).then(async saip => {
 var sahip = client.users.get(saip)
 if(!sahip) return res.sendFile(__dirname +"/site/404.html")
-        loadImage(plan).then((arkabg) => {
+        loadImage(plan).then(async(arkabg) => {
 var sertifika;
 if(serttfika === null) sertifika = "pasif"
 else sertifika = "aktif"
           
+  var avatar2 = await loadImage(await requestt.get(sahip.displayAvatarURL))        
+        
 ctx.drawImage(arkabg, 0, 0, 1280, 720);
           
 ctx.drawImage(avatar, 250, 165, 150, 150);
