@@ -507,6 +507,8 @@ else ism = "bold 32px Impact"
   })
 })
 
+app.get("/api/test/widget", (req,res) => res.send(`<a href="https://ritararycode.cf/bot/421261553384292372"><img src = "https://ritararycode.cf/api/widget/421261553384292372"></a>`) )
+
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/site/404.html');
 });
