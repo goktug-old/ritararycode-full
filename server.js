@@ -439,6 +439,68 @@ if(res.status(404)) return res.sendFile(__dirname +"/site/404.html")
 //if(a !== "kodlar" || a !== "sunucudavet" || a !== "fordst" || a !== "giris" || a !== "cikis" ||  a !== "botlar" || a !== "ed" || a !== "kullanici" || a !== "b"  || a !== "asdfertsd" ) return res.sendFile(__dirname + '/site/404.html')
 })*/
 
+app.get("/api/widget/:id", async(req,res) => {
+const request = require('node-superfetch');
+
+let u = client.users.get(req.params.id)
+
+  var plan = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png"
+  
+  var g = "50"
+    
+
+  var { createCanvas, loadImage } = require('canvas')
+        var canvas = createCanvas(1280, 720)
+        var ctx = canvas.getContext('2d');
+        const avatarURL = u.avatarURL
+        const { body } = await request.get(avatarURL);
+        const avatar = await loadImage(body);
+ 
+db.fetch(``).then(serttfika => {
+db.fetch(``).then(prefix => {
+db.fetch(``).then(dil => {
+db.fetch(``).then(saip => {
+var sahip = client.users.get(saip).catch(() => res.sendFile(__dirname +"/site/404.html") )
+        loadImage(plan).then((arkabg) => {
+  
+ctx.drawImage(arkabg, 0, 0, 1280, 720);
+          
+ctx.drawImage(avatar, 250, 165, 150, 150);
+ctx.drawImage(avatar, 50 , 165, 150, 150);
+          
+        var re = "db3b3b"
+var b = []
+var ism;
+u.tag.split("").forEach(a => b.push(a))
+if(b.length > 25) ism = 'bold 16px Impact'
+else if(b.length > 13) ism = 'bold 24px Impact'
+else ism = "bold 32px Impact"
+        var de = 1.6
+        ctx.beginPath()
+        ctx.fillStyle = `#${re}`;
+  ctx.fillStyle = `#fcfdff`;
+  ctx.font = ism
+        ctx.textAlign = "right";
+        ctx.fillText(`${u.tag}`, 865, 250)
+        ctx.fillText(`${u.tag}`, 1250, 250)
+  ctx.font = 'bold 36px Impact';
+        ctx.fillText(`discord.js`, 325, 475)
+        ctx.fillText(`${pref`, 710, 475)
+        ctx.fillText(`pasif`, 1125, 475)
+       // ctx.fillText(``,325, 475)
+        ctx.beginPath();
+        ctx.lineWidth = 8;
+  ctx.fill()
+     //  ctx.lineWidth = 8;
+     //   ctx.arc(43 + 67, 67 + 67, 67, 0, 2 * Math.PI, false);
+    ctx.clip();
+    
+    
+        res.send({files:[{attachment:canvas.toBuffer(),name:"ritararycode-widget.png"}]})
+        })})})})
+  })
+})
+
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/site/404.html');
 });
