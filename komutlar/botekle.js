@@ -5,7 +5,9 @@ exports.run = async(client,message,args) => {
 
 var sayı = ["0","1","2","3","4","5","6","7","8","9"]
 
-var id = args[0]
+var id;
+if(!isNaN(args[0])) return message.channel.sedn(":x: | Id Sayı Olmalıdır")
+else id = args[0]
 if(!id) return message.channel.send(":x: | rc!ekle <id> <prefix> <kütüphane> - <açıklama>")
 var prefix = args[1]
 if(!prefix) return message.channel.send(":x: | rc!ekle " + id + " <prefix> <kütüphane> - <açıklama>")

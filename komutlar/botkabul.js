@@ -8,6 +8,7 @@ exports.run = function(client, message, args) {
     if (message.mentions.users.first()) {
       bot = message.mentions.users.first().id;
     } else {
+      if(!isNaN(args[0])) return message.channel.send(":x: | Id rakam Olmalidir")
         bot = args[0];
     }
   // || message.mentions.users.first().id
