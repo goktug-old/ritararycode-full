@@ -1352,3 +1352,6 @@ ibd#5495  snipe kodunu aldı
 ibd#5495  ultrasohbettemizleyici kodunu aldı
 ibd#5495  capsengel kodunu aldı
 ibd#5495  yedeksistem kodunu aldı
+this.is.a.human#3517  sunucuyagiriscikislog kodunu aldı
+this.is.a.human#3517  yedeksistem kodunu aldı
+this.is.a.human#3517  prefix-calismakanal kodunu aldı
