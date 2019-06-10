@@ -1374,3 +1374,5 @@ WindTR#0870  bot-uyeotorol kodunu aldı
 Platinium.Kerim#9961  gyardim kodunu aldı
 Fatih Borlu#9047  sureliduyuru kodunu aldı
 this.is.a.human#3517  sunucukur kodunu aldı
+goktug/9#4851  hesapgen kodunu aldı
+Rıfat#0001  ayarlanabilirdestek kodunu aldı
