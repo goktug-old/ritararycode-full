@@ -1378,3 +1378,10 @@ goktug/9#4851  hesapgen kodunu aldı
 Rıfat#0001  ayarlanabilirdestek kodunu aldı
 Rıfat#0001  etiketprefix kodunu aldı
 Rıfat#0001  karaliste kodunu aldı
+Rıfat#0001  otorol kodunu aldı
+Rıfat#0001  snipe kodunu aldı
+Rıfat#0001  gozetle kodunu aldı
+Rıfat#0001  gozetle kodunu aldı
+Rıfat#0001  gozetle kodunu aldı
+Rıfat#0001  gozetle kodunu aldı
+Rıfat#0001  bot-uyeotorol kodunu aldı
