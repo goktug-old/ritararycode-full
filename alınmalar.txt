@@ -1400,3 +1400,7 @@ Göktuğ#7987  jsrol kodunu aldı
 Göktuğ#7987  cekilis kodunu aldı
 𝕂𝕖𝕣𝕚𝕞𝕂'⧨#2596  etiketprefix kodunu aldı
 𝕂𝕖𝕣𝕚𝕞𝕂'⧨#2596  sor kodunu aldı
+𝕂𝕖𝕣𝕚𝕞𝕂'⧨#2596  davetcikar kodunu aldı
+𝕂𝕖𝕣𝕚𝕞𝕂'⧨#2596  oyverdim kodunu aldı
+𝕂𝕖𝕣𝕚𝕞𝕂'⧨#2596  exec kodunu aldı
+𝕂𝕖𝕣𝕚𝕞𝕂'⧨#2596  yedeksistem kodunu aldı
