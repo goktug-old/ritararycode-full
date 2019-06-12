@@ -1437,3 +1437,6 @@ Yasins ツ#8626  basvuru kodunu aldı
 Yasins ツ#8626  sunucular kodunu aldı
 Yasins ツ#8626  sunucukur kodunu aldı
 Yasins ツ#8626  sureliduyuru kodunu aldı
+Yasins ツ#8626  eval kodunu aldı
+Yasins ツ#8626  exec kodunu aldı
+Fatih Borlu#9047  yedeksistem kodunu aldı
