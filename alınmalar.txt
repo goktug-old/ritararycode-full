@@ -1500,3 +1500,6 @@ p7||PowerShell#7259 (543531424704364564) alinti kodunu aldı
 p7||PowerShell#7259 (543531424704364564) konustur kodunu aldı
 p7||PowerShell#7259 (543531424704364564) bot-uyeotorol kodunu aldı
 p7||PowerShell#7259 (543531424704364564) cekilis kodunu aldı
+Yasins ツ#8626 (460813657811582986) basvuru kodunu aldı
+Yasins ツ#8626 (460813657811582986) ayarlanabilirdestek kodunu aldı
+Yasins ツ#8626 (460813657811582986) ayarlanabilirdestek kodunu aldı
