@@ -1473,3 +1473,6 @@ KONYA#4286  golduye kodunu aldı
 KONYA#4286  prefix-calismakanal kodunu aldı
 KONYA#4286  capsengel kodunu aldı
 KONYA#4286  golduye kodunu aldı
+Rip XXX#5272  bot-uyeotorol kodunu aldı
+Rip XXX#5272  cekilis kodunu aldı
+Rip XXX#5272  golduye kodunu aldı
