@@ -1470,3 +1470,5 @@ Rip XXX#5272  cekilis kodunu aldı
 МŃβĞ |KEREM||#0521  capsengel kodunu aldı
 KONYA#4286  karaliste kodunu aldı
 KONYA#4286  golduye kodunu aldı
+KONYA#4286  prefix-calismakanal kodunu aldı
+KONYA#4286  capsengel kodunu aldı
