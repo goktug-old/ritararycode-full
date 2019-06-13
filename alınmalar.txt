@@ -1480,3 +1480,7 @@ Rip XXX#5272  exec kodunu aldı
 Rip XXX#5272  yedeksistem kodunu aldı
 Rip XXX#5272  otorol kodunu aldı
 Klavyesi Yok#7633 (495825025207894016) capsengel kodunu aldı
+p7||PowerShell#7259 (543531424704364564) etiketprefix kodunu aldı
+p7||PowerShell#7259 (543531424704364564) konustur kodunu aldı
+p7||PowerShell#7259 (543531424704364564) yedeksistem kodunu aldı
+p7||PowerShell#7259 (543531424704364564) golduye kodunu aldı
