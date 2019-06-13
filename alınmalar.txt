@@ -1496,3 +1496,7 @@ AliOsman#8176 (519568098899001365) ultrasohbettemizleyici kodunu aldı
 AliOsman#8176 (519568098899001365) exec kodunu aldı
 Yasins ツ#8626 (460813657811582986) snipe kodunu aldı
 Berat#8859 (492537812709539860) kaydol kodunu aldı
+p7||PowerShell#7259 (543531424704364564) alinti kodunu aldı
+p7||PowerShell#7259 (543531424704364564) konustur kodunu aldı
+p7||PowerShell#7259 (543531424704364564) bot-uyeotorol kodunu aldı
+p7||PowerShell#7259 (543531424704364564) cekilis kodunu aldı
