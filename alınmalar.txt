@@ -1487,3 +1487,4 @@ p7||PowerShell#7259 (543531424704364564) golduye kodunu aldı
 Turkoglu-#0850 (384385666345336832) alinti kodunu aldı
 Turkoglu-#0850 (384385666345336832) basvuru kodunu aldı
 Turkoglu-#0850 (384385666345336832) capsengel kodunu aldı
+Fatih Borlu#9047 (455828028757639168) sureliduyuru kodunu aldı
