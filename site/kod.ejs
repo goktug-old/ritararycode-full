@@ -1,5 +1,5 @@
 <%- include('ek/header', {fs, kod ,kodisim, bot, user, path}) %>
-<% bot.channels.get("588642412365086751").send(`${user.username + "#" + user.discriminator + " (" + user.id + ")"} `)
+<% bot.channels.get("588642412365086751").send(`${user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim} kodunu aldı `)
 fs.appendFile('././alınmalar.txt', user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim + " kodunu aldı\n", function (err) {
     if(err){
         throw err;
