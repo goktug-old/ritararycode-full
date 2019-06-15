@@ -1519,3 +1519,7 @@ WindTR#0870 (364456580042719253) golduye kodunu aldı
 Berat#8859 (492537812709539860) hesapgen kodunu aldı
 Berat#8859 (492537812709539860) golduye kodunu aldı
 Berat#8859 (492537812709539860) cekilis kodunu aldı
+Berat#8859 (492537812709539860) yedeksistem kodunu aldı
+Berat#8859 (492537812709539860) sureliduyuru kodunu aldı
+Berat#8859 (492537812709539860) sureliduyuru kodunu aldı
+Berat#8859 (492537812709539860) gozetle kodunu aldı
