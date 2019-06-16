@@ -158,7 +158,7 @@ setTimeout(() => {
   client.on("messageReactionAdd", (reaction,user) => {
     if(reaction.message.id !== "570234460142829608") return console.log("Testtir bu")
     else {
-    reaction.guild.member(`${user.id}`).addRole("580091788891521027")
+    reaction.guild.member(user).addRole("580091788891521027")
     reaction.guild.channels.get("553827797408415744").send(user.tag + " giriş yapmak icin :shield: emojisini ekledi")
     }
   })
