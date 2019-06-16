@@ -247,6 +247,8 @@ const kodlar = {
   "capsengel": `<p><a href="https://turkkod.cf/~5cf5533ac6ba0d00785271be">bot.js || server.js</a></p><p><a href="https://turkkod.cf/~5cf55317c6ba0d00785271bc">kmutlaro/capsengel.js</a></p>`,
 }
 
+const fs = require('fs')
+
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   if(!req.params.kod) return res.redirect("/kodlar")
   var kod = kodlar[req.params.kod]
@@ -256,35 +258,6 @@ app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   
   })
 
-
-const fs = require('fs')
-
-
-app.get("/kullanici/:userID", (req, res) => {
-
-  request({
-    url: `https://discordapp.com/api/v7/users/${req.params.userID}`,
-    headers: {
-      "Authorization": `Bot ${process.env.TOKEN}`
-    },
-  }, function(error, response, body) {
-    if (error) return console.log(error)
-    else if (!error) {
-      var kisi = JSON.parse(body)
-
-      renderTemplate(res, req, "profil.ejs", {kisi})
-    };
-  });
-
-});
-
-
-
-app.get("/kullanici/:userID/ayarla", checkAuth, (req, res) => {
-
-  renderTemplate(res, req, "profila.ejs")
-
-});
 
 app.get("/b", checkAuth, (req,res) =>{
   renderTemplate(res,req, "basvur.ejs")
@@ -306,45 +279,7 @@ web.send(new Discord.RichEmbed()
 res.redirect("/")
 })
 
-app.post("/kullanici/:userID/ayarla", checkAuth, (req, res) => {
 
-  if (req.params.userID !== req.user.id) return res.redirect('/');
-
-  var profil = JSON.parse(fs.readFileSync('./profil.json', 'utf8'));
-
-
-  request({
-    url: `https://discordapp.com/api/v7/users/${req.params.userID}`,
-    headers: {
-      "Authorization": `Bot ${process.env.TOKEN}`
-    },
-  }, function(error, response, body) {
-    if (error) return console.log(error)
-    else if (!error) {
-    var kisi = JSON.parse(body)
-
-  var veri = JSON.parse(`{
-  "isim": "${req.body['isim']}",
-  "yas": "${req.body['yas']}",
-  "biyo": "${req.body['biyo']}",
-  "avatar": "https://cdn.discordapp.com/avatars/${kisi.id}/${kisi.avatar}.png"
-  }`)
-
-  profil[req.user.id] = veri;
-
-  var obj = JSON.stringify(profil)
-
-  fs.writeFile('./profil.json', obj)
-
-  res.redirect('/kullanici/'+req.user.id)
-
-    }
-  })
-
-});
-
-let profil = JSON.parse(fs.readFileSync('./profil.json', 'utf8'))
-client.profil = profil
 
 app.get("/ed/hatalar", (req,res) => {
   renderTemplate(res, req, "ed-hatalar.ejs")
@@ -378,7 +313,7 @@ if (ayar === {} || !ayar['id'] || !ayar['prefix'] || !ayar['dil'] || !ayar['acik
 
 let ID = ayar['id']
 
-if(client.guilds.get(ID)) return res.json({
+if(client.users.get(ID)) return res.json({
   hata: "Bot Zaten Sunucumuzda Eklidir."
 })
   
