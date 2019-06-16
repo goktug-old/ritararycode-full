@@ -1534,3 +1534,4 @@ Umutcan#4387 (504347404821332010) capsengel kodunu aldı
 FlameGunK#1828 (319368719492972547) golduye kodunu aldı
 FlameGunK#1828 (319368719492972547) yedeksistem kodunu aldı
 FlameGunK#1828 (319368719492972547) karaliste kodunu aldı
+p7||PowerShell#7259 (543531424704364564) otorol kodunu aldı
