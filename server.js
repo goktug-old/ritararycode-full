@@ -82,7 +82,7 @@ const fetchh = require("node-fetch")
 
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return res.send("Sunucnya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
+if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return res.send("Sunucnya gelmelisin <a href = 'https://discord.gg/kmccxMG'>Tiklat</a>")
  /*request(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
             {
               method: 'PATCH',
