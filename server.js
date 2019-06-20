@@ -50,7 +50,7 @@ done(null, obj);
 passport.use(new Strategy({
 clientID: "531018863882797056",
 clientSecret: "vnSdAXDyrVgIWZ-do4ryNxViI_9hlyEF",
-callbackURL: "https://ritararycode.cf/callback",
+callbackURL: "https://ritararycode.tk/callback",
 scope: ["identify", "guilds.join"]
 },
 (accessToken, refreshToken, profile, done) => {
@@ -340,7 +340,7 @@ if(!sertifika) sertifika = "Sertifika Yok"
 var sertifikadurum;
 if(sertifika === "aktif") sertifikadurum = `<button style="top: 25px; margin-left: 3%;" class="prefix btn btn-primary">✅ Sertifikalı </button>`
 else sertifikadurum = ""
-const avatar = client.users.get(id).displayAvatarURL
+const avatar = client.users.get(id).avatarURL
 const botaı = client.users.get(id).username
 const sahipavatar = client.users.get(sahipp).avatarURL
 
