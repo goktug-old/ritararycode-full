@@ -1,26 +1,26 @@
 dependencies:
   btoa: 1.2.1
-  canvas: 2.5.0
+  canvas: 2.6.0
   canvas-constructor: 3.0.3
   chalk: 2.4.2
   cheerio: 0.22.0
   child-process-promise: 2.2.1
-  discord.js: 11.4.2
+  discord.js: 11.5.1
   ejs: 2.6.1
-  enmap: 4.8.4
+  enmap: 4.8.7
   express: 4.16.4
   express-session: 1.16.1
   fs: 0.0.2
   generate-password: 1.4.1
-  helmet: 3.16.0
+  helmet: 3.18.0
   html-tags: 3.0.0
-  jimp: 0.6.1
+  jimp: 0.6.4
   level-session-store: 2.2.0
   marked: 0.6.2
   moment: 2.24.0
   moment-duration-format: 2.2.2
-  ms: 2.1.1
-  node-fetch: 2.5.0
+  ms: 2.1.2
+  node-fetch: 2.6.0
   node-superfetch: 0.1.9
   passport: 0.4.0
   passport-discord: 0.1.3
@@ -29,31 +29,32 @@ dependencies:
   request: 2.88.0
   useful-tools: 0.2.6
 packages:
-  /@babel/polyfill/7.4.3:
+  /@babel/polyfill/7.4.4:
     dependencies:
-      core-js: 2.6.5
+      core-js: 2.6.9
       regenerator-runtime: 0.13.2
+    deprecated: "\U0001F6A8 As of Babel 7.4.0, this\npackage has been deprecated in favor of directly\nincluding core-js/stable (to polyfill ECMAScript\nfeatures) and regenerator-runtime/runtime\n(needed to use transpiled generator functions):\n\n  > import \"core-js/stable\";\n  > import \"regenerator-runtime/runtime\";"
     dev: false
     resolution:
-      integrity: sha512-rkv8WIvJshA5Ev8iNMGgz5WZkRtgtiPexiT7w5qevGTuT7ZBfM3de9ox1y9JR5/OXb/sWGBbWlHNa7vQKqku3Q==
-  /@jimp/bmp/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-WlthFLfhQQhh+A2Gn5NSFl0Huxz36x86Jn+E9OW7ibK8edKPq+KLy4apM1yDpQ8kJOVi1OVjpP4vSDLdrI04dg==
+  /@jimp/bmp/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
       bmp-js: 0.1.0
-      core-js: 2.6.5
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/bmp/0.6.0
+    id: registry.npmjs.org/@jimp/bmp/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-zZOcVT1zK/1QL5a7qirkzPPgDKB1ianER7pBdpR2J71vx/g8MnrPbL3h/jEVPxjdci2Hph/VWhc/oLBtTbqO8w==
-  /@jimp/core/0.6.0:
+      integrity: sha512-dhKM7Cjw4XoOefx3/we2+vWyTP6hQPpM7mEsziGjtsrK2f/e3/+hhHbEsQNgO9BOA1FPJRXAOiYHts9IlMH1mg==
+  /@jimp/core/0.6.4:
     dependencies:
-      '@jimp/utils': 0.6.0
+      '@jimp/utils': 0.6.4
       any-base: 1.1.0
       buffer: 5.2.1
-      core-js: 2.6.5
+      core-js: 2.6.9
       exif-parser: 0.1.12
       file-type: 9.0.0
       load-bmfont: 1.4.0
@@ -63,324 +64,324 @@ packages:
       tinycolor2: 1.4.1
     dev: false
     resolution:
-      integrity: sha512-ngAkyCLtX7buc2QyFy0ql/j4R2wGYQVsVhW2G3Y0GVAAklRIFIUYpyNKrqs228xA8f2O6XStbDStFlYkt7uNeg==
-  /@jimp/custom/0.6.0:
+      integrity: sha512-nyiAXI8/uU54fGO53KrRB8pdn1s+IODZ+rj0jG2owsNJlTlagFrsZAy8IVTUCOiiXjh9TbwFo7D5XMrmi4KUww==
+  /@jimp/custom/0.6.4:
     dependencies:
-      '@jimp/core': 0.6.0
-      core-js: 2.6.5
+      '@jimp/core': 0.6.4
+      core-js: 2.6.9
     dev: false
     resolution:
-      integrity: sha512-+YZIWhf03Rfbi+VPbHomKInu3tcntF/aij/JrIJd1QZq13f8m3mRNxakXupiL18KH0C8BPNDk8RiwFX+HaOw3A==
-  /@jimp/gif/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-sdBHrBoVr1+PFx4dlUAgXvvu4dG0esQobhg7qhpSLRje1ScavIgE2iXdJKpycgzrqwAOL8vW4/E5w2/rONlaoQ==
+  /@jimp/gif/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
       omggif: 1.0.9
     dev: false
-    id: registry.npmjs.org/@jimp/gif/0.6.0
+    id: registry.npmjs.org/@jimp/gif/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-aWQ02P0ymTN1eh0BVsY+84wMdb/QeiVpCNQZl9y50cRnpuMM8TTmF/ZdCEBDiTRFcwXzHsqBXcLwEcYp3X2lTw==
-  /@jimp/jpeg/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-14mLoyG0UrYJsGNRoXBFvSJdFtBD0BSBwQ1zCNeW+HpQqdl+Kh5E1Pz4nqT2KNylJe1jypyR51Q2yndgcfGVyg==
+  /@jimp/jpeg/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
-      jpeg-js: 0.3.4
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
+      jpeg-js: 0.3.5
     dev: false
-    id: registry.npmjs.org/@jimp/jpeg/0.6.0
+    id: registry.npmjs.org/@jimp/jpeg/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-quYb+lM4h57jQvr2q9dEIkc0laTljws4dunIdFhJRfa5UlNL5mHInk8h5MxyALo0mZdT07TAcxiDHw5QXZ28JQ==
-  /@jimp/plugin-blit/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-NrFla9fZC/Bhw1Aa9vJ6cBOqpB5ylEPb9jD+yZ0fzcAw5HwILguS//oXv9EWLApIY1XsOMFFe0XWpY653rv8hw==
+  /@jimp/plugin-blit/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-blit/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-blit/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-LjiCa+8OT2fgmvBpZt0ogurg/eu5kB8ZFWDRwHPcf8i+058sZC20dar/qrjVd5Knssq4ynjb5oAHsGuJq16Rqw==
-  /@jimp/plugin-blur/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-suVznd4XozkQIuECX0u8kMl+cAQpZN3WcbWXUcJaVxRi+VBvHIetG1Qs5qGLzuEg9627+kE7ppv0UgZ5mkE6lg==
+  /@jimp/plugin-blur/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-blur/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-blur/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-/vjGcEiHda6OLTCYqXPFkfSTbL+RatZoGcp1vewcWqChUccn9QVINTlxB7nEI/3Nb/i7KdhOPNEQh1k6q6QXsw==
-  /@jimp/plugin-color/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-M2fDMYUUtEKVNnCJZk5J0KSMzzISobmWfnG88RdHXJCkOn98kdawQFwTsYOfJJfCM8jWfhIxwZLFhC/2lkTN2w==
+  /@jimp/plugin-color/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
       tinycolor2: 1.4.1
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-color/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-color/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-mvDeAwN8ZpDkOaABMJ0w9zUzo9OOtu1qvvPkSirXDTMiXt1nsbfz8BoeoD7nU2MFhQj5MiGjH65UDnsH5ZzYuw==
-  /@jimp/plugin-contain/0.6.0/238f655df29ca858f7a4f6afbe5021c8:
+      integrity: sha512-6Nfr2l9KSb6zH2fij8G6fQOw85TTkyRaBlqMvDmsQp/I1IlaDbXzA2C2Eh9jkQYZQDPu61B1MkmlEhJp/TUx6Q==
+  /@jimp/plugin-contain/0.6.4/7464fecfe51f1d0cf0d76666d2a1b84c:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/plugin-blit': /@jimp/plugin-blit/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-scale': /@jimp/plugin-scale/0.6.0/e564d3569f0fef41ddd945a64780874f
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/plugin-blit': /@jimp/plugin-blit/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-scale': /@jimp/plugin-scale/0.6.4/88919924c697959d071b7865863cf222
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-contain/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-contain/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
       '@jimp/plugin-blit': '>=0.3.5'
       '@jimp/plugin-resize': '>=0.3.5'
       '@jimp/plugin-scale': '>=0.3.5'
     resolution:
-      integrity: sha512-gPHnoQkDztMbvnTVo01BaMoM/hhDJdeJ7FRToD4p4Qvdor4V0I6NXtjOeUPXfD94miTgh/UTyJDqeG4GZzi4sA==
-  /@jimp/plugin-cover/0.6.1/40c1b0478f666e5fcf07f62252b7c5d8:
+      integrity: sha512-qI1MxU1noS6NbEPu/bDDeP405aMviuIsfpOz8J3En8IwIwrJV22qt6QIHmF+eyng8CYgivwIPjEPzFzLR566Nw==
+  /@jimp/plugin-cover/0.6.4/464821539c50a5a5199491b277bc73f6:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/plugin-crop': /@jimp/plugin-crop/0.6.1/@jimp!custom@0.6.0
-      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-scale': /@jimp/plugin-scale/0.6.0/e564d3569f0fef41ddd945a64780874f
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/plugin-crop': /@jimp/plugin-crop/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-scale': /@jimp/plugin-scale/0.6.4/88919924c697959d071b7865863cf222
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-cover/0.6.1
+    id: registry.npmjs.org/@jimp/plugin-cover/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
       '@jimp/plugin-crop': '>=0.3.5'
       '@jimp/plugin-resize': '>=0.3.5'
       '@jimp/plugin-scale': '>=0.3.5'
     resolution:
-      integrity: sha512-mYDchAeP9gcBCgi7vX2cYBNygY1s/YaEKEUvSh2H5+DJfxtp/eynW+bInypCfbQJArZZX+26F5GufWnkB8BOnw==
-  /@jimp/plugin-crop/0.6.1/@jimp!custom@0.6.0:
+      integrity: sha512-z6eafPonj3LJY8cTEfRkXmOfCDi1+f0tbYaNvmiu+OrWJ3Ojw2hMt+BVVvJ8pKe1dWIFkCjxOjyjZWj1gEkaLw==
+  /@jimp/plugin-crop/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-crop/0.6.1
+    id: registry.npmjs.org/@jimp/plugin-crop/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-rnxkgLvm1oC7yCg8mOIUqLNjAzzRC0eVTD3hfYq3LzDMe2LfpU208WhtVw0IjSJ2N7OSrRztJcw+jkVF8nUJJg==
-  /@jimp/plugin-displace/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-w9TR+pn+GeWbznscGe2HRkPxInge0whAF3TLPWhPwBVjZChTT8dSDXsUpUlxQqvI4SfzuKp8z3/0SBqYDCzxxA==
+  /@jimp/plugin-displace/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-displace/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-displace/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-kkva5Fy3r7J7QmiqYQ5c9NeUKKkN7+KSfCGsZ6tkRHK4REMIXhQO/OnJN8XG6RReV29O6QykdyeTXDiHUDiROw==
-  /@jimp/plugin-dither/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-MEvtBXOAio/3iGJkKBrTtFs3Q38ez2Wy/wTD0Ruas+L8fjJR7l4mDgV+zjRr57CqB5mpY+L48VEoa2/gNXh9cg==
+  /@jimp/plugin-dither/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-dither/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-dither/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-ILSG7bl3SOqmcIa9C4nBvs0h0E0ObnMbeKWUZiNuz6i0OAlbxryiIfU4j0UVQD5XqT9ksC5mviVNrvOMw4SZLw==
-  /@jimp/plugin-flip/0.6.0/b25d5651b009685ae90ca75513d2facc:
+      integrity: sha512-w+AGLcIMUeJZ4CI0FvFomahgKLcW+ICsLidUNOqyLzceluPAfug4X7vDhQ41pNkzKg0M1+Q1j0aWV8bdyF+LhA==
+  /@jimp/plugin-flip/0.6.4/dc06e72b74b830b88da333312756b437:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/plugin-rotate': /@jimp/plugin-rotate/0.6.1/6e823d75cfa5e83f82a9daa4336fe58c
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/plugin-rotate': /@jimp/plugin-rotate/0.6.4/0a1d71298d84519720c145d1e4410399
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-flip/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-flip/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
       '@jimp/plugin-rotate': '>=0.3.5'
     resolution:
-      integrity: sha512-MXGGwABjERvfqVadEzJuVAmbsEQfjxXD0O/mMBegU1Qh7/JmnKAVplQCnojsMPxUdao/FKZjQqOnB/j4LLJtOQ==
-  /@jimp/plugin-gaussian/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-ukINMegMUM9KYjyDCiyYKYdSsbhNRLHDwOJN0xVRalmOKqNaZmjNbiMbaVxKlYt6sHW76RhSMOekw9f6GQB9tQ==
+  /@jimp/plugin-gaussian/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-gaussian/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-gaussian/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-RUsBCyj6Ukxgn/TU8v6c6WRbSFqKM0iknLVqDkKIuiOyJB7ougv66fqomh/i/h3ihIkEnf50BuO0c3ovrczfvw==
-  /@jimp/plugin-invert/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-C1P6ohzIddpNb7CX5X+ygbp+ow8Fpt64ZLoIgdjYPs/42HxKluvY62fVfMhY6m5zUGKIMbg0uYeAtz/9LRJPyw==
+  /@jimp/plugin-invert/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-invert/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-invert/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-zTCqK8el6eqcNKAxw0y57gHBFgxygI5iM8dQDPyqsvVWO71i8XII7ubnJhEvPPN7vhIKlOSnS9XXglezvJoX4Q==
-  /@jimp/plugin-mask/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-sleGz1jXaNEsP/5Ayqw8oez/6KesWcyCqovIuK4Z4kDmMc2ncuhsXIJQXDWtIF4tTQVzNEgrxUDNA4bi9xpCUA==
+  /@jimp/plugin-mask/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-mask/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-mask/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-zkZVqAA7lxWhkn5EbPjBQ6tPluYIGfLMSX4kD1gksj+MVJJnVAd459AVuEXCvkUvv4wG5AlH8m6ve5NZj9vvxw==
-  /@jimp/plugin-normalize/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-3D4FbRxnpO9nzwa6cF8AImgO1aVReYbfRRO4I4bku4/iZ+kuU3fBLV+SRhB4c7di3ejG5u+rGsIfaNc94iYYvw==
+  /@jimp/plugin-normalize/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-normalize/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-normalize/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-7bNGT+S0rw9gvmxpkNsA19JSqBZYFrAn9QhEmoN4HIimdKtJaoLJh/GnxrPuOBLuv1IPJntoTOOWvOmfrQ6/ww==
-  /@jimp/plugin-print/0.6.1/e61f5663e831c7dd660a1d905dd73bae:
+      integrity: sha512-nOFMwOaVkOKArHkD/T6/1HKAPj3jlW6l0JduVDn1A5eIPCtlnyhlE9zdjgi5Q9IBR/gRjwW6tTzBKuJenS51kg==
+  /@jimp/plugin-print/0.6.4/3a12058f57000e90b26e6a7a0cf9f8f0:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/plugin-blit': /@jimp/plugin-blit/0.6.0/@jimp!custom@0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/plugin-blit': /@jimp/plugin-blit/0.6.4/@jimp!custom@0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
       load-bmfont: 1.4.0
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-print/0.6.1
+    id: registry.npmjs.org/@jimp/plugin-print/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
       '@jimp/plugin-blit': '>=0.3.5'
     resolution:
-      integrity: sha512-gZOrYEOFtohRYsGJNh9fQkBgpiKjDfNXpiXmwdolqBF39pPxRvo9ivTIJ7sHCLpDL+SnQRdR0EHiJ08BFt5Yow==
-  /@jimp/plugin-resize/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-3z5DLVCKg0NfZhHATEaYH/4XanIboPP1pOUoxIUeF++qOnGiGgH2giFJlRprHmx2l3E3DukR1v8pt54PGvfrFw==
+  /@jimp/plugin-resize/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-resize/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-resize/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-m0AA/mPkJG++RuftBFDUMRenqgIN/uSh88Kqs33VURYaabApni4ML3QslE1TCJtl2Lnu1eosxYlbzODjHx49eg==
-  /@jimp/plugin-rotate/0.6.1/6e823d75cfa5e83f82a9daa4336fe58c:
+      integrity: sha512-fk2+KheUNClrOWj6aDNWj1r4byVQb6Qxy4aT1UHX5GXPHDA+nhlej7ghaYdzeWZYodeM3lpasYtByu1XE2qScQ==
+  /@jimp/plugin-rotate/0.6.4/0a1d71298d84519720c145d1e4410399:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/plugin-blit': /@jimp/plugin-blit/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-crop': /@jimp/plugin-crop/0.6.1/@jimp!custom@0.6.0
-      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.0/@jimp!custom@0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/plugin-blit': /@jimp/plugin-blit/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-crop': /@jimp/plugin-crop/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.4/@jimp!custom@0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-rotate/0.6.1
+    id: registry.npmjs.org/@jimp/plugin-rotate/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
       '@jimp/plugin-blit': '>=0.3.5'
       '@jimp/plugin-crop': '>=0.3.5'
       '@jimp/plugin-resize': '>=0.3.5'
     resolution:
-      integrity: sha512-+YYjO4Y664k0IfsPJVz4Er3pX+C8vYDWD9L2am01Jls4LT7GtUZbgIKuqwl8qXX0ENc/aF9UssuWIYVVzEoapw==
-  /@jimp/plugin-scale/0.6.0/e564d3569f0fef41ddd945a64780874f:
+      integrity: sha512-44VgV5D4xQIYInJAVevdW9J3SOhGKyz0OEr2ciA8Q3ktonKx0O5Q1g2kbruiqxFSkK/u2CKPLeKXZzYCFrmJGQ==
+  /@jimp/plugin-scale/0.6.4/88919924c697959d071b7865863cf222:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.0/@jimp!custom@0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.4/@jimp!custom@0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
     dev: false
-    id: registry.npmjs.org/@jimp/plugin-scale/0.6.0
+    id: registry.npmjs.org/@jimp/plugin-scale/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
       '@jimp/plugin-resize': '>=0.3.5'
     resolution:
-      integrity: sha512-le/ttYwYioNPRoMlMaoJMCTv+m8d1v0peo/3J8E6Rf9ok7Bw3agkvjL9ILnsmr8jXj1YLrBSPKRs5nJ6ziM/qA==
-  /@jimp/plugins/0.6.1/@jimp!custom@0.6.0:
+      integrity: sha512-RAQRaDiCHmEz+A8QS5d/Z38EnlNsQizz3Mu3NsjA8uFtJsv1yMKWXZSQuzniofZw8tlMV6oI3VdM0eQVE07/5w==
+  /@jimp/plugins/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/plugin-blit': /@jimp/plugin-blit/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-blur': /@jimp/plugin-blur/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-color': /@jimp/plugin-color/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-contain': /@jimp/plugin-contain/0.6.0/238f655df29ca858f7a4f6afbe5021c8
-      '@jimp/plugin-cover': /@jimp/plugin-cover/0.6.1/40c1b0478f666e5fcf07f62252b7c5d8
-      '@jimp/plugin-crop': /@jimp/plugin-crop/0.6.1/@jimp!custom@0.6.0
-      '@jimp/plugin-displace': /@jimp/plugin-displace/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-dither': /@jimp/plugin-dither/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-flip': /@jimp/plugin-flip/0.6.0/b25d5651b009685ae90ca75513d2facc
-      '@jimp/plugin-gaussian': /@jimp/plugin-gaussian/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-invert': /@jimp/plugin-invert/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-mask': /@jimp/plugin-mask/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-normalize': /@jimp/plugin-normalize/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-print': /@jimp/plugin-print/0.6.1/e61f5663e831c7dd660a1d905dd73bae
-      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.0/@jimp!custom@0.6.0
-      '@jimp/plugin-rotate': /@jimp/plugin-rotate/0.6.1/6e823d75cfa5e83f82a9daa4336fe58c
-      '@jimp/plugin-scale': /@jimp/plugin-scale/0.6.0/e564d3569f0fef41ddd945a64780874f
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/plugin-blit': /@jimp/plugin-blit/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-blur': /@jimp/plugin-blur/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-color': /@jimp/plugin-color/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-contain': /@jimp/plugin-contain/0.6.4/7464fecfe51f1d0cf0d76666d2a1b84c
+      '@jimp/plugin-cover': /@jimp/plugin-cover/0.6.4/464821539c50a5a5199491b277bc73f6
+      '@jimp/plugin-crop': /@jimp/plugin-crop/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-displace': /@jimp/plugin-displace/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-dither': /@jimp/plugin-dither/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-flip': /@jimp/plugin-flip/0.6.4/dc06e72b74b830b88da333312756b437
+      '@jimp/plugin-gaussian': /@jimp/plugin-gaussian/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-invert': /@jimp/plugin-invert/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-mask': /@jimp/plugin-mask/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-normalize': /@jimp/plugin-normalize/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-print': /@jimp/plugin-print/0.6.4/3a12058f57000e90b26e6a7a0cf9f8f0
+      '@jimp/plugin-resize': /@jimp/plugin-resize/0.6.4/@jimp!custom@0.6.4
+      '@jimp/plugin-rotate': /@jimp/plugin-rotate/0.6.4/0a1d71298d84519720c145d1e4410399
+      '@jimp/plugin-scale': /@jimp/plugin-scale/0.6.4/88919924c697959d071b7865863cf222
+      core-js: 2.6.9
       timm: 1.6.1
     dev: false
-    id: registry.npmjs.org/@jimp/plugins/0.6.1
+    id: registry.npmjs.org/@jimp/plugins/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-gCgYxsQn3z5qifM8G4RfP6vQFKfwK/waVIE3I/mUY9QHZrf94sLuhcws+72hTLQ3It3m3QKaA1kSXrD9nkRdUw==
-  /@jimp/png/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-NpO/87CKnF4Q9r8gMl6w+jPKOM/C089qExkViD9cPvcFZEnyVOu7ucGzcMmTcabWOU62iQTOkRViPYr6XaK0LQ==
+  /@jimp/png/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      '@jimp/utils': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      '@jimp/utils': 0.6.4
+      core-js: 2.6.9
       pngjs: 3.4.0
     dev: false
-    id: registry.npmjs.org/@jimp/png/0.6.0
+    id: registry.npmjs.org/@jimp/png/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-DBtMyQyrJxuKI7/1dVqLek+rCMM8U6BSOTHgo05wU7lhJKTB6fn2tbYfsnHQKzd9ld1M2qKuC+O1GTVdB2yl6w==
-  /@jimp/tiff/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-qv3oo6ll3XWVIToBwVC1wQX0MFKwpxbe2o+1ld9B4ZDavqvAHzalzcmTd/iyooI85CVDAcC3RRDo66oiizGZCQ==
+  /@jimp/tiff/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/custom': 0.6.0
-      core-js: 2.6.5
+      '@jimp/custom': 0.6.4
+      core-js: 2.6.9
       utif: 2.0.1
     dev: false
-    id: registry.npmjs.org/@jimp/tiff/0.6.0
+    id: registry.npmjs.org/@jimp/tiff/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-PV95CquEsolFziq0zZrAEJIzZSKwMK89TvkOXTPDi/xesgdXGC2rtG1IZFpC9L4UX5hi/M5GaeJa49xULX6Nqw==
-  /@jimp/types/0.6.0/@jimp!custom@0.6.0:
+      integrity: sha512-8/vD4qleexmhPdppiu6fSstj/n/kGNTn8iIlf1emiqOuMN2PL9q5GOPDWU0xWdGNyJMMIDXJPgUFUkKfqXdg7w==
+  /@jimp/types/0.6.4/@jimp!custom@0.6.4:
     dependencies:
-      '@jimp/bmp': /@jimp/bmp/0.6.0/@jimp!custom@0.6.0
-      '@jimp/custom': 0.6.0
-      '@jimp/gif': /@jimp/gif/0.6.0/@jimp!custom@0.6.0
-      '@jimp/jpeg': /@jimp/jpeg/0.6.0/@jimp!custom@0.6.0
-      '@jimp/png': /@jimp/png/0.6.0/@jimp!custom@0.6.0
-      '@jimp/tiff': /@jimp/tiff/0.6.0/@jimp!custom@0.6.0
-      core-js: 2.6.5
+      '@jimp/bmp': /@jimp/bmp/0.6.4/@jimp!custom@0.6.4
+      '@jimp/custom': 0.6.4
+      '@jimp/gif': /@jimp/gif/0.6.4/@jimp!custom@0.6.4
+      '@jimp/jpeg': /@jimp/jpeg/0.6.4/@jimp!custom@0.6.4
+      '@jimp/png': /@jimp/png/0.6.4/@jimp!custom@0.6.4
+      '@jimp/tiff': /@jimp/tiff/0.6.4/@jimp!custom@0.6.4
+      core-js: 2.6.9
       timm: 1.6.1
     dev: false
-    id: registry.npmjs.org/@jimp/types/0.6.0
+    id: registry.npmjs.org/@jimp/types/0.6.4
     peerDependencies:
       '@jimp/custom': '>=0.3.5'
     resolution:
-      integrity: sha512-j4tm82huEWpLrwave/2NYnMTY6us/6K9Js6Vd/CHoM/ki8M71tMXEVzc8tly92wtnEzQ9+FEk0Ue6pYo68m/5A==
-  /@jimp/utils/0.6.0:
+      integrity: sha512-/EMbipQDg5U6DnBAgcSiydlMBRYoKhnaK7MJRImeTzhDJ6xfgNOF7lYq66o0kmaezKdG/cIwZ1CLecn2y3D8SQ==
+  /@jimp/utils/0.6.4:
     dependencies:
-      core-js: 2.6.5
+      core-js: 2.6.9
     dev: false
     resolution:
-      integrity: sha512-z5iYEfqc45vlYweROneNkjv32en6jS7lPL/eMLIvaEcQAHaoza20Dw8fUoJ0Ht9S92kR74xeTunAZq+gK2w67Q==
+      integrity: sha512-EFQurCyEnZLSM2Q1BYDTUmsOJPSOYEQd18Fvq8bGo8hnBHoGLWLWWyNi2l4cYhtpKmIXyhvQqa6/WaEpKPzvqA==
   /abbrev/1.1.1:
     dev: false
     resolution:
@@ -621,7 +622,7 @@ packages:
       canvas: '*'
     resolution:
       integrity: sha512-AbtpTT7YVJf5UxlgoUQVUCf5ZdfcnTyTp4zYJj2h3KnL9SMmZuBo3du0fyAhpetXuHW9qI13zMcn1+Ltam+a4g==
-  /canvas/2.5.0:
+  /canvas/2.6.0:
     dependencies:
       nan: 2.14.0
       node-pre-gyp: 0.11.0
@@ -631,7 +632,7 @@ packages:
       node: '>=6'
     requiresBuild: true
     resolution:
-      integrity: sha512-wwRz2cLMgb9d+rnotOJCoc04Bzj3aJMpWc6JxAD6lP7bYz0ldcn0sKddoZ0vhD5T8HBxrK+XmRDJb68/2VqARw==
+      integrity: sha512-bEO9f1ThmbknLPxCa8Es7obPlN9W3stB1bo7njlhOFKIdUTldeTqXCh9YclCPAi2pSQs84XA0jq/QEZXSzgyMw==
   /caseless/0.12.0:
     dev: false
     resolution:
@@ -751,10 +752,11 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
-  /core-js/2.6.5:
+  /core-js/2.6.9:
     dev: false
+    requiresBuild: true
     resolution:
-      integrity: sha512-klh/kDpwX8hryYL14M9w/xei6vrv6sE8gTHDG7/T/+SEovB/G4ejwcfE/CBzO6Edsu+OETZMZ3wcX/EjUkrl5A==
+      integrity: sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
   /core-util-is/1.0.2:
     dev: false
     resolution:
@@ -870,26 +872,26 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
-  /discord.js/11.4.2:
+  /discord.js/11.5.1:
     dependencies:
       long: 4.0.0
       prism-media: 0.0.3
       snekfetch: 3.6.4
       tweetnacl: 1.0.1
-      ws: 4.1.0
+      ws: 6.2.1
     dev: false
     engines:
       node: '>=6.0.0'
     peerDependencies:
-      bufferutil: ^3.0.3
+      '@discordjs/uws': ^10.149.0
+      bufferutil: ^4.0.0
       erlpack: discordapp/erlpack
       libsodium-wrappers: ^0.7.3
       node-opus: ^0.2.7
       opusscript: ^0.0.6
       sodium: ^2.0.3
-      uws: ^9.14.0
     resolution:
-      integrity: sha512-MDwpu0lMFTjqomijDl1Ed9miMQe6kB4ifKdP28QZllmLv/HVOJXhatRgjS8urp/wBlOfx+qAYSXcdI5cKGYsfg==
+      integrity: sha512-tGhV5xaZXE3Z+4uXJb3hYM6gQ1NmnSxp9PClcsSAYFVRzH6AJH74040mO3afPDMWEAlj8XsoPXXTJHTxesqcGw==
   /dns-prefetch-control/0.1.0:
     dev: false
     resolution:
@@ -993,14 +995,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-AsaA9KG7cWPXWHp5FvHdDWY3AMWeZ8x+2pUVLcn71qE5AtAzgGbxuclOytygskw8XGmiQafTmnI9Bix3uihu2w==
-  /enmap/4.8.4:
+  /enmap/4.8.7:
     dependencies:
       lodash: 4.17.11
     dev: false
     peerDependencies:
       better-sqlite-pool: 'github:eslachance/better-sqlite-pool'
     resolution:
-      integrity: sha512-2q4EonjIddx9x5EI/WXIufJohwfmIWTwFN0N4Jhmakvvq1BrWYRVuBc7Ev8x9yv8raY9ZZQ/TY7qyoSrsddFkg==
+      integrity: sha512-uDdns7BXSohCQSFO+5RGgJQlgIgKWUHoLY0IPdXmiz90OdlfW+e2SOFAsuaXDCJxdXeKGcJJ9JUvv3wIwF80/Q==
   /entities/1.1.2:
     dev: false
     resolution:
@@ -1048,10 +1050,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-WKnS1ywCwfbwKg70qRZicrd2CSI=
-  /expect-ct/0.1.1:
+  /expect-ct/0.2.0:
     dev: false
+    engines:
+      node: '>=4.0.0'
     resolution:
-      integrity: sha512-ngXzTfoRGG7fYens3/RMb6yYoVLvLMfmsSllP/mZPxNHgFq41TmPSLF/nLY7fwoclI2vElvAmILFWGUYqdjfCg==
+      integrity: sha512-6SK3MG/Bbhm8MsgyJAylg+ucIOU71/FzyFalcfu5nY19dH8y/z0tBJU0wrNBXD4B27EoQtqPF/9wqH0iYAd04g==
   /express-session/1.16.1:
     dependencies:
       cookie: 0.3.1
@@ -1128,10 +1132,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
-  /feature-policy/0.2.0:
+  /feature-policy/0.3.0:
     dev: false
+    engines:
+      node: '>=4.0.0'
     resolution:
-      integrity: sha512-2hGrlv6efG4hscYVZeaYjpzpT6I2OZgYqE2yDUzeAcKj2D1SH0AsEzqJNXzdoglEddcIXQQYop3lD97XpG75Jw==
+      integrity: sha512-ZtijOTFN7TzCujt1fnNhfWPFPSHeZkesff9AXZj+UEjYBynWNUIYpC87Ve4wHzyexQsImicLu7WsC2LHq7/xrQ==
   /file-type/9.0.0:
     dev: false
     engines:
@@ -1182,10 +1188,12 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
-  /frameguard/3.0.0:
+  /frameguard/3.1.0:
     dev: false
+    engines:
+      node: '>=4.0.0'
     resolution:
-      integrity: sha1-e8rUae57lukdEs6zlZx4I1qScuk=
+      integrity: sha512-TxgSKM+7LTA6sidjOiSZK9wxY0ffMPY3Wta//MqwmX0nZuEHc8QrkV8Fh3ZhMJeiH+Uyh/tcaarImRy8u77O7g==
   /fresh/0.5.2:
     dev: false
     engines:
@@ -1237,7 +1245,7 @@ packages:
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
-      inherits: 2.0.3
+      inherits: 2.0.4
       minimatch: 3.0.4
       once: 1.4.0
       path-is-absolute: 1.0.1
@@ -1315,28 +1323,28 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sCHwywg4daQ2mY0YYwXSZRsgcCeerUwxMwNixGA7aMLkVmPTYBl7gJoZDHOZyXkqPrtuDT3s2B1A+RLI7WxSdQ==
-  /helmet/3.16.0:
+  /helmet/3.18.0:
     dependencies:
       depd: 2.0.0
       dns-prefetch-control: 0.1.0
       dont-sniff-mimetype: 1.0.0
-      expect-ct: 0.1.1
-      feature-policy: 0.2.0
-      frameguard: 3.0.0
+      expect-ct: 0.2.0
+      feature-policy: 0.3.0
+      frameguard: 3.1.0
       helmet-crossdomain: 0.3.0
       helmet-csp: 2.7.1
       hide-powered-by: 1.0.0
       hpkp: 2.0.0
       hsts: 2.2.0
       ienoopen: 1.1.0
-      nocache: 2.0.0
-      referrer-policy: 1.1.0
+      nocache: 2.1.0
+      referrer-policy: 1.2.0
       x-xss-protection: 1.1.0
     dev: false
     engines:
       node: '>=4.0.0'
     resolution:
-      integrity: sha512-rsTKRogc5OYGlvSHuq5QsmOsOzF6uDoMqpfh+Np8r23+QxDq+SUx90Rf8HyIKQVl7H6NswZEwfcykinbAeZ6UQ==
+      integrity: sha512-TsKlGE5UVkV0NiQ4PllV9EVfZklPjyzcMEMjWlyI/8S6epqgRT+4s4GHVgc25x0TixsKvp3L7c91HQQt5l0+QA==
   /hide-powered-by/1.0.0:
     dev: false
     resolution:
@@ -1439,6 +1447,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+  /inherits/2.0.4:
+    dev: false
+    resolution:
+      integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
   /ini/1.3.5:
     dev: false
     resolution:
@@ -1522,20 +1534,20 @@ packages:
     dev: false
     resolution:
       integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
-  /jimp/0.6.1:
+  /jimp/0.6.4:
     dependencies:
-      '@babel/polyfill': 7.4.3
-      '@jimp/custom': 0.6.0
-      '@jimp/plugins': /@jimp/plugins/0.6.1/@jimp!custom@0.6.0
-      '@jimp/types': /@jimp/types/0.6.0/@jimp!custom@0.6.0
-      core-js: 2.6.5
+      '@babel/polyfill': 7.4.4
+      '@jimp/custom': 0.6.4
+      '@jimp/plugins': /@jimp/plugins/0.6.4/@jimp!custom@0.6.4
+      '@jimp/types': /@jimp/types/0.6.4/@jimp!custom@0.6.4
+      core-js: 2.6.9
     dev: false
     resolution:
-      integrity: sha512-R46NBV0mbdC+1DwP/xbTmXULfxxAok5KA+XtZTPVku1S0mXvsaxZ65cQz1MhiPjxcIIQYidI3ZFIf2F+th3wMQ==
-  /jpeg-js/0.3.4:
+      integrity: sha512-WQVMoNhkcq/fgthZOWeMdIguCVPg+t4PDFfSxvbNcrECwl8eq3/Ou2whcFWWjyW45m43yAJEY2UT7acDKl6uSQ==
+  /jpeg-js/0.3.5:
     dev: false
     resolution:
-      integrity: sha512-6IzjQxvnlT8UlklNmDXIJMWxijULjqGrzgqc0OG7YadZdvm7KPQ1j0ehmQQHckgEWOfgpptzcnWgESovxudpTA==
+      integrity: sha512-hvaExqwmQDS8O9qnZAVDXGWU43Tbu1V0wMZmjROjT11jloSgGICZpscG+P6Nyi1BVAvyu2ARRx8qmEW30sxgdQ==
   /jsbn/0.1.1:
     dev: false
     resolution:
@@ -1815,16 +1827,12 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
-  /nocache/2.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-ICtIAhoMTL3i34DeFaF0Q8i0OYA=
-  /node-fetch/2.5.0:
+  /nocache/2.1.0:
     dev: false
     engines:
-      node: 4.x || >=6.0.0
+      node: '>=4.0.0'
     resolution:
-      integrity: sha512-YuZKluhWGJwCcUu4RlZstdAxr8bFfOVHakc1mplwHkk8J+tqM1Y5yraYvIUpeX8aY7+crCwiELJq7Vl0o0LWXw==
+      integrity: sha512-0L9FvHG3nfnnmaEQPjT9xhfN4ISk0A8/2j4M37Np4mcDesJjHgEUfgPhdCyZuFI954tjokaIj/A3NdpFNdEh4Q==
   /node-fetch/2.6.0:
     dev: false
     engines:
@@ -2224,10 +2232,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-c9KkNifSMU/iXT8FFTaBwBMr+rdVcN+H/uNv1o+CuFeTThNZNTOrQ+RgXA1yL/DeLk098duAeRPP3QNPNbhxYQ==
-  /process-nextick-args/2.0.0:
+  /process-nextick-args/2.0.1:
     dev: false
     resolution:
-      integrity: sha512-MtEC1TqN0EU5nephaJ4rAtThHtC86dNN9qCuEhtshvpVBkAW5ZO7BASN9REnF9eoXGcRub+pFuKEpOHE+HbEMw==
+      integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
   /process/0.11.10:
     dev: false
     engines:
@@ -2324,9 +2332,9 @@ packages:
   /readable-stream/2.3.6:
     dependencies:
       core-util-is: 1.0.2
-      inherits: 2.0.3
+      inherits: 2.0.4
       isarray: 1.0.0
-      process-nextick-args: 2.0.0
+      process-nextick-args: 2.0.1
       safe-buffer: 5.1.2
       string_decoder: 1.1.1
       util-deprecate: 1.0.2
@@ -2343,10 +2351,12 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-RV20kLjdmpZuTF1INEb9IA3L68Nmi+Ri7ppZqo78wj//Pn62fCoJyV9zalccNzDD/OuJpMG4f+pfMl8+L6QdGw==
-  /referrer-policy/1.1.0:
+  /referrer-policy/1.2.0:
     dev: false
+    engines:
+      node: '>=4.0.0'
     resolution:
-      integrity: sha1-NXdOtzW/UPtsB46DM0tHI1AgfXk=
+      integrity: sha512-LgQJIuS6nAy1Jd88DCQRemyE3mS+ispwlqMk3b0yjZ257fI1v9c+/p6SD5gP5FGyXUIgrNOAfmyioHwZtYv2VA==
   /regenerator-runtime/0.13.2:
     dev: false
     resolution:
@@ -2753,19 +2763,18 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  /ws/4.1.0:
-    dependencies:
-      async-limiter: 1.0.0
-      safe-buffer: 5.1.2
-    dev: false
-    resolution:
-      integrity: sha512-ZGh/8kF9rrRNffkLFV4AzhvooEclrOH0xaugmqGsIfFgOE/pIz4fMc4Ef+5HSQqTEug2S9JZIWDR47duDSLfaA==
   /ws/6.1.4:
     dependencies:
       async-limiter: 1.0.0
     dev: false
     resolution:
       integrity: sha512-eqZfL+NE/YQc1/ZynhojeV8q+H050oR8AZ2uIev7RU10svA9ZnJUddHcOUZTJLinZ9yEfdA2kSATS2qZK5fhJA==
+  /ws/6.2.1:
+    dependencies:
+      async-limiter: 1.0.0
+    dev: false
+    resolution:
+      integrity: sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==
   /x-xss-protection/1.1.0:
     dev: false
     resolution:
@@ -2825,27 +2834,27 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   btoa: ^1.2.1
-  canvas: ^2.5.0
+  canvas: ^2.6.0
   canvas-constructor: ^3.0.0
-  chalk: ^2.4.1
+  chalk: ^2.4.2
   cheerio: ^0.22.0
   child-process-promise: ^2.2.1
-  discord.js: ^11.4.2
+  discord.js: ^11.5.1
   ejs: ^2.6.1
-  enmap: ^4.8.4
+  enmap: ^4.8.6
   express: ^4.16.4
   express-session: ^1.16.1
   fs: ^0.0.2
   generate-password: ^1.4.1
-  helmet: ^3.16.0
+  helmet: ^3.18.0
   html-tags: ^3.0.0
-  jimp: ^0.6.1
+  jimp: ^0.6.4
   level-session-store: ^2.2.0
   marked: ^0.6.2
   moment: ^2.24.0
   moment-duration-format: ^2.2.2
-  ms: ^2.1.1
-  node-fetch: ^2.5.0
+  ms: ^2.1.2
+  node-fetch: ^2.6.0
   node-superfetch: ^0.1.9
   passport: ^0.4.0
   passport-discord: ^0.1.3
