@@ -180,10 +180,10 @@ app.get("/kodlar", checkAuth, (req, res) => {
 renderTemplate(res, req, "kodlar.ejs");
 });
 
-const kodlar = require('./kods.json')
+
 
 const fs = require('fs')
-
+/*
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   if(!req.params.kod) return res.redirect("/kodlar")
   var kod = kodlar[req.params.kod]
@@ -191,7 +191,7 @@ app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   var kodisim = req.params.kod
   renderTemplate(res, req, "kod.ejs", {fs, kod, kodisim})
   
-  })
+  })*/
 
 
 app.get("/b", checkAuth, (req,res) =>{
