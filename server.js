@@ -8,7 +8,10 @@ app.use(express.static('public'));
 
 const Discord = require('discord.js')
 const client = new Discord.Client()
-client.login("NTMxMDE4ODYzODgyNzk3MDU2.XORRJQ.skLIuH9KXrwWRVFAgkUxZdkXxhc")
+client.login("NTMxMDE4ODYzODgyNzk3MDU2.XORRJQ.skLIuH9KXrwWRVFAgkUxZdkXxhc").catch(e => {
+  if(!e) return;
+  else console.log(e)
+})
 var başvuruwebhook = new Discord.WebhookClient("562159564431294495","yKcEo2vS0Y6840ft9YbnqJkteYBI_QN1SwVXMrIwZq_5kJkHc02Tx87A2NLlW5gR6Z2K")
 
 app.listen(process.env.PORT)
