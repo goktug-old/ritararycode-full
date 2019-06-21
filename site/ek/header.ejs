@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta http-equiv=”Content-Type” content=”text/html;" charset=utf-8" />
 <title>Ritarary Code</title>
-<link id="favicon" rel="icon" href="https://cdn.discordapp.com/avatars/531018863882797056/72d5731796a7bc97f0232fc95acf3c80.png?size=2048" type="image/x-icon">
+<link id="favicon" rel="icon" href="<%= bot.user.displayAvatarURL %>" type="image/x-icon">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,19 +30,33 @@
               <a class="nav-link" href="/giris">Giriş Yap</a>
             </li>
             
-             <% } else { %>
-            
+            <%
+			} else { 
+			var asd = ["495825025207894016"]
+			if(asd.some(a => user.id === a)) {
+			%>
+			
+            <li class="nav-item active">
+              <a class="nav-link" href="/kodpaylas">Kod Paylaş</a>
+            </li>
+			
+			<li class="nav-item active">
+              <a class="nav-link" href="/panel">Panel</a>
+            </li>
+			
+			<% } else { %>
+			
             <li class="nav-item active">
               <a class="nav-link" href="/kodlar">Kodlar</a>
             </li>
             
             <li class="nav-item active">
-              <a class="nav-link" href="/cikis"><img src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>.png" width="25" height="25" class="d-inline-block align-middle rounded-circle"> <%=user.username + "#" + user.discriminator%></a>
+              <a class="nav-link" href="/cikis">Çıkış Yap</a>
             </li>
-      <% } %>    
+			
+      <% }} %>    
+	  
           </ul>
         </div>
   </nav>
-</head>
-</html>
 <div class="container">

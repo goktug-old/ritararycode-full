@@ -1,0 +1,63 @@
+<%- include('ek/header', {bot, user, path, db}) %>
+
+<div align="center">
+<br><br><div class="justify-content-md-center"><h2 style="color: GRAY;">Yönetim Paneli</h2></div>
+
+<%
+
+  bot.guilds.get("530744872328626197").members.forEach(function(command) {
+  if(!command.user.bot) return;
+  if(command.user.id === "527780276852752404" || command.user.id === "518717000487534593" || command.user.id === "436527843959111681" || command.user.id === "552860386727165980" || command.user.id === "235088799074484224" || command.user.id === "531018863882797056" || command.user.id === "553270538034741248" || command.user.id === "551841231961849878" || command.user.id === "473284664711446529" || command.user.id === "540902460747677716" || command.user.id === "518145591860264961" || command.user.id === "540978976617660416" || command.user.id === "436527843959111681" || command.user.id === "351611743018942464" || command.user.id === "294882584201003009" || command.user.id === "548149568681017367" || command.user.id === "172002275412279296" || command.user.id === "275813801792634880" || command.user.id === "422087909634736160" || command.user.id === "500297618505859072" || command.user.id === "527858318786691092" || command.user.id === "409875566800404480")return;
+  var durum = command.user.presence.status
+  var durume; 
+  if(durum === "online") durume = "https://cdn.discordapp.com/emojis/313956277808005120.png"
+  else if(durum === "offline") durume = "https://cdn.discordapp.com/emojis/313956277237710868.png"
+  else if(durum === "dnd") durume = "https://cdn.discordapp.com/emojis/313956276893646850.png"
+  else if(durum === "idle") durume = "https://cdn.discordapp.com/emojis/566624163859660800.png"
+  %>
+<div class="card text-white bg-light mb-3" style="display: inline-block; width: 17rem;">
+        <div class="card-header"><a href="/bot/<%= command.user.id %>"><img src="<%= command.user.displayAvatarURL %>" style="width: 100%;"></a></div>
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="/bot/<%= command.user.id %>"><%= command.user.username %> <img src="<%= durume %>" width="35" height="35"></a>
+                  </h5>
+                  <button type="button" onclick="window.location.href='bot/<%= command.user.id %>'" class="btn btn-primary" style="display: inline-block; width: auto;">Bot Sayfasını Gör</button>
+                  <button type="button" onclick="at(<%= command.user.id %>,<%= command.user.username %>)" class="btn btn-primary" style="display: inline-block; width: auto;">Sunucudan At</button>
+                  <button type="button" onclick="sertifika(<%= command.user.id %>,<%= command.user.username %>)" class="btn btn-primary" style="display: inline-block; width: auto;">Sertifika Ver</button>
+                  <button type="button" onclick="sertifikaa(<%= command.user.id %>,<%= command.user.username %>)" class="btn btn-primary" style="display: inline-block; width: auto;">Sertifikasını Al</button>
+		  </div>
+        </div> 
+ <% }) %>
+</div>
+
+<%
+
+function at(id, ad) {
+db.fetch("sahip_" + id).then(function(s) {
+if(bot.users.get(s)) {
+bot.users.get(s).send(ad + " isimli botunuz " + user.username + "#" + user.discriminator + " adlı yetkili tarafından web-panel üzerinden atıldı!")
+bot.guilds.get("530744872328626197").member(id).kick(user.username + "#" + user.discriminator + " adlı yetkili tarafından web-panel üzerinden atıldı!")
+} else return bot.guilds.get("530744872328626197").member(id).kick(user.username + "#" + user.discriminator + " adlı yetkili tarafından web-panel üzerinden atıldı!")
+})
+}
+
+function sertifika(id, ad) {
+db.fetch("sahip_" + id).then(function(s) {
+
+bot.users.get(s).send(":tada: " + ad + " isimli botunuza " + user.username + "#" + user.discriminator + " adlı yetkili tarafından web-panel üzerinden sertifika verildi!")
+db.set("sertifika_" + id, "aktif")
+
+})}
+
+function sertifikaa(id, ad) {
+db.fetch("sahip_" + id).then(function(s) {
+
+bot.users.get(s).send(ad + " isimli botunuzun sertifikası " + user.username + "#" + user.discriminator + " adlı yetkili tarafından web-panel üzerinden alındı!")
+db.delete("sertifika_" + id)
+
+})}
+
+%>
+
+
+<% include ./ek/footer %>

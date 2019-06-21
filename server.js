@@ -254,28 +254,26 @@ app.get("/botekle", checkAuth, (req,res) => {
 
 app.post("/botekle", checkAuth, (req, res) => {
 
-let ayar = req.body
-
-let ID = ayar['id']
+let ID = req.body['id']
 
 if(client.users.get(ID)) return res.json({
   hata: "Bot Zaten Sunucumuzda Eklidir."
-})
+})/*
   
-db.set(`prefix_${ID}`, ayar['prefix'])
-db.set(`dil_${ID}`, ayar['dil'])
+db.set(`prefix_${ID}`, req.body['prefix'])
+db.set(`dil_${ID}`, req.body['dil'])
 db.set(`sahip_${ID}`, req.user.id)
-db.set(`aciklama_${ID}`, ayar['aciklama'])
+db.set(`aciklama_${ID}`, req.body['aciklama'])
 
 db.push(`botlar_${req.user.id}`, ID)
-
+*/
 var çen = client.channels.get("530756322040479754")
 
 çen.send(new Discord.RichEmbed()
 .setColor("RANDOM")
 .addField("Yeni Bot Gönderildi!", "[ID: " + ID + "](https://discordapp.com/oauth2/authorize?client_id=" + ID + "&scope=bot&permissions=8)")
 .addBlankField()
-.addField('Prefix:',ayar['prefix']))
+.addField('Prefix:',req.body['prefix']))
 
 res.redirect('/')  
 client.users.get(req.user.id).send(`${ID} ID'li Botunuz Görevlilere Iletilmiştir`) 
