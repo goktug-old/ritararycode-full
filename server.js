@@ -1,6 +1,3 @@
-
-var karaliste = ["485741578615521291"]
-
 const http = require('http');
 const express = require('express');
 const app = express();
@@ -11,10 +8,8 @@ app.use(express.static('public'));
 
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const useful = require('useful-tools');
 client.login("NTMxMDE4ODYzODgyNzk3MDU2.XORRJQ.skLIuH9KXrwWRVFAgkUxZdkXxhc")
-client.ayar = db
-client.useful = useful;
+var başvuruwebhook = new Discord.WebhookClient("562159564431294495","yKcEo2vS0Y6840ft9YbnqJkteYBI_QN1SwVXMrIwZq_5kJkHc02Tx87A2NLlW5gR6Z2K")
 
 app.listen(process.env.PORT)
 
@@ -50,7 +45,7 @@ done(null, obj);
 passport.use(new Strategy({
 clientID: "531018863882797056",
 clientSecret: "vnSdAXDyrVgIWZ-do4ryNxViI_9hlyEF",
-callbackURL: "https://ritararycode.tk/callback",
+callbackURL: "https://ritararycode.cf/callback",
 scope: ["identify", "guilds.join"]
 },
 (accessToken, refreshToken, profile, done) => {
@@ -82,7 +77,7 @@ const fetchh = require("node-fetch")
 
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return res.send("Sunucnya gelmelisin <a href = 'https://discord.gg/kmccxMG'>Tiklat</a>")
+if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return res.send("Sunucnya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
  /*request(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
             {
               method: 'PATCH',
@@ -159,9 +154,7 @@ const a = []
 
 client.on("ready", () => {
 client.guilds.get("530744872328626197").members.forEach(command => {
-  if(!command.user.bot) return;
-  //if(command.user.id === "518717000487534593" || command.user.id === "436527843959111681" || command.user.id === "552860386727165980" || command.user.id === "235088799074484224" || command.user.id === "531018863882797056" || command.user.id === "553270538034741248" || command.user.id === "551841231961849878" || command.user.id === "473284664711446529" || command.user.id === "540902460747677716" || command.user.id === "518145591860264961" || command.user.id === "540978976617660416" || command.user.id === "436527843959111681" || command.user.id === "351611743018942464" || command.user.id === "294882584201003009" || command.user.id === "548149568681017367" || command.user.id === "172002275412279296" || command.user.id === "275813801792634880" || command.user.id === "422087909634736160" || command.user.id === "500297618505859072" || command.user.id === "527858318786691092" || command.user.id === "409875566800404480")return;
-db.fetch(`sertifika_${command.user.id}`).then(ab => {
+  db.fetch(`sertifika_${command.user.id}`).then(ab => {
   if(ab === "aktif") { a.push(command.user.id) }
 })})
 })
@@ -244,52 +237,24 @@ app.get("/b", checkAuth, (req,res) =>{
 })
 
 app.post("/b", checkAuth, (req,res) => {
-//  var id = req.params.id
- // if(id !== req.user.id) return res.redirect("/")
-   var isim = `${req.body["isim"]}`
- //  var dcname = `${req.body["dcname"]}`
-   var bilgi =`${req.body["bilgi"]}`
-var web = new Discord.WebhookClient("562159564431294495","yKcEo2vS0Y6840ft9YbnqJkteYBI_QN1SwVXMrIwZq_5kJkHc02Tx87A2NLlW5gR6Z2K")
-
-web.send(new Discord.RichEmbed()
+   var isim = req.body["isim"]
+   var bilgi = req.body["bilgi"]
+   
+başvuruwebhook.send(new Discord.RichEmbed()
          .addField("Isim:", isim)
          .addField("Bilgi:",bilgi)
-         .addField("Discord Kullanici adi:",req.user.username + "#" + req.user.tag)
+         .addField("Discord:",`${req.user.username + "#" + req.user.discriminator} ( ${req.user.id} )`)
          )
 res.redirect("/")
 })
 
-
-
-app.get("/ed/hatalar", (req,res) => {
-  renderTemplate(res, req, "ed-hatalar.ejs")
-})
-
-app.get("/ed/uptimerobot", (req,res) => {
-  renderTemplate(res, req, "ed-uptime.ejs")
-})
-
-app.get("/ed/glitchmodul", (req,res) => {
-  renderTemplate(res, req, "ed-gmodul.ejs")
-})
-
-app.get("/ed/botyapma", (req,res) => {
-  renderTemplate(res, req, "ed-bot.ejs")
-})
-
-app.get("/ed", (req,res) => {
-  renderTemplate(res, req, "ed.ejs")
-})
-
-app.get("/vutututu", checkAuth, (req,res) => {
+app.get("/botekle", checkAuth, (req,res) => {
   renderTemplate(res, req, "botekle.ejs")
 })
 
-app.post("/vutututu", checkAuth, (req, res) => {
+app.post("/botekle", checkAuth, (req, res) => {
 
 let ayar = req.body
-
-if (ayar === {} || !ayar['id'] || !ayar['prefix'] || !ayar['dil'] || !ayar['aciklama']) return res.sendFile(__dirname +"/site/404.html")
 
 let ID = ayar['id']
 
@@ -310,15 +275,13 @@ var çen = client.channels.get("530756322040479754")
 .setColor("RANDOM")
 .addField("Yeni Bot Gönderildi!", "[ID: " + ID + "](https://discordapp.com/oauth2/authorize?client_id=" + ID + "&scope=bot&permissions=8)")
 .addBlankField()
-.addField('Sahip', client.users.get(req.user.id).tag)
-.addBlankField()
 .addField('Prefix:',ayar['prefix']))
 
 res.redirect('/')  
-client.users.get(req.user.id).send(" botunu ilettim. Yakın zamanda eklenir <3") 
+client.users.get(req.user.id).send(`${ID} ID'li Botunuz Görevlilere Iletilmiştir`) 
 })
 
-app.get('/asdfertsd', checkAuth, async(req,res) => {
+app.get('/gizli/dosyalar/kodlarr', checkAuth, async(req,res) => {
   var kodlarr = require('./kods.json')
   renderTemplate(res, req, "kodlarv2.ejs", {kodlarr})
 })
@@ -332,7 +295,6 @@ db.fetch(`açıklama_${id}`).then(async acikla => {
 db.fetch(`prefix_${id}`).then(async prefix => {
 db.fetch(`dil_${id}`).then(async dil => {
 db.fetch(`sertifika_${id}`).then(async sertifika => {
-if(!sahip) res.sendFile(__dirname + "/site/404.html")
 if(!prefix) prefix = "Ayarlanmamış"
 if(!acikla) acikla = "Ayarlanmamış"
 if(!dil) dil = "Ayarlanmamış"
@@ -340,25 +302,18 @@ if(!sertifika) sertifika = "Sertifika Yok"
 var sertifikadurum;
 if(sertifika === "aktif") sertifikadurum = `<button style="top: 25px; margin-left: 3%;" class="prefix btn btn-primary">✅ Sertifikalı </button>`
 else sertifikadurum = ""
-const avatar = client.users.get(id).avatarURL
+const avatar = client.users.get(id).displayAvatarURL
 const botaı = client.users.get(id).username
-const sahipavatar = client.users.get(sahipp).avatarURL
+const sahipavatar = client.users.get(sahipp).displayAvatarURL
 
    renderTemplate(res, req, "bot.ejs", {prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
   
-})})})})})})/*
-
-app.get('*', (req,res) => {
-if(res.status(404)) return res.sendFile(__dirname +"/site/404.html")
-//var a = req.params.a
-//if(a !== "kodlar" || a !== "sunucudavet" || a !== "fordst" || a !== "giris" || a !== "cikis" ||  a !== "botlar" || a !== "ed" || a !== "kullanici" || a !== "b"  || a !== "asdfertsd" ) return res.sendFile(__dirname + '/site/404.html')
-})*/
+})})})})})})
 
 app.get("/api/widget/:id", async(req,res) => {
 const requestt = require('node-superfetch');
 var id = req.params.id
-let u = client.users.get(req.params.id)
-if(!u) return res.sendFile(__dirname + "/site/404.html")
+let u = client.users.get(req.params.id).catch( () => res.sendFile(__dirname + "/site/404.html") )
 
   var plan = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png"
   
@@ -376,19 +331,20 @@ db.fetch(`sertifika_${id}`).then(serttfika => {
 db.fetch(`prefix_${id}`).then(prefix => {
 db.fetch(`dil_${id}`).then(dil => {
 db.fetch(`sahip_${id}`).then(async saip => {
-var sahip = client.users.get(saip)
-if(!sahip) return res.sendFile(__dirname +"/site/404.html")
+var sahip = client.users.get(saip).catch( () => res.sendFile(__dirname +"/site/404.html") )
         loadImage(plan).then(async(arkabg) => {
 var sertifika;
 if(serttfika === null) sertifika = "pasif"
 else sertifika = "aktif"
-  const { boddy } = await requestt.get(sahip.avatarURL)
-  var avatar2 = await loadImage(boddy)        
+
+        const avatarURLL = sahip.avatarURL
+        const { boddy } = await requestt.get(avatarURLL);
+        const avatarr = await loadImage(boddy);     
         
 ctx.drawImage(arkabg, 0, 0, 1280, 720);
           
 ctx.drawImage(avatar, 250, 165, 150, 150);
-ctx.drawImage(avatar, 50 , 165, 150, 150);
+ctx.drawImage(avatarr, 50 , 165, 150, 150);
           
         var re = "db3b3b"
 var b = []
@@ -409,21 +365,28 @@ else ism = "bold 32px Impact"
         ctx.fillText(`${dil}`, 325, 475)
         ctx.fillText(`${prefix}`, 710, 475)
         ctx.fillText(`${sertifika}`, 1125, 475)
-       // ctx.fillText(``,325, 475)
         ctx.beginPath();
         ctx.lineWidth = 8;
   ctx.fill()
-     //  ctx.lineWidth = 8;
-     //   ctx.arc(43 + 67, 67 + 67, 67, 0, 2 * Math.PI, false);
     ctx.clip();
     
-       res.header('Content-Type', 'image/png');
-        res.send(canvas.toBuffer())
-        })})})})
-  })
+	var asd = canvas.toBuffer()
+       
+        res.download(asd)
+		
+})})})})})})
+
+app.get("/kodpaylas", (req,res) => {
+  renderTemplate(res, req, "paylas.ejs")
 })
 
-app.get("/api/test/widget", (req,res) => res.send(`<a href="https://ritararycode.cf/bot/421261553384292372"><img src = "https://ritararycode.cf/api/widget/421261553384292372"></a>`) )
+app.get("/panel", (req,res) => {
+  renderTemplate( res, req, "panel.ejs", { db } )
+})
+
+app.get("/api/test/widget", (req,res) => {
+  res.send(`<a href="https://ritararycode.cf/bot/421261553384292372"><img src = "https://ritararycode.cf/api/widget/421261553384292372"></a>`)
+})
 
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/site/404.html');
