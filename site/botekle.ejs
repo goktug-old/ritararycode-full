@@ -1,44 +1,12 @@
-<%- include('ek/header', {bot, user, path}) %>
-<br><br>
- <form method="post">
-				
-   <div align="center" style="font-size:20px;">
-		<div><i aria-hidden="true"></i>Bot ID</div>
-		<div>
-      <input type="text" style="text-align: center;" name="id" id="id"
-									placeholder="497761216169639936" required="required">
-     </div><br>
-		<div><i aria-hidden="true"></i>Prefix</div>
-		<div>
-      <input type="text" style="text-align: center;" name="prefix" id="prefix"
-									placeholder="g!" required="required">
-     </div><br>
-     
-     <div><i aria-hidden="true"></i>Kütüphane</div>
-    <div class="select-style">
-     <select id="dil" name="dil" required="required">
-       <option disabled selected>Lütfen bir dil seçiniz.</option>
-        
-          <option value="discord.js" >discord.js</option>
-        
-          <option value="discord.js" >discord.js-commando</option>
-        
-          <option value="Eris" >Eris</option>
-        
-          <option value="discord.py" >discord.py</option>
-        
-        <option value="dier" >Diğer</option>
-     </select>
-     </div><br>
-     <div><i aria-hidden="true"></i>Botun Açıklaması</div>
-		<div>
-      <textarea style="text-align: left; background-color:#222; hight:1050px; width:500px" name="aciklama" id="aciklama"
-                placeholder="Botunuzun açıklamasını yazınız. (HTML-CSS İÇEREBİLİR)" minlength="20" required="required"></textarea>
-     </div>
-				<div style="width: 100%; text-align: right; margin-top: 20px;">
-					<button style="border-radius: 100px; background-color:#00a1ff" type="submit" class="btn btn-primary"><i class="fa fa-save fa-fw"></i> Botu ilet<i aria-hidden='true'></i></button>
-				</div>
-   </div>
-			</form>
+<%- include('ek/header', {bot, user, path}) %><br><br><br><br>
+<form method="post">
 
+<input type="text" id="id" class="form-control" placeholder="<%- bot.user.id %>" required="true"><br>
+<input type="text" id="prefix" class="form-control" placeholder="rc!" required="true"><br>
+<input type="text" id="dil" class="form-control" placeholder="discord.js" required="true"><br>
+<input type="textarea" id="açıklama" class="form-control" placeholder="Kullanışlı bir bot olan <%- bot.user.username %>'i sunucularınıza almayı unutmayın!" required="true"><br><br>
+
+  <center><button class="btn btn-danger" type="submit"><i class="fa fa-save"></i> Başvur</button></center>
+
+</form>
 <% include ./ek/footer %>

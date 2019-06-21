@@ -45,7 +45,7 @@ done(null, obj);
 passport.use(new Strategy({
 clientID: "531018863882797056",
 clientSecret: "vnSdAXDyrVgIWZ-do4ryNxViI_9hlyEF",
-callbackURL: "https://ritararycode.cf/callback",
+callbackURL: "https://ritararycode.tk/callback",
 scope: ["identify", "guilds.join"]
 },
 (accessToken, refreshToken, profile, done) => {
@@ -77,7 +77,7 @@ const fetchh = require("node-fetch")
 
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return res.send("Sunucnya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
+//if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send("Sunucuya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
  /*request(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
             {
               method: 'PATCH',
@@ -93,7 +93,7 @@ if(!client.guilds.get("530744872328626197").members.get(req.user.id)) return res
               if(error) console.log(error)
                console.log(response)
             }, 500)})*/
-else return next();
+return next();
 }
 req.session.backURL = req.url;
 res.redirect("/giris");
@@ -302,9 +302,9 @@ if(!sertifika) sertifika = "Sertifika Yok"
 var sertifikadurum;
 if(sertifika === "aktif") sertifikadurum = `<button style="top: 25px; margin-left: 3%;" class="prefix btn btn-primary">✅ Sertifikalı </button>`
 else sertifikadurum = ""
-const avatar = client.users.get(id).displayAvatarURL
+const avatar = client.users.get(id).avatarURL
 const botaı = client.users.get(id).username
-const sahipavatar = client.users.get(sahipp).displayAvatarURL
+const sahipavatar = client.users.get(sahipp).avatarURL
 
    renderTemplate(res, req, "bot.ejs", {prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
   
