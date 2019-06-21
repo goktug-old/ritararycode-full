@@ -73,7 +73,7 @@ app.use(bodyParser.urlencoded({
 extended: true
 })); 
 
-var karaliste = ["554038221374226453"]
+var karaliste = []
 
 const fetchh = require("node-fetch")
 
