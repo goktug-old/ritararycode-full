@@ -180,48 +180,7 @@ app.get("/kodlar", checkAuth, (req, res) => {
 renderTemplate(res, req, "kodlar.ejs");
 });
 
-const kodlar = {
-  "alinti":"<p><a href=\"https://turkkod.cf/~5c529b9c40b57500669021d0\">komutlar/alıntı.js</a></p>",
-  "ayarlanabilirdestek":"<p><a href=\"https://turkkod.tk/~5c4e14e7e732980067d945be\">bot.js ye atılacak </a></p><p><a href=\"https://turkkod.tk/~5c4e152ce732980067d945bf\">komutlar/destekkanal.js atılacak</a></p><p><a href=\"https://turkkod.tk/~5c4e1564e732980067d945c0\">komutlar/destekrol.js atılacak</a></p>",
-  "etiketprefix":`<p><a href="https://www.turkkod.cf/~5c3046bfa7bd4c00641b64c3">bot.js</a></p>`,
-  "sor":`<p><a href="https://turkkod.tk/~5c4c3e37b4a2ef00673cb00d">komutlar/sor.js</a></p><h5>Çalışması için cleverbot.io dan key almalısın!</h5>`,
-  "davetcikar":`<p><a href="https://www.turkkod.cf/~5cd7cc657bf95c0079e9f2b8">komutlar/davetçıkar.js</a></p>`,
-  "degisenoynuyor":`<p><a href="https://turkkod.cf/~5c4325858ca41b0065194058">events/ready.js</a></p>`,
-  "kaydol":`<p><a href="https://hasteb.in/ucopeqaq.js">komutlar/kayıtol.js</a></p><p><a href ="https://hasteb.in/yunigute.js">komutlar/kayıtonay.js</a></p>`,
-  "dmduyuru":`<p><a href="https://turkkod.cf/~5c840b63aaba3b0063e813d5">komutlar/dmduyuru.js</a></p>`,
-  "eval":`<p><a href="https://turkkod.cf/~5c43225e8ca41b0065194056">komutlar/eval.js</a></p>`,
-  "karaliste":`<p><a href="https://turkkod.cf/~5c693b1559d65d0063086ee6">komutlar/karaliste.js</a></p><p><a href="https://turkkod.cf/~5c693b3e59d65d0063086ee7">komutlar/beyazliste.js</a></p><p><a href="https://turkkod.cf/~5c693ba159d65d0063086ee8">events/message.js</a></p>`,
-  "kullanicibilgi":`<p><a href="https://turkkod.tk/~5c4994f9f941520065f02bf6">komutlar/kullanıcıbilgi.js</a></p>`,
-  "konustur":`<p><a href="http://turkkod.cf/~5c2f882e5149a7006548bb32">komutlar/konuştur.js</a></p>`,
-  "otorol":`<p><a href="https://turkkod.cf/~5c4815b60da4560065318f4d">komutlar/otorol.js</a></p><p><a href="https://turkkod.cf/~5c4815c70da4560065318f4e">bot.js</a></p><p><a href="https://turkkod.cf/~5c4816e80da4560065318f4f">komutlar/otorolkapat.js</a></p>`,
-  "oyverdim":`<p><a href="https://hasteb.in/makihosa.js">komutlar/oyverdim.js</a></p>`,
-  "oylama":`<p><a href="https://hasteb.in/ovihosaq.js">komutlar/oylama.js</a></p>`,
-  "patatesemoji":`<p><a href="https://hasteb.in/ihubofon.cs">bot.js/server.js</a></p>`,
-  "sunucukur":`<p><a href="http://turkkod.ml/~5c693bc559d65d0063086ee9">komutlar/sunucukur.js</a></p>`,
-  "sunucuyagiriscikislog":`<p><a href="https://turkkod.cf/~5c45c2cd6bc2b20065e1da54">bot.js</a></p>`,
-  "sunucular":`<p><a href="https://turkkod.cf/~5c693e7259d65d0063086eea">komutlar/sunucular.js</a></p>`,
-  "tavsiye":`<p><a href="https://hasteb.in/savohule.js">komutlar/tavsiye.js</a></p>`,
-  "ultrasohbettemizleyici":`<p><a href="https://hasteb.in/axurokav.js">bot.js/server.js</a></p><p><a href="https://hasteb.in/uvoxesoj.js">komutlar/ultrasohbettemizleyici.js</a></p>`, 
-  "yenile":`<p><a href="https://hastebin.com/lakalinoba.js">komutlar/yenile.js</a></p>`,
-  "snipe":`<p><a href="https://hasteb.in/iboyozov.js">bot.js</a></p> <p><a href="https://hasteb.in/kulanife.js">komutlar/snipe.js</a></p>`,
-  "gozetle":`<p><a href="https://hasteb.in/iseyulab.js">komutlar/gözetle.js</a></p><p><a href="https://hasteb.in/iwobonam.js">komutlar/gözetlekapat.js</a></p><p><a href="https://hasteb.in/kefogazo.js">bot.js/server.js</a></p>`,
-  "prefix-calismakanal":`<p><a href="https://turkkod.tk/~5c7d49e650ab74006269c72f">komutlar/prefixayarla.js</a></p><p><a href="https://turkkod.tk/~5c7d4a0150ab74006269c730">komutlar/çalışmakanal.js</a></p><p><a href="https://turkkod.tk/~5c7d4a3850ab74006269c731">events/message.js</a></p><p><a href="https://hasteb.in/jimutebe.js">komutlar/kapat.js</a></p>`,
-  "dmlog":`<p><a href="https://www.turkkod.cf/~5c4c0cf0f958bf0068e5570e">bot.js</a></p><h5>Eğer Hata Alıyorsanız ayrı bir glitch açıp deneyin</h5>`,
-  "jsrol":`<p><a href="https://turkkod.cf/~5cd7d45f7bf95c0079e9f2b9">komutlar/jsrol.js</a></p>`,
-  "sureliduyuru":`<p><a href="https://hasteb.in/mudiyajo.js">bot.js/server.js</a></p><p><a href="https://hasteb.in/ikenolop.js">events/ready.js</a></p>`,
-  "bot-uyeotorol":`<p><a href="https://turkkod.cf/~5c84ea14d9ce880067b289bf#L21">komutlar/otorol.js</a></p><p><a href="https://turkkod.cf/~5c84ea02d9ce880067b289be">bot.js</a></p>`,
-  "basvuru":`<p><a href="https://turkkod.cf/~5c84f5e5d9ce880067b289c0">komutlar/başvur.js</a></p>`,
-  "kanalkonu":`<p><a href="https://turkkod.cf/~5c850955d9ce880067b289c1">komutlar/kanalkonu.js</a></p>`,
-  "sarkisozu":`<p><a href="https://turkkod.cf/~5c86ab6830b1af0067c19a80">komutlar/şarkısözü.js</a></p><h5>Komutun Çalışması İçin www.simsekapi.cf üzerinden api key almalısınız. Key Alımı İçin Turkoglu-#0850  ile görüşün</h5>`,
-  "notsistem":`<p><a href="https://turkkod.cf/~5c8d35a476e4da006730c439">komutlar/notal.js</a></p><p><a href="https://turkkod.cf/~5c8d35a976e4da006730c43a">komutlar/notbilgi.js</a></p><p><a href="https://turkkod.cf/~5c8d35af76e4da006730c43b">komutlar/notlar.js</a></p><p><a href="https://turkkod.cf/~5c8d35b476e4da006730c43c">komutlar/notsil.js</a></p>`,
-  "exec":`<p><a href="https://turkkod.cf/~5c8fc4adb282380062a3ff2f">komutlar/exec.js</a></p><p>Gerekli Modül <strong>child-process-promise</strong></p>`,
-  "gyardim": `<p><a href="https://turkkod.cf/~5c9cfbf5d50477006779732b">komutlar/yardım.js</a></p>`,
-  "hesapgen": `<p><a href="https://turkkod.cf/~5ca1b52180716e00664ebc43">komutlar/hesap.js</a></p>`,
-  "yedeksistem": `<p><a href="https://glitch.com/edit/#!/yedekbotu">Tıkla Banağ </a></p>`,
-  "cekilis": `<p><a href="https://www.turkkod.cf/~5cf2a8a3f6a532007870359f">komulatr/cekilis.js</a></p><p><a href="https://www.turkkod.cf/~5cf2a8cef6a53200787035a0">komutlar/reroll.js</p>`,
-  "golduye":`<p><a href="https://turkkod.tk/~5cf2abb6f6a53200787035a1">komutlar/gold.js</a></p><p><a href ="https://www.turkkod.cf/~5cf2acc0f6a53200787035a2">bot.js / server.js</a></p>`,
-  "capsengel": `<p><a href="https://turkkod.cf/~5cf5533ac6ba0d00785271be">bot.js || server.js</a></p><p><a href="https://turkkod.cf/~5cf55317c6ba0d00785271bc">kmutlaro/capsengel.js</a></p>`,
-}
+const kodlar = require('./kods.json')
 
 const fs = require('fs')
 
