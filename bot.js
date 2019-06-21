@@ -143,21 +143,7 @@ client.on('message', message => {
   }
 })
   
-var a = ["KICK_MEMBERS", "BAN_MEMBERS", "ADMINISTRATOR", "MANAGE_CHANNELS", "MANAGE_GUILD", "MANAGE_MESSAGES", "MANAGE_NICKNAMES", "MANAGE_ROLES" , "MANAGE_WEBHOOKS", "MANAGE_EMOJIS"]
 
-client.on("guildMemberAdd", member => {
-  if(!member.user.bot) return
-  if(member.guild.id !== "530744872328626197") return;
-  else {
-    setTimeout(() => {
-      if(a.some(b => member.hasPermission(b))) {
-        member.kick("Yöneticili Pujt")
-        member.guild.channels.get('577018950865518595').send(member.user.tag)
-      }
-    }, 500)
-  }
-})
-  
   client.on("messageReactionAdd", (reaction,user) => {
     if(reaction.message.id !== "570234460142829608") return console.log("Testtir bu")
     else {
