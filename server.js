@@ -256,9 +256,10 @@ app.post("/botekle", checkAuth, (req, res) => {
 
 let ID = req.body['id']
 
-if(client.users.get(ID)) return res.json({
-  hata: "Bot Zaten Sunucumuzda Eklidir."
-})/*
+if(client.users.get(ID)) {
+  client.users.get(req.user.id).send(`${ID} ID'li Botunuz Zaten Sunumuzda Bulunmakta!`) 
+  return res.redirect("/")
+} else {
   
 db.set(`prefix_${ID}`, req.body['prefix'])
 db.set(`dil_${ID}`, req.body['dil'])
@@ -266,7 +267,7 @@ db.set(`sahip_${ID}`, req.user.id)
 db.set(`aciklama_${ID}`, req.body['aciklama'])
 
 db.push(`botlar_${req.user.id}`, ID)
-*/
+
 var çen = client.channels.get("530756322040479754")
 
 çen.send(new Discord.RichEmbed()
@@ -277,7 +278,7 @@ var çen = client.channels.get("530756322040479754")
 
 res.redirect('/')  
 client.users.get(req.user.id).send(`${ID} ID'li Botunuz Görevlilere Iletilmiştir`) 
-})
+}})
 
 app.get('/gizli/dosyalar/kodlarr', checkAuth, async(req,res) => {
   var kodlarr = require('./kods.json')
@@ -308,82 +309,12 @@ const sahipavatar = client.users.get(sahipp).avatarURL
   
 })})})})})})
 
-app.get("/api/widget/:id", async(req,res) => {
-const requestt = require('node-superfetch');
-var id = req.params.id
-let u = client.users.get(req.params.id).catch( () => res.sendFile(__dirname + "/site/404.html") )
-
-  var plan = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png"
-  
-  var g = "50"
-    
-
-  var { createCanvas, loadImage } = require('canvas')
-        var canvas = createCanvas(1280, 720)
-        var ctx = canvas.getContext('2d');
-        const avatarURL = u.avatarURL
-        const { body } = await requestt.get(avatarURL);
-        const avatar = await loadImage(body);
- 
-db.fetch(`sertifika_${id}`).then(serttfika => {
-db.fetch(`prefix_${id}`).then(prefix => {
-db.fetch(`dil_${id}`).then(dil => {
-db.fetch(`sahip_${id}`).then(async saip => {
-var sahip = client.users.get(saip).catch( () => res.sendFile(__dirname +"/site/404.html") )
-        loadImage(plan).then(async(arkabg) => {
-var sertifika;
-if(serttfika === null) sertifika = "pasif"
-else sertifika = "aktif"
-
-        const avatarURLL = sahip.avatarURL
-        const { boddy } = await requestt.get(avatarURLL);
-        const avatarr = await loadImage(boddy);     
-        
-ctx.drawImage(arkabg, 0, 0, 1280, 720);
-          
-ctx.drawImage(avatar, 250, 165, 150, 150);
-ctx.drawImage(avatarr, 50 , 165, 150, 150);
-          
-        var re = "db3b3b"
-var b = []
-var ism;
-u.tag.split("").forEach(a => b.push(a))
-if(b.length > 25) ism = 'bold 16px Impact'
-else if(b.length > 13) ism = 'bold 24px Impact'
-else ism = "bold 32px Impact"
-        var de = 1.6
-        ctx.beginPath()
-        ctx.fillStyle = `#${re}`;
-  ctx.fillStyle = `#fcfdff`;
-  ctx.font = ism
-        ctx.textAlign = "right";
-        ctx.fillText(`${client.users.get(id).tag}`, 865, 250)
-        ctx.fillText(`${sahip.tag}`, 1250, 250)
-  ctx.font = 'bold 36px Impact';
-        ctx.fillText(`${dil}`, 325, 475)
-        ctx.fillText(`${prefix}`, 710, 475)
-        ctx.fillText(`${sertifika}`, 1125, 475)
-        ctx.beginPath();
-        ctx.lineWidth = 8;
-  ctx.fill()
-    ctx.clip();
-    
-	var asd = canvas.toBuffer()
-       
-        res.download(asd)
-		
-})})})})})})
-
 app.get("/kodpaylas", (req,res) => {
   renderTemplate(res, req, "paylas.ejs")
 })
 
 app.get("/panel", (req,res) => {
   renderTemplate( res, req, "panel.ejs", { db } )
-})
-
-app.get("/api/test/widget", (req,res) => {
-  res.send(`<a href="https://ritararycode.cf/bot/421261553384292372"><img src = "https://ritararycode.cf/api/widget/421261553384292372"></a>`)
 })
 
 app.get('*', function(req, res){

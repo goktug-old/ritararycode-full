@@ -1,10 +1,10 @@
 <%- include('ek/header', {bot, user, path}) %><br><br><br><br>
 <form method="post">
 
-<input type="text" id="id" class="form-control" placeholder="<%- bot.user.id %>" required="true"><br>
-<input type="text" id="prefix" class="form-control" placeholder="rc!" required="true"><br>
-<input type="text" id="dil" class="form-control" placeholder="discord.js" required="true"><br>
-<input type="textarea" id="açıklama" class="form-control" placeholder="Kullanışlı bir bot olan <%- bot.user.username %>'i sunucularınıza almayı unutmayın!" required="true"><br><br>
+<input id="id" name="id" class="form-control" placeholder="<%- bot.user.id %>" required="true"><br>
+<input id="prefix" name="prefix" class="form-control" placeholder="rc!" required="true"><br>
+<input id="dil" name="dil" class="form-control" placeholder="discord.js" required="true"><br>
+<input id="aciklama" name="aciklama" class="form-control" placeholder="Kullanışlı bir bot olan <%- bot.user.username %>'i sunucularınıza almayı unutmayın!" required="true"><br><br>
 
   <center><button class="btn btn-danger" type="submit"><i class="fa fa-save"></i> Başvur</button></center>
 
