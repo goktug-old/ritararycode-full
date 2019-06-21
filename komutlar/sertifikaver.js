@@ -12,7 +12,7 @@ exports.run = function(client, message, args) {
         bot = args[0];
     }
   
-  db.set(`sertifika_${bot}`, "atifk")
+  db.set(`sertifika_${bot}`, "aktif")
   
     db.fetch(`sahip_${bot}`).then(i => {
     
