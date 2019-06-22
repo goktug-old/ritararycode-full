@@ -83,7 +83,7 @@ const fetchh = require("node-fetch")
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
-if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send("Sunucuya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
+//if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send("Sunucuya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
  /*request(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
             {
               method: 'PATCH',
@@ -200,26 +200,26 @@ var kodlar = {
 "exec":["b47FT6QZJAIfjRvGeEiQYELOD"],
 "girişçıkış":["GsqvqgjhhXPRSJxSaecV60T6N"],
 "golduye":["09SevrwF9nd6PIBhxUhfMdAIZ","4fnDs7Oiifg0do1zay82"],
-"hesapgen":"n6y3X4G3BwMflmjHAYfNv3fVH",
-"jsrol":"7tVTw3QOQoQNgEvjFPVJXH3w8",
-"kanalduyuru":"zlKyhBkXvJcWNbbWrEN2dyp7r",
-"kanalkonu":"b0kMBLT6rmxhWExIuScGYooTJ",
-"kapat":"nV7JPn4bzmVTMFxtCtQSLIJHE",
+"hesapgen":["n6y3X4G3BwMflmjHAYfNv3fVH"],
+"jsrol":["7tVTw3QOQoQNgEvjFPVJXH3w8"],
+"kanalduyuru":["zlKyhBkXvJcWNbbWrEN2dyp7r"],
+"kanalkonu":["b0kMBLT6rmxhWExIuScGYooTJ"],
+"kapat":["nV7JPn4bzmVTMFxtCtQSLIJHE"],
 "karaliste":["9HGkhAbLBRAFAFhDf0ZNsac8s","2EdUk1lO3aicQo5ki19ywmV1h","zpU2FU70VuSvOAsmZubZASqeG"],
-"kayıt":"7jJUE3mu13cY2a30S9NHjncHA",
-"konustur":"2HS3Gq99l97wyQODkkjd07Ry5",
+"kayıt":["7jJUE3mu13cY2a30S9NHjncHA"],
+"konustur":["2HS3Gq99l97wyQODkkjd07Ry5"],
 "notsistem":["I948vsloozby5ukRYSJKQg0Yi","hzV9Okjm1Bz7URHJqnJ5ByM4Z","e23bqgC0QhzHmnsg4DoFdim3B","oYkmnuUcvCUivFXONLLrIqvzx"],
 "otorol":["dI3UN536Z1sKXqncWRQtfgeeE","7LMQM3dWinYhsbadRkz61DHBz","pkFLSp9FfNiEgceejlzTFOnNl"],
-"gyardim":"jzZGHLiUepn48PvwF4Hqi9uh2",
+"gyardim":["jzZGHLiUepn48PvwF4Hqi9uh2"],
 "snipe":["V9hgdew3CoN2sbv1H5ktFLCHU","Szzwzoy9TRkyxG7jjdkR21fQX"],
-"sor":"Booxr7HarcSGRjU4ipCfhGEnv",
-"sunucular":"cao58E2M8tr8kZXvzkpPC6Np5",
-"sunucuyagiriscikislog":"jucBLZFXn8VuHxipY5ok1OARN",
+"sor":["Booxr7HarcSGRjU4ipCfhGEnv"],
+"sunucular":["cao58E2M8tr8kZXvzkpPC6Np5"],
+"sunucuyagiriscikislog":["jucBLZFXn8VuHxipY5ok1OARN"],
 "ultrasohbettemizleyici":["tEXiO1MKn65t13YOhd3R","Ww0sZWQFsykc3JF2IUfG"],
 "prefix-calismakanal":["KW5YOZT65ScLMFfJtBB3","AY5mnX8MnDwQGAxSeOdiEtcl3","zpU2FU70VuSvOAsmZubZASqeG"],
 "cekilis":["VnB93myn3g2DIcfdlyTw","61xlLgBEDjG2UZqiziJh1e7TW"],
-"sarkisozu":"7G00ddMpn2EB3wsLOGrd",
-"yedeksistem": "https://glitch.com/edit/#!/yedekbotu"
+"sarkisozu":["7G00ddMpn2EB3wsLOGrd"],
+"yedeksistem": ["https://glitch.com/edit/#!/yedekbotu"]
 }
               
 
