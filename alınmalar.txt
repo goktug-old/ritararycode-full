@@ -1693,3 +1693,5 @@ ERVEL#1881 (503285107331825664) snipe kodunu aldı
 Berat#8859 (492537812709539860) capsengel kodunu aldı
 Berat#8859 (492537812709539860) capsengel kodunu aldı
 EZ?#8720 (469728699596537877) etiketprefix kodunu aldı
+EZ?#8720 (469728699596537877) degisenoynuyor kodunu aldı
+EZ?#8720 (469728699596537877) dmkayit kodunu aldı
