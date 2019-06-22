@@ -1704,3 +1704,6 @@ EZ?#8720 (469728699596537877) dmkayit kodunu aldı
 Schyro#6995 (325260517256069121) etiketprefix kodunu aldı
 Schyro#6995 (325260517256069121) ayarlanabilirdestek kodunu aldı
 Schyro#6995 (325260517256069121) ultrasohbettemizleyici kodunu aldı
+Schyro#6995 (325260517256069121) yedeksistem kodunu aldı
+Schyro#6995 (325260517256069121) prefix-calismakanal kodunu aldı
+Schyro#6995 (325260517256069121) davetcikar kodunu aldı
