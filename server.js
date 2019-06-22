@@ -227,8 +227,9 @@ const fs = require('fs')
 
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   if(!req.params.kod) return res.redirect("/kodlar")
-  var kod = kodlar[req.params.kod]
-  if(!kod) return res.sendFile(__dirname + "/site/404.html")
+  var kodd = kodlar[req.params.kod]
+  if(!kodd) return res.sendFile(__dirname + "/site/404.html")
+  var kod = kodd
   var kodisim = req.params.kod
   var kodlink = "https://paste.ritararycode.tk/kod/" + kod
   renderTemplate(res, req, "kod.ejs", {fs, kod, kodisim, kodlink})
