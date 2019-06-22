@@ -189,86 +189,62 @@ var kodlar = {
 "bakim":"FhvPoycigCGAnCVz4MlLgtpBx",
 "ban":"om5UNPqUzdgpkCaWEX36frtSg",
 "basvuru":"lbYGgkdDJoHdO89xo1PYRSppP",
-"bototorola":"vEJLwgq0dGkBXosG7XV77XD47",
-"bototorolb":"yfxvyRdCa8tI6XcsxNwEbDCTv",
-"capslock":"jz1mHO34kcKU48e740Co1HyH0",
-"caslockb":"ur39Z498owzd4XBcVIVnM9iym",
+"bot-uyeotorol":["vEJLwgq0dGkBXosG7XV77XD47","yfxvyRdCa8tI6XcsxNwEbDCTv"],
+"capslock":["jz1mHO34kcKU48e740Co1HyH0","ur39Z498owzd4XBcVIVnM9iym"],
 "davetcikar":"KPiSth7xnxGJdSWH4HEsmcXNY",
 "destek":"3yMEVo8GTBBxOrHDPOZo3EXKh",
 "destek":"ZjJaaI2F7YAK88hJkkugOwvwy",
-"değişenoynuyor":"XI0XPmHCI1xDlCVVcPqHT6xko",
-"dmkayıt":"t3eRfdaqil4dl0m6AWXR3nVrj",
-"dmkayıto":"3mhPi7O1f7OL6R1V5TgaUhk63",
+"degisenoynuyor":"XI0XPmHCI1xDlCVVcPqHT6xko",
+"dmkayit":"t3eRfdaqil4dl0m6AWXR3nVrj",
 "dmlog":"tjYVt3lKNiNvzj6ooK9WbpC13",
 "etiketprefix":"cJHf1M38ZgAGBq9XYVaxRGGeV",
 "exec":"b47FT6QZJAIfjRvGeEiQYELOD",
 "girişçıkış":"GsqvqgjhhXPRSJxSaecV60T6N",
 "gold":"09SevrwF9nd6PIBhxUhfMdAIZ",
 "hesapgen":"n6y3X4G3BwMflmjHAYfNv3fVH",
-"js":"7tVTw3QOQoQNgEvjFPVJXH3w8",
+"jsrol":"7tVTw3QOQoQNgEvjFPVJXH3w8",
 "kanalduyuru":"zlKyhBkXvJcWNbbWrEN2dyp7r",
 "kanalkonu":"b0kMBLT6rmxhWExIuScGYooTJ",
 "kapat":"nV7JPn4bzmVTMFxtCtQSLIJHE",
-"karaliste":"9HGkhAbLBRAFAFhDf0ZNsac8s",
-"karalistek":"2EdUk1lO3aicQo5ki19ywmV1h",
+"karaliste":["9HGkhAbLBRAFAFhDf0ZNsac8s","2EdUk1lO3aicQo5ki19ywmV1h","zpU2FU70VuSvOAsmZubZASqeG"],
 "kayıt":"7jJUE3mu13cY2a30S9NHjncHA",
-"konuştur":"2HS3Gq99l97wyQODkkjd07Ry5",
-"messagejs":"zpU2FU70VuSvOAsmZubZASqeG",
+"konustur":"2HS3Gq99l97wyQODkkjd07Ry5",
 "notal":"I948vsloozby5ukRYSJKQg0Yi",
 "notsil":"hzV9Okjm1Bz7URHJqnJ5ByM4Z",
 "otorola":"dI3UN536Z1sKXqncWRQtfgeeE",
 "otorolb":"7LMQM3dWinYhsbadRkz61DHBz",
 "otorolk":"pkFLSp9FfNiEgceejlzTFOnNl",
-"prefix":"AY5mnX8MnDwQGAxSeOdiEtcl3",
 "sayıseçmeliyardım":"jzZGHLiUepn48PvwF4Hqi9uh2",
 "snipe":"V9hgdew3CoN2sbv1H5ktFLCHU",
 "snipeb":"Szzwzoy9TRkyxG7jjdkR21fQX",
 "sor":"Booxr7HarcSGRjU4ipCfhGEnv",
 "sunucular":"cao58E2M8tr8kZXvzkpPC6Np5",
 "sunucuyagiriscikislog":"jucBLZFXn8VuHxipY5ok1OARN",
-"ultra":"tEXiO1MKn65t13YOhd3R",
-"ultrab":"Ww0sZWQFsykc3JF2IUfG",
-"calismakanal":"KW5YOZT65ScLMFfJtBB3",
+"ultrasohbettemizleyici":["tEXiO1MKn65t13YOhd3R","Ww0sZWQFsykc3JF2IUfG"],
+"calismakanal":["KW5YOZT65ScLMFfJtBB3","AY5mnX8MnDwQGAxSeOdiEtcl3","zpU2FU70VuSvOAsmZubZASqeG"],
 "cekilis":"VnB93myn3g2DIcfdlyTw",
 "sarkisozu":"7G00ddMpn2EB3wsLOGrd"
 }
 
-              ayarlanabilirdestek"> https://www.ritararycode.cf/kodlar/anahtar/ayarlanabilirdestek</h5></a>
-              etiketprefix"> https://www.ritararycode.cf/kodlar/anahtar/etiketprefix</h5></a>
-              sor"> https://www.ritararycode.cf/kodlar/anahtar/sor</h5></a>
-              davetcikar"> https://www.ritararycode.cf/kodlar/anahtar/davetcikar</h5></a>
-              degisenoynuyor"> https://www.ritararycode.cf/kodlar/anahtar/degisenoynuyor</h5></a>
-              kaydol"> https://www.ritararycode.cf/kodlar/anahtar/kaydol</h5></a>
-              dmduyuru"> https://www.ritararycode.cf/kodlar/anahtar/dmduyuru</h5></a>
-              /eval"> https://www.ritararycode.cf/kodlar/anahtar/eval</h5></a>
-              /jsrol"> https://www.ritararycode.cf/kodlar/anahtar/jsrol</h5></a>
-              /karaliste"> https://www.ritararycode.cf/kodlar/anahtar/karaliste</h5></a>
-              /konustur"> https://www.ritararycode.cf/kodlar/anahtar/konustur</h5></a>
-              /kullanicibilgi"> https://www.ritararycode.cf/kodlar/anahtar/kullanicibilgi</h5></a>
-              /otorol"> https://www.ritararycode.cf/kodlar/anahtar/otorol</h5></a>
-              /oylama"> https://www.ritararycode.cf/kodlar/anahtar/oylama</h5></a>
-              <h5>🔲<a href= "/kodlar/oyverdim"> https://www.ritararycode.cf/kodlar/anahtar/oyverdim</h5></a>
-              <h5>🔲<a href= "/kodlar/sunucukur"> https://www.ritararycode.cf/kodlar/anahtar/sunucukur</h5></a>
-              <h5>🔲<a href= "/kodlar/sunucular"> https://www.ritararycode.cf/kodlar/anahtar/sunucular</h5></a>
-              <h5>🔲<a href= "/kodlar/sunucuyagiriscikislog"> https://www.ritararycode.cf/kodlar/anahtar/sunucuyagiriscikislog</h5></a>
-              <h5>🔲<a href= "/kodlar/sureliduyuru"> https://www.ritararycode.cf/kodlar/anahtar/sureliduyuru</h5></a>
-              <h5>🔲<a href= "/kodlar/tavsiye"> https://www.ritararycode.cf/kodlar/tavsiye</h5></a>
-              <h5>🔲<a href= "/kodlar/yenile"> https://www.ritararycode.cf/kodlar/yenile</h5></a>
-              <h5>🔲<a href= "/kodlar/ultrasohbettemizleyici"> https://www.ritararycode.cf/kodlar/ultrasohbettemizleyici</h5></a>
-              <h5>🔲<a href= "/kodlar/snipe"> https://www.ritararycode.cf/kodlar/snipe</h5></a>
-              <h5>🔲<a href= "/kodlar/gozetle"> https://www.ritararycode.cf/kodlar/gozetle</h5></a>
-              <h5>🔲<a href= "/kodlar/prefix-calismakanal"> https://www.ritararycode.cf/kodlar/prefix-calismakanal</h5></a>
-              <h5>🔲<a href= "/kodlar/bot-uyeotorol"> https://www.ritararycode.cf/kodlar/bot-uyeotorol</h5></a>
-              <h5>🔲<a href= "/kodlar/kanalkonu"> https://www.ritararycode.cf/kodlar/kanalkonu</h5></a>
-              <h5>🔲<a href= "/kodlar/sarkisozu"> https://www.ritararycode.cf/kodlar/sarkisozu</h5></a>
-              <h5>🔲<a href= "/kodlar/notsistem"> https://www.ritararycode.cf/kodlar/notsistem</h5></a>
-              <h5>🔲<a href= "/kodlar/exec"> https://www.ritararycode.cf/kodlar/exec</h5></a>
-              <h5>■<a href= "/kodlar/gyardim"> https://www.ritararycode.cf/kodlar/gyardim</h5></a>
-              <h5>■<a href= "/kodlar/hesapgen"> https://www.ritararycode.cf/kodlar/hesapgen</h5></a>
-              <h5>■<a href= "/kodlar/yedeksistem"> https://www.ritararycode.cf/kodlar/yedeksistem</h5></a
-              <h5>■<a href= "/kodlar/cekilis"> https://www.ritararycode.cf/kodlar/cekilis</a></h5>
-              <h5>■<a href= "/kodlar/golduye"> https://www.ritararycode.cf/kodlar/golduye</h5></a>
-              <h5>■<a href= "/kodlar/capsengel"> https://www.ritararycode.cf/kodlar/capsengel</h5></a>
+ayarlanabilirdestek     konustur kullanicibilgi otorol oylama oyverdim"> https://w
+sunucukur"> https://ww
+sunucular"> https://ww
+sunucuyagiriscikislog"> https://www.ritararyco
+sureliduyuru"> https://www.r
+tavsiye"> 
+yenile">
+"> https://www.rit
+snipe"
+gozetle"> 
+bot-uyeotorol"> https:
+              notsistem"> ht
+              exec
+              gyardim"> 
+              hesapgen"> h
+              yedeksistem"> htt
+              cekilis"> 
+              golduye"> 
+              capsengel"> ht
 
 const fs = require('fs')
 
