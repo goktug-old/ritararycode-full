@@ -315,11 +315,15 @@ const sahipavatar = client.users.get(sahipp).avatarURL
   
 })})})})})})
 
-app.get("/kodpaylas", (req,res) => {
+  var asd = ["495825025207894016"]
+  
+app.get("/kodpaylas", checkAuth, (req,res) => {
+  if(asd.some(a => req.user.id === a)) return res.redirect("/")
   renderTemplate(res, req, "paylas.ejs")
 })
 
-app.get("/panel", (req,res) => {
+app.get("/panel", checkAuth, (req,res) => {
+  if(asd.some(a => req.user.id === a)) return res.redirect("/")
   renderTemplate( res, req, "panel.ejs", { db } )
 })
 
