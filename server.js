@@ -190,17 +190,16 @@ var kodlar = {
 "ban":"om5UNPqUzdgpkCaWEX36frtSg",
 "basvuru":"lbYGgkdDJoHdO89xo1PYRSppP",
 "bot-uyeotorol":["vEJLwgq0dGkBXosG7XV77XD47","yfxvyRdCa8tI6XcsxNwEbDCTv"],
-"capslock":["jz1mHO34kcKU48e740Co1HyH0","ur39Z498owzd4XBcVIVnM9iym"],
+"capsengel":["jz1mHO34kcKU48e740Co1HyH0","ur39Z498owzd4XBcVIVnM9iym"],
 "davetcikar":"KPiSth7xnxGJdSWH4HEsmcXNY",
-"destek":"3yMEVo8GTBBxOrHDPOZo3EXKh",
-"destek":"ZjJaaI2F7YAK88hJkkugOwvwy",
+"ayarlanabilirdestek":["3yMEVo8GTBBxOrHDPOZo3EXKh","ZjJaaI2F7YAK88hJkkugOwvwy"],
 "degisenoynuyor":"XI0XPmHCI1xDlCVVcPqHT6xko",
 "dmkayit":"t3eRfdaqil4dl0m6AWXR3nVrj",
 "dmlog":"tjYVt3lKNiNvzj6ooK9WbpC13",
 "etiketprefix":"cJHf1M38ZgAGBq9XYVaxRGGeV",
 "exec":"b47FT6QZJAIfjRvGeEiQYELOD",
 "girişçıkış":"GsqvqgjhhXPRSJxSaecV60T6N",
-"gold":"09SevrwF9nd6PIBhxUhfMdAIZ",
+"golduye":["09SevrwF9nd6PIBhxUhfMdAIZ","4fnDs7Oiifg0do1zay82"],
 "hesapgen":"n6y3X4G3BwMflmjHAYfNv3fVH",
 "jsrol":"7tVTw3QOQoQNgEvjFPVJXH3w8",
 "kanalduyuru":"zlKyhBkXvJcWNbbWrEN2dyp7r",
@@ -209,42 +208,20 @@ var kodlar = {
 "karaliste":["9HGkhAbLBRAFAFhDf0ZNsac8s","2EdUk1lO3aicQo5ki19ywmV1h","zpU2FU70VuSvOAsmZubZASqeG"],
 "kayıt":"7jJUE3mu13cY2a30S9NHjncHA",
 "konustur":"2HS3Gq99l97wyQODkkjd07Ry5",
-"notal":"I948vsloozby5ukRYSJKQg0Yi",
-"notsil":"hzV9Okjm1Bz7URHJqnJ5ByM4Z",
-"otorola":"dI3UN536Z1sKXqncWRQtfgeeE",
-"otorolb":"7LMQM3dWinYhsbadRkz61DHBz",
-"otorolk":"pkFLSp9FfNiEgceejlzTFOnNl",
-"sayıseçmeliyardım":"jzZGHLiUepn48PvwF4Hqi9uh2",
-"snipe":"V9hgdew3CoN2sbv1H5ktFLCHU",
-"snipeb":"Szzwzoy9TRkyxG7jjdkR21fQX",
+"notsistem":["I948vsloozby5ukRYSJKQg0Yi","hzV9Okjm1Bz7URHJqnJ5ByM4Z","e23bqgC0QhzHmnsg4DoFdim3B","oYkmnuUcvCUivFXONLLrIqvzx"],
+"otorol":["dI3UN536Z1sKXqncWRQtfgeeE","7LMQM3dWinYhsbadRkz61DHBz","pkFLSp9FfNiEgceejlzTFOnNl"],
+"gyardim":"jzZGHLiUepn48PvwF4Hqi9uh2",
+"snipe":["V9hgdew3CoN2sbv1H5ktFLCHU","Szzwzoy9TRkyxG7jjdkR21fQX"],
 "sor":"Booxr7HarcSGRjU4ipCfhGEnv",
 "sunucular":"cao58E2M8tr8kZXvzkpPC6Np5",
 "sunucuyagiriscikislog":"jucBLZFXn8VuHxipY5ok1OARN",
 "ultrasohbettemizleyici":["tEXiO1MKn65t13YOhd3R","Ww0sZWQFsykc3JF2IUfG"],
 "calismakanal":["KW5YOZT65ScLMFfJtBB3","AY5mnX8MnDwQGAxSeOdiEtcl3","zpU2FU70VuSvOAsmZubZASqeG"],
-"cekilis":"VnB93myn3g2DIcfdlyTw",
-"sarkisozu":"7G00ddMpn2EB3wsLOGrd"
+"cekilis":["VnB93myn3g2DIcfdlyTw","61xlLgBEDjG2UZqiziJh1e7TW"],
+"sarkisozu":"7G00ddMpn2EB3wsLOGrd",
+"yedeksistem": "https://glitch.com/edit/#!/yedekbotu"
 }
-
-ayarlanabilirdestek     konustur kullanicibilgi otorol oylama oyverdim"> https://w
-sunucukur"> https://ww
-sunucular"> https://ww
-sunucuyagiriscikislog"> https://www.ritararyco
-sureliduyuru"> https://www.r
-tavsiye"> 
-yenile">
-"> https://www.rit
-snipe"
-gozetle"> 
-bot-uyeotorol"> https:
-              notsistem"> ht
-              exec
-              gyardim"> 
-              hesapgen"> h
-              yedeksistem"> htt
-              cekilis"> 
-              golduye"> 
-              capsengel"> ht
+              
 
 const fs = require('fs')
 
