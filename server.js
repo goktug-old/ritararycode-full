@@ -184,17 +184,67 @@ renderTemplate(res, req, "kodlar.ejs");
 });
 
 
+var kodlar = {
+"xlGF0KU3l9KPYQgjSObXBugJR""alıntı":,
+"FhvPoycigCGAnCVz4MlLgtpBx""bakım":,
+"om5UNPqUzdgpkCaWEX36frtSg""ban":,
+"lbYGgkdDJoHdO89xo1PYRSppP""başvur":,
+"vEJLwgq0dGkBXosG7XV77XD47""bototorola":,
+"yfxvyRdCa8tI6XcsxNwEbDCTv""bototorolb":,
+"jz1mHO34kcKU48e740Co1HyH0""capslock":,
+"ur39Z498owzd4XBcVIVnM9iym""caslockb":,
+"KPiSth7xnxGJdSWH4HEsmcXNY""davetçıkar":,
+"3yMEVo8GTBBxOrHDPOZo3EXKh""destek",
+"ZjJaaI2F7YAK88hJkkugOwvwy""destekü",
+"XI0XPmHCI1xDlCVVcPqHT6xko""değişenoynuyor",
+"t3eRfdaqil4dl0m6AWXR3nVrj""dmkayıt":,
+"3mhPi7O1f7OL6R1V5TgaUhk63""dmkayıto":,
+"tjYVt3lKNiNvzj6ooK9WbpC13""dmlog":,
+"cJHf1M38ZgAGBq9XYVaxRGGeV""etiketprefix":,
+"b47FT6QZJAIfjRvGeEiQYELOD""exec":,
+"GsqvqgjhhXPRSJxSaecV60T6N""girişçıkış":,
+"09SevrwF9nd6PIBhxUhfMdAIZ""gold":,
+"n6y3X4G3BwMflmjHAYfNv3fVH""hesapgen":,
+"7tVTw3QOQoQNgEvjFPVJXH3w8""js":,
+"zlKyhBkXvJcWNbbWrEN2dyp7r""kanalduyuru":,
+"b0kMBLT6rmxhWExIuScGYooTJ""kanalkonu":,
+"nV7JPn4bzmVTMFxtCtQSLIJHE""kapat":,
+"9HGkhAbLBRAFAFhDf0ZNsac8s""karaliste":,
+"2EdUk1lO3aicQo5ki19ywmV1h""karalistek":,
+"7jJUE3mu13cY2a30S9NHjncHA""kayıt":,
+"2HS3Gq99l97wyQODkkjd07Ry5""konuştur":,
+"zpU2FU70VuSvOAsmZubZASqeG""messagejs":,
+"I948vsloozby5ukRYSJKQg0Yi""notal":,
+"hzV9Okjm1Bz7URHJqnJ5ByM4Z""notsil":,
+"dI3UN536Z1sKXqncWRQtfgeeE""otorola":,
+"7LMQM3dWinYhsbadRkz61DHBz""otorolb":,
+"pkFLSp9FfNiEgceejlzTFOnNl""otorolk":,
+"AY5mnX8MnDwQGAxSeOdiEtcl3""prefix":,
+"jzZGHLiUepn48PvwF4Hqi9uh2""sayıseçmeliyardım":,
+"V9hgdew3CoN2sbv1H5ktFLCHU""snipe":,
+"Szzwzoy9TRkyxG7jjdkR21fQX""snipeb":,
+"Booxr7HarcSGRjU4ipCfhGEnv""sor":,
+"cao58E2M8tr8kZXvzkpPC6Np5""sunucular",
+"jucBLZFXn8VuHxipY5ok1OARN":"sunucuyakatılldımayrıldım",
+"tEXiO1MKn65t13YOhd3R" "ultra":,
+"Ww0sZWQFsykc3JF2IUfG" "ultrab":,
+"KW5YOZT65ScLMFfJtBB3" "çalışmakanal":,
+"VnB93myn3g2DIcfdlyTw" "çekiliş":,
+"7G00ddMpn2EB3wsLOGrd" "şarkısözü":
+}
 
 const fs = require('fs')
-/*
+
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   if(!req.params.kod) return res.redirect("/kodlar")
   var kod = kodlar[req.params.kod]
   if(!kod) return res.sendFile(__dirname + "/site/404.html")
   var kodisim = req.params.kod
-  renderTemplate(res, req, "kod.ejs", {fs, kod, kodisim})
+  var kodlink = "https://paste.ritararycode.tk/kod/" + kod
+  renderTemplate(res, req, "kod.ejs", {fs, kod, kodisim, kodlink})
   
-  })*/
+})
+
 
 
 app.get("/b", checkAuth, (req,res) =>{

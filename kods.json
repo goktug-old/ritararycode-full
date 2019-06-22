@@ -1,4 +1,4 @@
-{"kodlar": [
+[
   {"name": "Sayı Seçmeli Yardım", "n2": "gyardim", "giflink": "https://cdn.glitch.com/f474f6e7-fc22-4d54-b571-c677aa00db6b%2Fasd.gif?1557645251981", linkler: []}, 
   {"name": "Alıntı", "n2": "alinti", "giflink": "https://cdn.glitch.com/f474f6e7-fc22-4d54-b571-c677aa00db6b%2Fasd2.gif?1557645613742", linkler: []}, 
   {"name": "Botu Etiketleyince Yazı Yazması", "n2": "etiketprefix", "giflink": "https://cdn.glitch.com/f474f6e7-fc22-4d54-b571-c677aa00db6b%2Fasd3.gif?1557646215075", linkler: []}, 
@@ -27,4 +27,3 @@
   {"name": "", "n2": "", "giflink": "", linkler: []}, 
   {"name": "", "n2": "", "giflink": "", linkler: []}
 ]
-}
