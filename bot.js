@@ -155,5 +155,5 @@ client.on('message', message => {
 }
 
 setInterval(a=> {
-require("http").get("http://ritararycode.glitch.me")
+require("http").get("http://abdurrrrrrrzzaklandinizcasina.glitch.me")
 }, 180000)
