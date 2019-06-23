@@ -1713,3 +1713,6 @@ ByRejonsuz#0432 (583653321106259969) etiketprefix kodunu aldı
 ByRejonsuz#0432 (583653321106259969) prefix-calismakanal kodunu aldı
 ByRejonsuz#0432 (583653321106259969) yedeksistem kodunu aldı
 ByRejonsuz#0432 (583653321106259969) karaliste kodunu aldı
+ByRejonsuz#0432 (583653321106259969) prefix-calismakanal kodunu aldı
+ミ Mert Bhey#7633 (495825025207894016) karaliste kodunu aldı
+ByRejonsuz#0432 (583653321106259969) karaliste kodunu aldı
