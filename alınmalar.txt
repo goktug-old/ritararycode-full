@@ -1709,3 +1709,5 @@ Schyro#6995 (325260517256069121) prefix-calismakanal kodunu aldı
 Schyro#6995 (325260517256069121) davetcikar kodunu aldı
 ╭∩╮(◣_◢)╭∩╮ gökoş ╭∩╮(◣_◢)╭∩╮#4851 (554038221374226453) sor kodunu aldı
 ╭∩╮(◣_◢)╭∩╮ gökoş ╭∩╮(◣_◢)╭∩╮#4851 (554038221374226453) alinti kodunu aldı
+ByRejonsuz#0432 (583653321106259969) etiketprefix kodunu aldı
+ByRejonsuz#0432 (583653321106259969) prefix-calismakanal kodunu aldı
