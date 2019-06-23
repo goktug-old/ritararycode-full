@@ -204,7 +204,6 @@ var kodlar = {
 "jsrol":["7tVTw3QOQoQNgEvjFPVJXH3w8"],
 "kanalduyuru":["zlKyhBkXvJcWNbbWrEN2dyp7r"],
 "kanalkonu":["b0kMBLT6rmxhWExIuScGYooTJ"],
-"kapat":["nV7JPn4bzmVTMFxtCtQSLIJHE"],
 "karaliste":["9HGkhAbLBRAFAFhDf0ZNsac8s","2EdUk1lO3aicQo5ki19ywmV1h","zpU2FU70VuSvOAsmZubZASqeG"],
 "kayıt":["7jJUE3mu13cY2a30S9NHjncHA"],
 "konustur":["2HS3Gq99l97wyQODkkjd07Ry5"],
@@ -216,7 +215,7 @@ var kodlar = {
 "sunucular":["cao58E2M8tr8kZXvzkpPC6Np5"],
 "sunucuyagiriscikislog":["jucBLZFXn8VuHxipY5ok1OARN"],
 "ultrasohbettemizleyici":["tEXiO1MKn65t13YOhd3R","Ww0sZWQFsykc3JF2IUfG"],
-"prefix-calismakanal":["KW5YOZT65ScLMFfJtBB3","AY5mnX8MnDwQGAxSeOdiEtcl3","zpU2FU70VuSvOAsmZubZASqeG"],
+"prefix-calismakanal":["KW5YOZT65ScLMFfJtBB3","AY5mnX8MnDwQGAxSeOdiEtcl3","nV7JPn4bzmVTMFxtCtQSLIJHE","zpU2FU70VuSvOAsmZubZASqeG"],
 "cekilis":["VnB93myn3g2DIcfdlyTw","61xlLgBEDjG2UZqiziJh1e7TW"],
 "sarkisozu":["7G00ddMpn2EB3wsLOGrd"],
 "yedeksistem": ["https://glitch.com/edit/#!/yedekbotu"]
