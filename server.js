@@ -400,6 +400,12 @@ res.send(canvas.toBuffer());
 })})
 })
 
+app.get('/test/widget', (req,res) => {
+  res.send(`
+            <a href="/bot/497761216169639936"><img src="https://ritararycode.tk/widget/497761216169639936"></img></a>
+`)
+})
+
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/site/404.html');
 });
