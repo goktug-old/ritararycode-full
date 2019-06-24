@@ -49,7 +49,7 @@ passport.use(new Strategy({
 clientID: "531018863882797056",
 clientSecret: "vnSdAXDyrVgIWZ-do4ryNxViI_9hlyEF",
 callbackURL: "https://ritararycode.tk/callback",
-scope: ["identify", "guilds.join"]
+scope: ["identify"]
 },
 (accessToken, refreshToken, profile, done) => {
 process.nextTick(() => done(null, profile));
