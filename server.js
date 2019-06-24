@@ -19,6 +19,7 @@ app.listen(process.env.PORT)
 const url = require("url");
 
 client.on('ready', () => {
+  console.log('EĞEĞEĞEĞEĞEĞEĞEĞ')
   require('./bot.js')(client)
 })
 
@@ -328,8 +329,10 @@ app.get("/panel", checkAuth, (req,res) => {
 
 
 app.get('/widget/:id', async(req,res) => {
+  
+  console.log("tm")
   var id = req.params.id
-  let u = client.users.get(id)
+  //let u = client.users.get(id)
   var plan = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png"
   
   var g = "50"
@@ -338,7 +341,7 @@ app.get('/widget/:id', async(req,res) => {
   var { createCanvas, loadImage } = require('canvas')
         var canvas = createCanvas(1280, 720)
         var ctx = canvas.getContext('2d');
-        const avatarURL = u.avatarURL
+        const avatarURL = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png" //u.displayAvatarURL
         const { body } = await request.get(avatarURL);
         const avatar = await loadImage(body);
  
@@ -351,20 +354,20 @@ ctx.drawImage(avatar, 250, 165, 150, 150);
 ctx.drawImage(avatar, 50 , 165, 150, 150);
           
         var re = "db3b3b"
-var b = []
+/*var b = []
 var ism;
 u.tag.split("").forEach(a => b.push(a))
 if(b.length > 25) ism = 'bold 16px Impact'
-else if(b.length > 13) ism = 'bold 24px Impact'
-else ism = "bold 32px Impact"
+else if(b.length > 13) ism = 'bold 24px Impact'*/
+var ism = "bold 32px Impact"
         var de = 1.6
         ctx.beginPath()
         ctx.fillStyle = `#${re}`;
   ctx.fillStyle = `#fcfdff`;
   ctx.font = ism
         ctx.textAlign = "right";
-        ctx.fillText(`${u.tag}`, 865, 250)
-        ctx.fillText(`${u.tag}`, 1250, 250)
+        ctx.fillText(`deneme`, 865, 250) //${u.tag}
+        ctx.fillText(`deneme`, 1250, 250)
   ctx.font = 'bold 36px Impact';
         ctx.fillText(`discord.js`, 325, 475)
         ctx.fillText(`g!`, 710, 475)
@@ -378,8 +381,8 @@ else ism = "bold 32px Impact"
     ctx.clip();
     
     
-       canvas.toBuffer()
-  
+res.header('Content-Type', 'image/png');
+res.send(canvas.toBuffer());
   })
   
   
