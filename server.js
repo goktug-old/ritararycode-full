@@ -326,6 +326,77 @@ app.get("/panel", checkAuth, (req,res) => {
   renderTemplate( res, req, "panel.ejs", { db } )
 })
 
+
+app.get('/widget/:id', async(req,res) => {
+  var id = req.params.id
+  let u = client.users.get(id)
+  var plan = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png"
+  
+  var g = "50"
+    
+
+  var { createCanvas, loadImage } = require('canvas')
+        var canvas = createCanvas(1280, 720)
+        var ctx = canvas.getContext('2d');
+        const avatarURL = u.avatarURL
+        const { body } = await request.get(avatarURL);
+        const avatar = await loadImage(body);
+ 
+       
+        loadImage(plan).then((arkabg) => {
+  
+ctx.drawImage(arkabg, 0, 0, 1280, 720);
+          
+ctx.drawImage(avatar, 250, 165, 150, 150);
+ctx.drawImage(avatar, 50 , 165, 150, 150);
+          
+        var re = "db3b3b"
+var b = []
+var ism;
+u.tag.split("").forEach(a => b.push(a))
+if(b.length > 25) ism = 'bold 16px Impact'
+else if(b.length > 13) ism = 'bold 24px Impact'
+else ism = "bold 32px Impact"
+        var de = 1.6
+        ctx.beginPath()
+        ctx.fillStyle = `#${re}`;
+  ctx.fillStyle = `#fcfdff`;
+  ctx.font = ism
+        ctx.textAlign = "right";
+        ctx.fillText(`${u.tag}`, 865, 250)
+        ctx.fillText(`${u.tag}`, 1250, 250)
+  ctx.font = 'bold 36px Impact';
+        ctx.fillText(`discord.js`, 325, 475)
+        ctx.fillText(`g!`, 710, 475)
+        ctx.fillText(`pasif`, 1125, 475)
+       // ctx.fillText(``,325, 475)
+        ctx.beginPath();
+        ctx.lineWidth = 8;
+  ctx.fill()
+     //  ctx.lineWidth = 8;
+     //   ctx.arc(43 + 67, 67 + 67, 67, 0, 2 * Math.PI, false);
+    ctx.clip();
+    
+    
+       canvas.toBuffer()
+  
+  })
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+})
+
+
+
+
+
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/site/404.html');
 });
