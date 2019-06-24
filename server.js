@@ -327,38 +327,48 @@ app.get("/panel", checkAuth, (req,res) => {
   renderTemplate( res, req, "panel.ejs", { db } )
 })
 
+const requesttt = require('node-superfetch');
 
 app.get('/widget/:id', async(req,res) => {
-  
-  console.log("tm")
   var id = req.params.id
-  //let u = client.users.get(id)
+  let u = client.users.get(id)
   var plan = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png"
   
   var g = "50"
     
 
+db.fetch('sahip_' + id).then(sahip => {       
+if(!sahip) return res.redirect("/")
+  
   var { createCanvas, loadImage } = require('canvas')
         var canvas = createCanvas(1280, 720)
         var ctx = canvas.getContext('2d');
-        const avatarURL = "https://cdn.discordapp.com/attachments/553228980669382686/587199954481577994/rcwidget-1.png" //u.displayAvatarURL
-        const { body } = await request.get(avatarURL);
-        const avatar = await loadImage(body);
- 
-       
+               
         loadImage(plan).then((arkabg) => {
-  
+        loadImage(u.displayAvatarURL).then((avatarURL) => {
+        loadImage(client.users.get(sahip).displayAvatarURL).then((avatarURLL) => {
 ctx.drawImage(arkabg, 0, 0, 1280, 720);
           
-ctx.drawImage(avatar, 250, 165, 150, 150);
-ctx.drawImage(avatar, 50 , 165, 150, 150);
-          
+ctx.drawImage(avatarURL, 250, 165, 150, 150);
+ctx.drawImage(avatarURLL, 50 , 165, 150, 150);
+var sert;
+db.fetch('dil_' + id).then(dil => {
+var bb = []
+var ismm;
+dil.split("").forEach(a => bb.push(a))
+if(bb.length > 17) ismm = 'bold 21px Impact'
+else if(bb.length > 9) ismm = 'bold 32px Impact'
+var ism = "bold 32px Impact"
+db.fetch('sertifika_' + id).then(sertifika => {   
+if(!sertifika || sertifika === "pasif") sert = "pasif"
+else sert = sertifika
+db.fetch('prefix_' + id).then(prefix => {     
         var re = "db3b3b"
-/*var b = []
+var b = []
 var ism;
-u.tag.split("").forEach(a => b.push(a))
+client.users.get(sahip).tag.split("").forEach(a => b.push(a))
 if(b.length > 25) ism = 'bold 16px Impact'
-else if(b.length > 13) ism = 'bold 24px Impact'*/
+else if(b.length > 13) ism = 'bold 24px Impact'
 var ism = "bold 32px Impact"
         var de = 1.6
         ctx.beginPath()
@@ -366,12 +376,13 @@ var ism = "bold 32px Impact"
   ctx.fillStyle = `#fcfdff`;
   ctx.font = ism
         ctx.textAlign = "right";
-        ctx.fillText(`deneme`, 865, 250) //${u.tag}
-        ctx.fillText(`deneme`, 1250, 250)
+        ctx.fillText(`${u.tag}`, 865, 250) //${u.tag}
+        ctx.fillText(`${client.users.get(sahip).tag}`, 1250, 250)
+  ctx.font = ismm
+        ctx.fillText(`${dil}`, 325, 475)
   ctx.font = 'bold 36px Impact';
-        ctx.fillText(`discord.js`, 325, 475)
-        ctx.fillText(`g!`, 710, 475)
-        ctx.fillText(`pasif`, 1125, 475)
+        ctx.fillText(`${prefix}`, 710, 475)
+        ctx.fillText(`${sert}`, 1125, 475)
        // ctx.fillText(``,325, 475)
         ctx.beginPath();
         ctx.lineWidth = 8;
@@ -384,21 +395,10 @@ var ism = "bold 32px Impact"
 res.header('Content-Type', 'image/png');
 res.send(canvas.toBuffer());
   })
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+})})})})
+})})
 })
-
-
-
-
 
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/site/404.html');
