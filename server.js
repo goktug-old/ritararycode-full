@@ -180,11 +180,6 @@ if(!isim) return res.sendFile(__dirname +"/site/404.html")
 renderTemplate(res, req, "botlara.ejs", {isim})
 })
 
-app.get("/kodlar", checkAuth, (req, res) => {
-renderTemplate(res, req, "kodlar.ejs");
-});
-
-
 var kodlar = {
 "alinti":["xlGF0KU3l9KPYQgjSObXBugJR"],
 "bakim":["FhvPoycigCGAnCVz4MlLgtpBx"],
@@ -221,9 +216,14 @@ var kodlar = {
 "sarkisozu":["7G00ddMpn2EB3wsLOGrd"],
 "yedeksistem": ["https://glitch.com/edit/#!/yedekbotu"]
 }
-              
+
+var kodar = ["alinti","bakim","ban", "basvuru","bot-uyeotorol","capsengel","davetcikar","ayarlanabilirdestek","degisenoynuyor","dmkayit","dmlog","etiketprefix","exec","girişçıkı","golduye","golduye","hesapgen","kanalduyuru","jsrol","kanalkonu","karaliste","kayıt","konustur","notsistem","otorol", "gyardim", "snipe", "sor","sunucular","sunucuyagiriscikislog","ultrasohbettemizleyici","prefix-calismakanal","cekilis","sarkisozu","yedeksistem"]
 
 const fs = require('fs')
+
+app.get("/kodlar", checkAuth, (req, res) => {
+renderTemplate(res, req, "kodlar.ejs", { kodar });
+});
 
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   if(!req.params.kod) return res.redirect("/kodlar")
