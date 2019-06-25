@@ -2,7 +2,6 @@ const Discord = require('discord.js')
 
 exports.run = (client, msg, args) => {
  msg.channel.send(new Discord.RichEmbed()
-                  .addField('rc!ekle <botid> <prefix> <kütüphane> <açıklama>','Sistemimize Bot Gönderirsiniz')
                   .addField("rc!sertifikabilgi","Sertifika Programımız Hakkında Bilgi Alırsınız")
                   .addField("rc!botlar @Kişi","Kullanıcının Sunucudaki botlarını görürsünüz")
                   .addField("rc!sahip @bot","Botun Sahibini Bulursunuz")
