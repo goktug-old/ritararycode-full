@@ -217,7 +217,7 @@ var kodlar = {
 "yedeksistem": ["https://glitch.com/edit/#!/yedekbotu"]
 }
 
-var kodar = ["alinti","bakim","ban", "basvuru","bot-uyeotorol","capsengel","davetcikar","ayarlanabilirdestek","degisenoynuyor","dmkayit","dmlog","etiketprefix","exec","girişçıkı","golduye","golduye","hesapgen","kanalduyuru","jsrol","kanalkonu","karaliste","kayıt","konustur","notsistem","otorol", "gyardim", "snipe", "sor","sunucular","sunucuyagiriscikislog","ultrasohbettemizleyici","prefix-calismakanal","cekilis","sarkisozu","yedeksistem"]
+var kodar = ["alinti","bakim","ban", "basvuru","bot-uyeotorol","capsengel","davetcikar","ayarlanabilirdestek","degisenoynuyor","dmkayit","dmlog","etiketprefix","exec","girişçıkı","golduye","hesapgen","kanalduyuru","jsrol","kanalkonu","karaliste","kayıt","konustur","notsistem","otorol", "gyardim", "snipe", "sor","sunucular","sunucuyagiriscikislog","ultrasohbettemizleyici","prefix-calismakanal","cekilis","sarkisozu","yedeksistem"]
 
 const fs = require('fs')
 
