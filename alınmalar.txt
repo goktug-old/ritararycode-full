@@ -1816,3 +1816,5 @@ Darwin#1804 (520997295014281228) bakim kodunu aldı
 Darwin#1804 (520997295014281228) ayarlanabilirdestek kodunu aldı
 Darwin#1804 (520997295014281228) degisenoynuyor kodunu aldı
 Darwin#1804 (520997295014281228) degisenoynuyor kodunu aldı
+Darwin#1804 (520997295014281228) konustur kodunu aldı
+Darwin#1804 (520997295014281228) yedeksistem kodunu aldı
