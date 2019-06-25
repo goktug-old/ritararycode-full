@@ -1793,3 +1793,7 @@ Göktuğ#7987 (297457504328220673) prefix-calismakanal kodunu aldı
 spajki#6578 (303494917093851136) snipe kodunu aldı
 spajki#6578 (303494917093851136) kayıt kodunu aldı
 spajki#6578 (303494917093851136) dmkayit kodunu aldı
+spajki#6578 (303494917093851136) ban kodunu aldı
+Göktuğ#7987 (297457504328220673) etiketprefix kodunu aldı
+Göktuğ#7987 (297457504328220673) ayarlanabilirdestek kodunu aldı
+Göktuğ#7987 (297457504328220673) prefix-calismakanal kodunu aldı
