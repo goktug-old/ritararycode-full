@@ -1797,3 +1797,8 @@ spajki#6578 (303494917093851136) ban kodunu aldı
 Göktuğ#7987 (297457504328220673) etiketprefix kodunu aldı
 Göktuğ#7987 (297457504328220673) ayarlanabilirdestek kodunu aldı
 Göktuğ#7987 (297457504328220673) prefix-calismakanal kodunu aldı
+Chucklo#6261 (396663805456809988) yedeksistem kodunu aldı
+Chucklo#6261 (396663805456809988) prefix-calismakanal kodunu aldı
+Chucklo#6261 (396663805456809988) sunucuyagiriscikislog kodunu aldı
+Chucklo#6261 (396663805456809988) exec kodunu aldı
+Samet Albayrak#3583 (553226737602002955) bakim kodunu aldı
