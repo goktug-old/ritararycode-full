@@ -1865,3 +1865,4 @@ Yato#8751 (209640342297903104) bakim kodunu aldı
 ``#5088 (592423341156204554) ayarlanabilirdestek kodunu aldı
 ``#5088 (592423341156204554) bot-uyeotorol kodunu aldı
 ``#5088 (592423341156204554) bakim kodunu aldı
+Fatih Borlu#9047 (455828028757639168) kanalduyuru kodunu aldı
