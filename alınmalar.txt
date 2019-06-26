@@ -1854,3 +1854,14 @@ Yato#8751 (209640342297903104) bakim kodunu aldı
 ↘Samet Albayrak↙#3583 (553226737602002955) alinti kodunu aldı
 ↘Samet Albayrak↙#3583 (553226737602002955) jsrol kodunu aldı
 ゃBedirhanTuhana⚝#6391 (411864908989202453) yedeksistem kodunu aldı
+``#5088 (592423341156204554) ultrasohbettemizleyici kodunu aldı
+``#5088 (592423341156204554) prefix-calismakanal kodunu aldı
+``#5088 (592423341156204554) sunucuyagiriscikislog kodunu aldı
+``#5088 (592423341156204554) gyardim kodunu aldı
+``#5088 (592423341156204554) otorol kodunu aldı
+``#5088 (592423341156204554) notsistem kodunu aldı
+``#5088 (592423341156204554) etiketprefix kodunu aldı
+``#5088 (592423341156204554) dmlog kodunu aldı
+``#5088 (592423341156204554) ayarlanabilirdestek kodunu aldı
+``#5088 (592423341156204554) bot-uyeotorol kodunu aldı
+``#5088 (592423341156204554) bakim kodunu aldı
