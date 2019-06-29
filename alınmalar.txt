@@ -1967,3 +1967,7 @@ Doğukan#0631 (539785021016244244) prefix-calismakanal kodunu aldı
 Uçamayan Kedi#9960 (304640653931970560) alinti kodunu aldı
 ! Ottoman#2090 (584745121082245171) ultrasohbettemizleyici kodunu aldı
 Mabel#8550 (585083599133474818) golduye kodunu aldı
+EmirhanK#4962 (590110597786370049) ayarlanabilirdestek kodunu aldı
+EmirhanK#4962 (590110597786370049) bakim kodunu aldı
+EmirhanK#4962 (590110597786370049) bot-uyeotorol kodunu aldı
+EmirhanK#4962 (590110597786370049) capsengel kodunu aldı
