@@ -1964,3 +1964,4 @@ SBC#6166 (550688044315836455) sarkisozu kodunu aldı
 SBC#6166 (550688044315836455) exec kodunu aldı
 SBC#6166 (550688044315836455) ultrasohbettemizleyici kodunu aldı
 Doğukan#0631 (539785021016244244) prefix-calismakanal kodunu aldı
+Uçamayan Kedi#9960 (304640653931970560) alinti kodunu aldı
