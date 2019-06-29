@@ -1966,3 +1966,4 @@ SBC#6166 (550688044315836455) ultrasohbettemizleyici kodunu aldı
 Doğukan#0631 (539785021016244244) prefix-calismakanal kodunu aldı
 Uçamayan Kedi#9960 (304640653931970560) alinti kodunu aldı
 ! Ottoman#2090 (584745121082245171) ultrasohbettemizleyici kodunu aldı
+Mabel#8550 (585083599133474818) golduye kodunu aldı
