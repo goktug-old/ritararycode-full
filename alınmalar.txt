@@ -1961,3 +1961,6 @@ EmirhanK#4962 (590110597786370049) golduye kodunu aldı
 goktug#4851 (554038221374226453) jsrol kodunu aldı
 SBC#6166 (550688044315836455) yedeksistem kodunu aldı
 SBC#6166 (550688044315836455) sarkisozu kodunu aldı
+SBC#6166 (550688044315836455) exec kodunu aldı
+SBC#6166 (550688044315836455) ultrasohbettemizleyici kodunu aldı
+Doğukan#0631 (539785021016244244) prefix-calismakanal kodunu aldı
