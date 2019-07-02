@@ -2066,3 +2066,7 @@ The Elixar#5522 (499899798304849921) exec kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) hesapgen kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) golduye kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) girişçıkış kodunu aldı
+! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) kanalkonu kodunu aldı
+! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) notsistem kodunu aldı
+! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) prefix-calismakanal kodunu aldı
+! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) sarkisozu kodunu aldı
