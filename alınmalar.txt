@@ -2070,3 +2070,6 @@ The Elixar#5522 (499899798304849921) exec kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) notsistem kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) prefix-calismakanal kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) sarkisozu kodunu aldı
+! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) etiketprefix kodunu aldı
+Faruk#9261 (551354375407403038) exec kodunu aldı
+Faruk#9261 (551354375407403038) yedeksistem kodunu aldı
