@@ -2108,3 +2108,8 @@ Yusuf|The|Difference#3532 (532971584961642506) kanalduyuru kodunu aldı
 Yusuf|The|Difference#3532 (532971584961642506) davetcikar kodunu aldı
 Yusuf|The|Difference#3532 (532971584961642506) ayarlanabilirdestek kodunu aldı
 spajki#6578 (303494917093851136) bakim kodunu aldı
+spajki#6578 (303494917093851136) etiketprefix kodunu aldı
+spajki#6578 (303494917093851136) bot-uyeotorol kodunu aldı
+spajki#6578 (303494917093851136) dmkayit kodunu aldı
+spajki#6578 (303494917093851136) dmlog kodunu aldı
+spajki#6578 (303494917093851136) dmlog kodunu aldı
