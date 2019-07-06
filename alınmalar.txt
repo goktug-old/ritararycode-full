@@ -2192,3 +2192,5 @@ LastEfkar#3586 (573727206128353300) karaliste kodunu aldı
 LastEfkar#3586 (573727206128353300) prefix-calismakanal kodunu aldı
 LastEfkar#3586 (573727206128353300) sunucuyagiriscikislog kodunu aldı
 LastEfkar#3586 (573727206128353300) gyardim kodunu aldı
+LastEfkar#3586 (573727206128353300) etiketprefix kodunu aldı
+LastEfkar#3586 (573727206128353300) capsengel kodunu aldı
