@@ -2239,3 +2239,4 @@ adabugra#5915 (442317996635979790) capsengel kodunu aldı
 adabugra#5915 (442317996635979790) ayarlanabilirdestek kodunu aldı
 adabugra#5915 (442317996635979790) dmkayit kodunu aldı
 adabugra#5915 (442317996635979790) etiketprefix kodunu aldı
+adabugra#5915 (442317996635979790) golduye kodunu aldı
