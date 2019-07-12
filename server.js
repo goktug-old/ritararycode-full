@@ -225,6 +225,7 @@ app.get("/kodlar", checkAuth, (req, res) => {
 renderTemplate(res, req, "kodlar.ejs", { kodar });
 });
 
+
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   if(!req.params.kod) return res.redirect("/kodlar")
   var kodd = kodlar[req.params.kod]
@@ -232,7 +233,7 @@ app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   var kod = kodd
   var kodisim = req.params.kod
   var kodlink = "https://paste.ritararycode.tk/kod/" + kod
-  renderTemplate(res, req, "kod.ejs", {fs, kod, kodisim, kodlink})
+  renderTemplate(res, req, "kod.ejs", {kodlarr, fs, kod, kodisim, kodlink})
   
 })
 

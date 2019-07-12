@@ -1,24 +1,16 @@
-<%- include('ek/header', {fs, kod ,kodisim, bot, user, path}) %>
+<%- include('ek/header', {kodlarr, fs, kod ,kodisim, bot, user, path}) %>
 <% bot.channels.get("588642412365086751").send(`${user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim} kodunu aldı `)
 fs.appendFile('././alınmalar.txt', user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim + " kodunu aldı\n", function (err) {
     if(err){
         throw err;
-    }}) %> 
+    }}) 
 
-<br><br><br>
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto"><br>
-            <ul> 
-              <% kod.forEach(aa => { %>
-              <p><a href="<%- "https://paste.ritararycode.tk/kod/" + aa %>"><%- "https://paste.ritararycode.tk/kod/" + aa %></a></p>
-              <% }) %>
-            </ul>
-            <br>
-          </div>
-        </div>
-      </div>
-    </section>    
-        
+var resim;
+var kres = kodlarr.forEach(a => { if(a.n2 === kodisim) resim = a.giflink } )
+%>
+
+<br><br>
+<div align="left"><img src="<%= resim %>"></div>
+<div align="right"><%- kod %></div>
+   
 <%- include('./ek/footer') %>
