@@ -21,6 +21,15 @@ else {
     if(!açıklama) return message.channel.send("Lütfen Bir Açıklama Girin")
    db.set(`dil_${bot}`, `${açıklama}`) 
     message.channel.send(`**${bott.tag}** adlı botun kodlama dili artık **${açıklama}**`)
+  }else if(args[1] === "token") {
+var token = require('generate-password').generate({
+uppercase: true,
+length: 15,
+numbers: true
+})
+    db.set(`token_${token}`, `${bot}`) 
+    message.author.send(`**${bott.tag}** adlı botun tokeni: ${token} `)
+    message.channel.send(`**${bott.tag}** adlı botun api tokeni DM Kutunda!**`)
   } else if(args[1] === "sertifika") {
     if(message.author.id !== "495825025207894016") return;
     var açıklama = args[2]

@@ -419,6 +419,22 @@ app.get('/test/widget', (req,res) => {
 `)
 })
 
+app.get('/api/bilgiler/:token/:sunucusayisi/:shardid/:shardcount', (req,res) => {
+var sunucusayisi = req.params.sunucusayisi
+var token = req.params.token
+var shardid = req.params.shardid
+var shardcount = req.params.shardcount
+if(!sunucusayisi) return res.json({ durum: "Sunucu Sayisi Gonderilmedi" })
+if(!token) return res.json({ durum: "Token girilmemiş" })
+if(shardid === null) shardid = "Shard Yok"
+if(shardcount === null) shardcount = "Shard Yok"
+db.fetch('token_'+ token).then(botid => {
+db.set(`botlar_${botid}.sunucusayi`,sunucusayisi)
+db.set(`botlar_${botid}.shardid`,shardid)
+db.set(`botlar_${botid}.shardcount`,shardcount)
+
+})})
+
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/site/404.html');
 });
