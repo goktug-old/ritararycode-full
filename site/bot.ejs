@@ -1,33 +1,22 @@
 <%- include('ek/header', {bot, user, path, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum}) %>
-<style>
-textarea {
-    margin-bottom: 10px;
-    font-size: 17pt;
-    padding: 15px 10px 10px;
-    border: 1px solid #cecece;
-    background-color: #efefef;
-    border-radius: 5px;
-    outline: none;
-    height: 100px;
-    width: 200px;
-    align: right;
-}
-</style>
 <div align="center">
 <img src="<%- avatar %>" width="300" height="300"><br>
-<img src="<%- durum %>" width="50" height="50"> <%- botaı %><br>
+<img src="<%- durum %>" width="35" height="35"><%- botaı %><br>
 <button class="btn btn-warning" onclick="window.location.href='https://discordapp.com/oauth2/authorize?client_id=<%- id %>&scope=bot&permissions=8'" >Botu Ekle</button>
 <br><br>
+</div>
 
 <div align="left">                         
-<div class="input-group"><button class="btn btn-primary">Prefix: <%- prefix %></button></div><br>
-<div class="input-group"><button class="btn btn-primary">Dil: <%- dil %></button></div><br>
-<div class="input-group"><button class="btn btn-primary">Yapımcı: <img src="<%- sahipavatar %>" width="23" height="23"> <%- sahip %> </button></div><br>
-<div class="input-group"><%- sertifikadurum %></div>
+  <button class="btn btn-primary">Prefix: <%- prefix %></button><div align="rigth"></div><br><br>
+<button class="btn btn-primary">Dil: <%- dil %></button><br><br>
+<button class="btn btn-primary">Yapımcı: <img src="<%- sahipavatar %>" width="23" height="23"> <%- sahip %> </button><br><br>
+<%- sertifikadurum %>
 <br><br>
+</div>
 
-<div align="center"><h4>
-<%- acikla %></h4>
-</div></div></div>
+<div align="center">    
+<div class="jumbotron" style="color: rgb(149, 149, 149);">
+<p style="color: BLACK"><%- acikla %></p>
+</div></div>
 
 <% include ./ek/footer %>
