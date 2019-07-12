@@ -271,7 +271,7 @@ if(client.users.get(ID)) {
 db.set(`prefix_${ID}`, req.body['prefix'])
 db.set(`dil_${ID}`, req.body['dil'])
 db.set(`sahip_${ID}`, req.user.id)
-db.set(`aciklama_${ID}`, req.body['aciklama'])
+db.set(`açıklama_${ID}`, req.body['aciklama'])
 
 db.push(`botlar_${req.user.id}`, ID)
 
