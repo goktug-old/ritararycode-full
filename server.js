@@ -224,8 +224,6 @@ const fs = require('fs')
 app.get("/kodlar", checkAuth, (req, res) => {
 renderTemplate(res, req, "kodlar.ejs", { kodar });
 });
-
-
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   if(!req.params.kod) return res.redirect("/kodlar")
   var kodd = kodlar[req.params.kod]
@@ -233,7 +231,7 @@ app.get("/kodlar/:kod", checkAuth, async (req, res) => {
   var kod = kodd
   var kodisim = req.params.kod
   var kodlink = "https://paste.ritararycode.tk/kod/" + kod
-  renderTemplate(res, req, "kod.ejs", {kodlarr, fs, kod, kodisim, kodlink})
+  renderTemplate(res, req, "kod.ejs", {fs, kod, kodisim, kodlink})
   
 })
 
@@ -292,11 +290,25 @@ app.get('/gizli/dosyalar/kodlarr', checkAuth, async(req,res) => {
   renderTemplate(res, req, "kodlarv2.ejs", {kodlarr})
 })
 
+const emojiler = {
+   "online": "https://cdn.discordapp.com/emojis/313956277808005120.png",
+   "offline": "https://cdn.discordapp.com/emojis/313956277237710868.png",
+   "dnd": "https://cdn.discordapp.com/emojis/313956276893646850.png",
+   "idle": "https://cdn.discordapp.com/emojis/566624163859660800.png"
+}
+
+
 app.get("/bot/:id", async(req,res) => {
 var id = req.params.id
-
+var durume = client.users.get(id).presence.status
+var durum; 
+if(durume === "online") durum = emojiler.online
+else if(durume === "offline") durum = emojiler.offline
+else if(durume === "dnd") durum = emojiler.dnd
+else if(durume === "idle") durum = emojiler.idle
 db.fetch(`sahip_${id}`).then(async sahipp => {
 const sahip = client.users.get(sahipp).tag
+if(!sahip) return res.status(404)
 db.fetch(`açıklama_${id}`).then(async acikla => {
 db.fetch(`prefix_${id}`).then(async prefix => {
 db.fetch(`dil_${id}`).then(async dil => {
@@ -304,18 +316,16 @@ db.fetch(`sertifika_${id}`).then(async sertifika => {
 if(!prefix) prefix = "Ayarlanmamış"
 if(!acikla) acikla = "Ayarlanmamış"
 if(!dil) dil = "Ayarlanmamış"
-if(!sertifika) sertifika = "Sertifika Yok"
 var sertifikadurum;
-if(sertifika === "aktif") sertifikadurum = `<button style="top: 25px; margin-left: 3%;" class="prefix btn btn-primary">✅ Sertifikalı </button>`
-else sertifikadurum = ""
-const avatar = client.users.get(id).avatarURL
+if(sertifika === "aktif") sertifikadurum = `<button class="btn btn-primary">Sertifikası bulunuyor</button>`
+else sertifikadurum = `<button class="btn btn-danger">Sertifikası bulunmuyor</button>`
+const avatar = client.users.get(id).displayAvatarURL
 const botaı = client.users.get(id).username
-const sahipavatar = client.users.get(sahipp).avatarURL
+const sahipavatar = client.users.get(sahipp).displayAvatarURL
 
-   renderTemplate(res, req, "bot.ejs", {prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
+   renderTemplate(res, req, "bot.ejs", {id , durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
   
 })})})})})})
-
   var asd = ["495825025207894016"]
   
 app.get("/kodpaylas", checkAuth, (req,res) => {
