@@ -117,13 +117,7 @@ client.elevation = message => {
   if(!message.guild) {
     return; }
   let permlvl = 0;
-  if (message.author.id === ayarlar.sahip) permlvl = 5;
-  if (message.author.id === ayarlar.sahip2) permlvl = 5;
-  if (message.author.id === '491231235801088000') permlvl = 6;
-  if (message.author.id === '312927505252089866') permlvl = 6;
-  if (message.author.id === "495856795277983754") permlvl = 6;
-  if (message.author.id === ayarlar.sahip2) permlvl = 6;
-  if (message.author.id === ayarlar.sahip) permlvl = 6;
+  if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 6;
   if (message.author.id === ayarlar.sahip) permlvl = 31; //SAHİP
   if (message.author.id === ayarlar.sahip2) permlvl = 31;
   if(message.author.id === "384385666345336832") permlvl = 31;
@@ -148,15 +142,14 @@ client.on('message', message => {
   }
 })
   
-
+/*
   client.on("messageReactionAdd", (reaction,user) => {
     if(reaction.message.id !== "570234460142829608") return console.log("Testtir bu")
     else {
     client.guilds.get().member(user).addRole("580091788891521027")
     client.guilds.get().channels.get("553827797408415744").send(user.tag + " giriş yapmak icin :shield: emojisini ekledi")
     }
-  })
-  
+  */
 }
 
 setInterval(a=> {
