@@ -30,6 +30,11 @@ if(message.content.toLowerCase().includes('js')) {
   return message.channel.send(`Hey **${message.author.username}**,\nKodlara Erişim Sağlamak İçin <#553544585872277505> kanalına bir göz at!`).then(msg => msg.delete(10000))
 }})
 
+client.on("message", message => {
+if(message.author.bot) return;
+if(message.content.toLowerCase().includes("api") || message.content.toLowerCase().match("key")) { message.reply("Simsek api bilgileri <#598245477955403829> kanalında") }
+})
+
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 const log = message => {
