@@ -2367,3 +2367,6 @@ FazilPatronn#0899 (364769923123380225) otorol kodunu aldı
 ! 《EVĪ̇ИÐÂR─ßЦÐÂҚĈĪ》#9680 (409238673528324097) bot-uyeotorol kodunu aldı
 Viper ⚡#0642 (491231235801088000) basvuru kodunu aldı
 Viper ⚡#0642 (491231235801088000) ban kodunu aldı
+Viper ⚡#0642 (491231235801088000) exec kodunu aldı
+Viper ⚡#0642 (491231235801088000) golduye kodunu aldı
+Viper ⚡#0642 (491231235801088000) prefix-calismakanal kodunu aldı
