@@ -112,9 +112,11 @@ bot: client,
 path: req.path,
 db: db,
 user: req.isAuthenticated() ? req.user : null
-};
+};try {
 res.render(path.resolve(`${templateDir}${path.sep}${template}`), Object.assign(baseData, data));
-};
+} catch(e) {
+res.status(404)
+}};
 
 
 app.get("/giris", (req, res, next) => {
