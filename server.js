@@ -319,7 +319,7 @@ if(!prefix) prefix = "Ayarlanmamış"
 if(!acikla) acikla = "Ayarlanmamış"
 if(!dil) dil = "Ayarlanmamış"
 var sertifikadurum;
-if(sertifika === "aktif") sertifikadurum = `<button class="btn btn-primary">Sertifikası bulunuyor</button>`
+if(sertifika === "aktif") sertifikadurum = `<button class="button1">Sertifikası bulunuyor</button>`
 else sertifikadurum = `<button class="btn btn-danger">Sertifikası bulunmuyor</button>`
 const avatar = client.users.get(id).displayAvatarURL
 const botaı = client.users.get(id).username

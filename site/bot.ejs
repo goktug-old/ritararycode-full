@@ -1,13 +1,16 @@
-<%- include('ek/header', {bot, user, path, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum}) %>
+<%- include('ek/header', {bot, user, path, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum}) %><br><br>
+<style>
+  .button1 {background-color: #4CAF50;}
+</style>
 <div align="center">
-<img src="<%- avatar %>" width="300" height="300"><br>
-<img src="<%- durum %>" width="35" height="35"><%- botaı %><br>
+<img src="<%- avatar %>" width="275" height="275"><br>
+<p width="35" height="35" style="color: BLACK"><img src="<%- durum %>" width="35" height="35"><%- botaı %><br></p>
 <button class="btn btn-warning" onclick="window.location.href='https://discordapp.com/oauth2/authorize?client_id=<%- id %>&scope=bot&permissions=8'" >Botu Ekle</button>
 <br><br>
 </div>
 
 <div align="left">                         
-  <button class="btn btn-primary">Prefix: <%- prefix %></button><div align="rigth"></div><br><br>
+<button class="btn btn-primary">Prefix: <%- prefix %></button><br><br>
 <button class="btn btn-primary">Dil: <%- dil %></button><br><br>
 <button class="btn btn-primary">Yapımcı: <img src="<%- sahipavatar %>" width="23" height="23"> <%- sahip %> </button><br><br>
 <%- sertifikadurum %>
