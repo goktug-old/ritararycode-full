@@ -2415,3 +2415,4 @@ Yato#8751 (209640342297903104) notsistem kodunu aldı
 Yato#8751 (209640342297903104) ultrasohbettemizleyici kodunu aldı
 Yato#8751 (209640342297903104) sarkisozu kodunu aldı
 Yato#8751 (209640342297903104) etiketprefix kodunu aldı
+Umut Güngör#3509 (545668494252048408) etiketprefix kodunu aldı
