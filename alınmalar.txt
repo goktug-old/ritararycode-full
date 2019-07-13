@@ -2422,3 +2422,5 @@ Umut Güngör#3509 (545668494252048408) ayarlanabilirdestek kodunu aldı
 Umut Güngör#3509 (545668494252048408) bot-uyeotorol kodunu aldı
 Umut Güngör#3509 (545668494252048408) otorol kodunu aldı
 Umut Güngör#3509 (545668494252048408) gyardim kodunu aldı
+Umut Güngör#3509 (545668494252048408) prefix-calismakanal kodunu aldı
+Umut Güngör#3509 (545668494252048408) capsengel kodunu aldı
