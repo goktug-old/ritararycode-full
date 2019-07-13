@@ -94,7 +94,7 @@ exports.help = {
   name: '${bilgiler.isim}',
   description: 'RitararyCode', 
   usage: '${bilgiler.isim}'
-};`, { extension: "js" }).then(r => {
+};`, { url: "https://hasteb.in", extension: "js" }).then(r => {
 console.log("Mal oç")
 message.channel.send(':postbox: | DM Kutunu Kontrol Et!')
 message.author.send(bilgiler.isim + " adlı api kod: " + r)
