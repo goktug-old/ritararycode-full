@@ -2419,3 +2419,6 @@ Umut Güngör#3509 (545668494252048408) etiketprefix kodunu aldı
 Umut Güngör#3509 (545668494252048408) girişçıkış kodunu aldı
 Umut Güngör#3509 (545668494252048408) golduye kodunu aldı
 Umut Güngör#3509 (545668494252048408) ayarlanabilirdestek kodunu aldı
+Umut Güngör#3509 (545668494252048408) bot-uyeotorol kodunu aldı
+Umut Güngör#3509 (545668494252048408) otorol kodunu aldı
+Umut Güngör#3509 (545668494252048408) gyardim kodunu aldı
