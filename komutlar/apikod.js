@@ -35,6 +35,7 @@ var bilgiler,gereklilikisim, embed,resimm,doma;
 
 asd.forEach(a => {
   if(a.isim === args[0]) {
+  console.log(a.isim + args[0])
   var isim = a.isim
   var resim;
   var cikti = a.cikti.toString()
@@ -94,7 +95,7 @@ exports.help = {
   description: 'RitararyCode', 
   usage: '${bilgiler.isim}'
 };`, "js").then(r => {
-
+console.log("Mal oç")
 message.channel.send(':postbox: | DM Kutunu Kontrol Et!')
 message.author.send(bilgiler.isim + " adlı api kod: " + r)
 message.guild.channels.find(t => t.name === "site-logs").send(message.author.tag + " adlı kullanıcı " + bilgiler.isim + ' adlı **simsekapi** kodunu aldı!')
