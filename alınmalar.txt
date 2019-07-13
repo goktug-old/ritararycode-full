@@ -2401,3 +2401,4 @@ Umut Güngör#3509 (545668494252048408) golduye kodunu aldı
 Umut Güngör#3509 (545668494252048408) kayıt kodunu aldı
 Umut Güngör#3509 (545668494252048408) prefix-calismakanal kodunu aldı
 Umut Güngör#3509 (545668494252048408) yedeksistem kodunu aldı
+EserNetwork-Corwin#7358 (537294623635406868) alinti kodunu aldı
