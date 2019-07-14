@@ -19,7 +19,7 @@ exports.run = function(client, message, args) {
       let rolid = '554275625716678657'
     
     if (!bot) return message.reply("Kabul Kişiyi Belirtmelisin. Örnek Kullanım : `rc!bot-kabul <bot-id> veya botu etiketle`");
-  
+  try {
         var embed = new Discord.RichEmbed()
             .setTimestamp()
             .addField("Eylem:", "Başvuru Kabul")
@@ -28,11 +28,14 @@ exports.run = function(client, message, args) {
             .addField('Kabul Edilen Bot',client.users.get(bot))
             .addField('Botun Davet Linki',`https://discordapp.com/oauth2/authorize?client_id=${bot}&scope=bot&permissions=-1`)
             .setColor('GREEN')
-        client.users.get(i).send(":tada: | " + client.users.get(bot).tag + " adlı botunuz onaylandı!")
+        client.users.get(i).send(":tada: | " + client.users.get(bot).tag + " adlı botunuz onaylandı!").catch(e => message.channel.send(e))
         client.channels.get('553542376887681025').send(embed);
         message.reply("Kabul Mesajı Gönderildi.\nhttps://discordapp.com/oauth2/authorize?client_id="+ bot + "&scope=bot&permissions=0");
     
         sunucu.members.get(i).addRole(rolid)
+    } catch(e) {
+      message.channel.send(e)
+    }
     })}
 
 exports.conf = {
