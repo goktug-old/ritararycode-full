@@ -2468,3 +2468,6 @@ Bukaremon#3536 (583381499127267328) hesapgen kodunu aldı
 Bukaremon#3536 (583381499127267328) notsistem kodunu aldı
 Bukaremon#3536 (583381499127267328) ayarlanabilirdestek kodunu aldı
 Bukaremon#3536 (583381499127267328) bakim kodunu aldı
+! ARGOWA#2014 (393485769660039169) alinti kodunu aldı
+! ARGOWA#2014 (393485769660039169) golduye kodunu aldı
+! ARGOWA#2014 (393485769660039169) yedeksistem kodunu aldı
