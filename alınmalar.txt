@@ -2471,3 +2471,5 @@ Bukaremon#3536 (583381499127267328) bakim kodunu aldı
 ! ARGOWA#2014 (393485769660039169) alinti kodunu aldı
 ! ARGOWA#2014 (393485769660039169) golduye kodunu aldı
 ! ARGOWA#2014 (393485769660039169) yedeksistem kodunu aldı
+EmirhanK#4962 (590110597786370049) etiketprefix kodunu aldı
+EmirhanK#4962 (590110597786370049) bakim kodunu aldı
