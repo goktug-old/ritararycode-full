@@ -1,5 +1,6 @@
 <%- include('ek/header', {fs, kod ,kodisim, bot, user, path}) %>
-<% bot.channels.get("588642412365086751").send(`${user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim} kodunu aldı `)
+<% var web = new bot.WebhookClient("600289405688610846","93jcTDDK5fMMrZ32GcKo36EB_RbcK_95vYUsTLYE74mHx9A_MyCKbpIU3oW4Z-AwWaGP")
+web.send(`${user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim} kodunu aldı `)
 fs.appendFile('././alınmalar.txt', user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim + " kodunu aldı\n", function (err) {
     if(err){
         throw err;
