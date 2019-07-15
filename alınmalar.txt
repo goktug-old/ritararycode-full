@@ -2474,3 +2474,5 @@ Bukaremon#3536 (583381499127267328) bakim kodunu aldı
 EmirhanK#4962 (590110597786370049) etiketprefix kodunu aldı
 EmirhanK#4962 (590110597786370049) bakim kodunu aldı
 EmirhanK#4962 (590110597786370049) golduye kodunu aldı
+xWhoNext#7625 (598110588404498443) etiketprefix kodunu aldı
+xWhoNext#7625 (598110588404498443) alinti kodunu aldı
