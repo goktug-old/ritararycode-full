@@ -2547,3 +2547,5 @@ Wallsy#8230 (513345527266410496) notsistem kodunu aldı
 Wallsy#8230 (513345527266410496) bakim kodunu aldı
 Wallsy#8230 (513345527266410496) exec kodunu aldı
 Wallsy#8230 (513345527266410496) golduye kodunu aldı
+Faruk#9261 (551354375407403038) exec kodunu aldı
+Faruk#9261 (551354375407403038) prefix-calismakanal kodunu aldı
