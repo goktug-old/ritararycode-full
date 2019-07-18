@@ -2551,3 +2551,8 @@ Faruk#9261 (551354375407403038) exec kodunu aldı
 Faruk#9261 (551354375407403038) prefix-calismakanal kodunu aldı
 ₸ Just PowerShell#0031 (543531424704364564) sunucuyagiriscikislog kodunu aldı
 Wallsy#8230 (513345527266410496) ban kodunu aldı
+Wallsy#8230 (513345527266410496) etiketprefix kodunu aldı
+Wallsy#8230 (513345527266410496) sor kodunu aldı
+Wallsy#8230 (513345527266410496) notsistem kodunu aldı
+Wallsy#8230 (513345527266410496) dmkayit kodunu aldı
+Wallsy#8230 (513345527266410496) bot-uyeotorol kodunu aldı
