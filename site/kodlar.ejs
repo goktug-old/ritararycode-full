@@ -1,21 +1,13 @@
 <%- include('ek/header', {bot, user, path, kodar}) %>
-<% console.log(user.username + "#" + user.discriminator + " Kodlara giriş yaptı") %>
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto"><br><br><br><br><br>
-            <h2><center>İşte Ritarary Code Kodları!</center></h2>
-            <ul>
+<% console.log(user.username + "#" + user.discriminator + " Kodlara giriş yaptı") %><br><br>
+<div class="container">
+        <div class="row" align="left"><br><br>
+            <h2><center>İşte Ritarary Code Kodları!</center></h2><br><br>
               <% kodar.forEach(a => { %>
               <center>
-              <h5>🔲<a href= "/kodlar/<%- a %>">https://ritararycode.tk/kodlar/<%- a %></h5></a>      
+              <h5>🔲<a href= "/kodlar/<%- a %>">https://ritararycode.tk/kodlar/<%- a %></h5></a><br><br>
               </center>
               <% }) %>
-            </ul>
-            <br>
-          </div>
         </div>
-      </div>
-    </section>
-    
+</div>
 <%- include('./ek/footer') %>
