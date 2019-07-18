@@ -18,7 +18,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
 <meta name="google-site-verification" content="KqGN9Zg0p7lMzd-1cAOXVvydHoqM_ZAz-w4QOHRfhZY" />
-<meta name="keywords" content="ritararycode, ritarary code, code, kod paylaşım, kodlama , development, bot ekleme, bot list, bot listesi, coding, bot, discord, ritararycode discord">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142546167-1"></script>
 <script>
@@ -28,59 +27,68 @@
 
   gtag('config', 'UA-142546167-1');
 </script>
+<meta name="keywords" content="ritararycode, ritarary code, code, kod paylaşım, kodlama , development, bot ekleme, bot list, bot listesi, coding, bot, discord, ritararycode discord">
+<style>
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+
+<div class="sidebar">
+              <a class="active" href="/">Ana Sayfa</a>
+              <a href="/botlar">Sistemdeki Botlar</a>
+      <% if (!user) { %>
+              <a href="/giris">Giriş Yap</a>
+      <% } else { %>
+              <a href="/kodlar">Kodlar</a>
+              <a href="/cikis">Çıkış Yap</a>
+      <% } %>   
+</div>
   
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Ana Sayfa</a>
-            </li>
-            
-            <li class="nav-item active">
-              <a class="nav-link" href="/botlar">Sistemdeki Botlar</a>
-            </li>  
-            <% if (!user) { %>
-            
-            <li class="nav-item active">
-              <a class="nav-link" href="/giris">Giriş Yap</a>
-            </li>
-            
-            <%
-			} else { 
-			var asd = ["495825025207894016"]
-			if(asd.some(a => user.id === a)) {
-			%>
-			
-            <li class="nav-item active">
-              <a class="nav-link" href="/kodpaylas">Kod Paylaş</a>
-            </li>
-			
-			<li class="nav-item active">
-              <a class="nav-link" href="/panel">Panel</a>
-            </li>
-			
-            <li class="nav-item active">
-              <a class="nav-link" href="/kodlar">Kodlar</a>
-            </li>
-            
-            <li class="nav-item active">
-              <a class="nav-link" href="/cikis">Çıkış Yap</a>
-            </li>
-			
-			<% } else { %>
-			
-            <li class="nav-item active">
-              <a class="nav-link" href="/kodlar">Kodlar</a>
-            </li>
-            
-            <li class="nav-item active">
-              <a class="nav-link" href="/cikis">Çıkış Yap</a>
-            </li>
-			
-      <% }} %>    
-	  
-          </ul>
-        </div>
-  </nav>
-<div class="container">
+<div class="content">
