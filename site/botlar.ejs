@@ -15,14 +15,15 @@ const help = {};
 		return this.charAt(0).toUpperCase() + this.slice(1);
 	}
 %>
-<div align="center">
+<div align="center" class="container">
 <br><br><div class="justify-content-md-center"><h2 style="color: GRAY;">Ritarary Code Bot Listesi:</h2></div><br><br><center>
 <%- include ./ek/arama %>
 <br><br>
 </center>
 	<% for (const kategori in help) { %>
 			<% for (const command of help[kategori]) { %>
-  <% db.fetch(`sertifika_${command.user.id}`).then(sert => { %>
+  <% var sert; %>
+  <% db.fetch(`sertifika_${command.user.id}`).then(async sertfika => {  sert = sertfika }) %>
   <% var durum = command.presence.status %>
   <% var durume; 
   if(durum === "online") durume = "https://cdn.discordapp.com/emojis/313956277808005120.png"
@@ -35,12 +36,7 @@ const help = {};
 <div class="w3-card-4 w3-pale-yellow" style="width:30%">
 
     <div class="w3-container w3-center">
-      <h3><img src="https://media.discordapp.net/attachments/553228980669382686/601436942453702656/11707-military-medal.png?width=30&height=30"></h3>
-      <% } else { %>
-<div class="w3-card-4 w3-white" style="width:30%">
-<div class="w3-container w3-center">
-      <% } %>
-      <img src="https://cdn.discordapp.com/avatars/<%= command.user.id %>/<%= command.user.avatar %>.png?size=2048" alt="Avatar" style="width:80%">
+      <h3><img src="https://media.discordapp.net/attachments/553228980669382686/601436942453702656/11707-military-medal.png?width=30&height=30"></h3>      <img src="https://cdn.discordapp.com/avatars/<%= command.user.id %>/<%= command.user.avatar %>.png?size=2048" alt="Avatar" style="width:80%">
 
       <div class="w3-section">
         <button onclick="window.location.href='bot/<%= command.user.id %>'" class="w3-button w3-blue">Bak</button>
@@ -49,6 +45,19 @@ const help = {};
     </div>
 </div>
 </div>
- <% })} %>
+      <% } else { %>
+<div class="w3-card-4 w3-white" style="width:30%">
+<div class="w3-container w3-center"><br>
+      <img src="https://cdn.discordapp.com/avatars/<%= command.user.id %>/<%= command.user.avatar %>.png?size=2048" alt="Avatar" style="width:80%">
+
+      <div class="w3-section">
+        <button onclick="window.location.href='bot/<%= command.user.id %>'" class="w3-button w3-blue">Bak</button>
+        <button onclick="window.location.href='https://discordapp.com/oauth2/authorize?client_id=<%= command.user.id %>&scope=bot&permissions=8 '" class="w3-button w3-orange">Ekle</button>
+      </div>
+    </div>
+</div>
+      <% } %>
+</div>
+ <% } %>
 	<% } %>
 </div>
