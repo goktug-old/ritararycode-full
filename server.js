@@ -173,7 +173,7 @@ renderTemplate(res, req, "anasayfa.ejs", { a });
 })
 
 app.get("/botlar", (req, res) => {
-renderTemplate(res, req, "botlar.ejs");
+renderTemplate(res, req, "botlar.ejs", {db});
 });
 
 app.get('/botlar/ara/:isim', (req,res) => {

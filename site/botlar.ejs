@@ -1,4 +1,4 @@
-<%- include('ek/header', {bot, user, path}) %>
+<%- include('ek/header', {db, bot, user, path}) %>
 
 <%
 
@@ -22,6 +22,7 @@ const help = {};
 </center>
 	<% for (const kategori in help) { %>
 			<% for (const command of help[kategori]) { %>
+  <% db.fetch(`sertifika_${command.user.id}`).then(sert => { %>
   <% var durum = command.presence.status %>
   <% var durume; 
   if(durum === "online") durume = "https://cdn.discordapp.com/emojis/313956277808005120.png"
@@ -30,10 +31,15 @@ const help = {};
   else if(durum === "idle") durume = "https://cdn.discordapp.com/emojis/566624163859660800.png"
   %> 
 <div class="container">
+<% if(sert === "aktif") { %>
 <div class="w3-card-4 w3-pale-yellow" style="width:30%">
 
     <div class="w3-container w3-center">
       <h3><img src="https://media.discordapp.net/attachments/553228980669382686/601436942453702656/11707-military-medal.png?width=30&height=30"></h3>
+      <% } else { %>
+<div class="w3-card-4 w3-white" style="width:30%">
+<div class="w3-container w3-center">
+      <% } %>
       <img src="https://cdn.discordapp.com/avatars/<%= command.user.id %>/<%= command.user.avatar %>.png?size=2048" alt="Avatar" style="width:80%">
 
       <div class="w3-section">
@@ -42,7 +48,7 @@ const help = {};
       </div>
     </div>
 </div>
-  </div>
- <% } %>
+</div>
+ <% })} %>
 	<% } %>
 </div>
