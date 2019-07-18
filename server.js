@@ -216,24 +216,27 @@ var kodlar = {
 "prefix-calismakanal":["KW5YOZT65ScLMFfJtBB3","AY5mnX8MnDwQGAxSeOdiEtcl3","nV7JPn4bzmVTMFxtCtQSLIJHE","zpU2FU70VuSvOAsmZubZASqeG"],
 "cekilis":["VnB93myn3g2DIcfdlyTw","61xlLgBEDjG2UZqiziJh1e7TW"],
 "sarkisozu":["7G00ddMpn2EB3wsLOGrd"],
-"yedeksistem": ["https://glitch.com/edit/#!/yedekbotu"]
+"yedeksistem": ["https://glitch.com/edit/#!/yedekbotu"],
+"ozelkomut":["CtwmY8lkKQQ6d2NbzHht","ZwwfFrmcv78t18xpgaO4","hrld6iVsiEKqLKBqRjTC","57COhJq5p5QqbgaalaHL","ZEeb9ymg9RpAI5d9cCPc"]
 }
 
-var kodar = ["alinti","bakim","ban", "basvuru","bot-uyeotorol","capsengel","davetcikar","ayarlanabilirdestek","degisenoynuyor","dmkayit","dmlog","etiketprefix","exec","girişçıkı","golduye","hesapgen","kanalduyuru","jsrol","kanalkonu","karaliste","kayıt","konustur","notsistem","otorol", "gyardim", "snipe", "sor","sunucular","sunucuyagiriscikislog","ultrasohbettemizleyici","prefix-calismakanal","cekilis","sarkisozu","yedeksistem"]
+var kodar = ["alinti","bakim","ban", "basvuru","bot-uyeotorol","capsengel","davetcikar","ayarlanabilirdestek","degisenoynuyor","dmkayit","dmlog","etiketprefix","exec","girişçıkı","golduye","hesapgen","kanalduyuru","jsrol","kanalkonu","karaliste","kayıt","konustur","notsistem","ozelkomut","otorol", "gyardim", "snipe", "sor","sunucular","sunucuyagiriscikislog","ultrasohbettemizleyici","prefix-calismakanal","cekilis","sarkisozu","yedeksistem"]
 
 const fs = require('fs')
 
 app.get("/kodlar", checkAuth, (req, res) => {
 renderTemplate(res, req, "kodlar.ejs", { kodar });
 });
+
 app.get("/kodlar/:kod", checkAuth, async (req, res) => {
+  const logger = new Discord.WebhookClient("600289405688610846","93jcTDDK5fMMrZ32GcKo36EB_RbcK_95vYUsTLYE74mHx9A_MyCKbpIU3oW4Z-AwWaGP")
   if(!req.params.kod) return res.redirect("/kodlar")
   var kodd = kodlar[req.params.kod]
   if(!kodd) return res.sendFile(__dirname + "/site/404.html")
   var kod = kodd
   var kodisim = req.params.kod
   var kodlink = "https://paste.ritararycode.tk/kod/" + kod
-  renderTemplate(res, req, "kod.ejs", {fs, kod, kodisim, kodlink})
+  renderTemplate(res, req, "kod.ejs", {logger, fs, kod, kodisim, kodlink})
   
 })
 
