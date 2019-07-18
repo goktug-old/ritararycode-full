@@ -28,13 +28,21 @@ const help = {};
   else if(durum === "offline") durume = "https://cdn.discordapp.com/emojis/313956277237710868.png"
   else if(durum === "dnd") durume = "https://cdn.discordapp.com/emojis/313956276893646850.png"
   else if(durum === "idle") durume = "https://cdn.discordapp.com/emojis/566624163859660800.png"
-  %>
-<div class="card text-white bg-light mb-3" style="display: inline-block; width: 17rem;">
-          <div class="card-header"><a href="/bot/<%= command.user.id %>"><img src="<%= command.user.displayAvatarURL %>" style="width: 100%;"></a></div>
-    
-       <div class="card-body">
-            <h5 class="card-title">
-              <a href="/bot/<%= command.user.id %>"><%= command.user.username %> <img src="<%= durume %>" width="35" height="35"></a>
+  %> 
+<div class="w3-card-4 w3-pale-yellow" style="width:50%">
+
+    <div class="w3-container w3-center">
+      <h3><img src="https://media.discordapp.net/attachments/553228980669382686/601436942453702656/11707-military-medal.png?width=30&height=30"></h3>
+      <a href="/bot/<%= command.user.id %>"><img src="" style="width:80%">
+      <h5>Gökbörü</h5></a>
+
+      <div class="w3-section">
+        <button class="w3-button w3-blue">Bak</button>
+        <button class="w3-button w3-orange">Ekle</button>
+      </div>
+    </div>
+</div>
+ <img src="<%= durume %>" width="35" height="35"></a>
                   </h5>
                   <button type="button" onclick="window.location.href='bot/<%= command.user.id %>'" class="btn btn-primary" style="display: inline-block; width: auto;">Bak</button>
                   <button type="button" onclick="window.location.href='https://discordapp.com/oauth2/authorize?client_id=<%= command.user.id %>&scope=bot&permissions=8 '" class="btn btn-primary" style="display: inline-block; width: auto;">Ekle</button>
