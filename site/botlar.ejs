@@ -35,9 +35,7 @@ const help = {};
           <div class="card-header"><a href="/bot/<%= command.user.id %>"><img src="<%= command.user.avatarURL %>" style="width: 100%;"></a></div>
     
        <div class="card-body">
-            <h5 class="card-title" style="color:BLACK; width:35 height:35">
-              <a href="/bot/<%= command.user.id %>"><%= command.user.username %></a><img src="<%- durume %>" width="35" height="35">
-                  </h5>
+            <%= cardtitle %>
                   <button type="button" onclick="window.location.href='bot/<%= command.user.id %>'" class="btn btn-primary" style="display: inline-block; width: auto;">Bak</button>
                   <button type="button" onclick="window.location.href='https://discordapp.com/oauth2/authorize?client_id=<%= command.user.id %>&scope=bot&permissions=8 '" class="btn btn-primary" style="display: inline-block; width: auto;">Ekle</button>
                 </div>

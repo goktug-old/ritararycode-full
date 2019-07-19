@@ -1,5 +1,8 @@
-<%- include("./ek/header", {bot, temp,user,path}) %>
-      <b>Gerçek isminiz:</b><br>
+<%- include("./ek/header", {bot, temp,user,path}) %><br><br>
+<div class="justify-content-md-center"><h2 style="color: GRAY;">Ritarary Code Başvuru:</h2></div><br><br>
+<form>
+  
+<b>Gerçek isminiz:</b><br>
       <input type="text" class="form-control" required="true" placeholder="Mert" name="isim"><br><br>
   
       <b>Js, Html veya Commando bilginiz:</b><br>
@@ -8,6 +11,6 @@
       <b>Discord Tag</b><br>
       <input readonly class="form-control" required="true" placeholder="<%= user.username +"#" + user.discriminator %>" name="isim"><br><br>
       
-  <input type="submit" name="gonder" value="Gönder">
+  <input type="submit" class="btn btn-warning" name="gonder" value="Gönder">
 
 </form>

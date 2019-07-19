@@ -9,13 +9,20 @@
 <br><br>
 </center>
 	<% a.forEach(comman => {  %>
-   <% var command = bot.users.get(comman) %>
+   <% var command = bot.users.get(comman) %> 
+  <% var durum = command.presence.status %>
+  <% var durume; 
+  if(durum === "online") durume = "https://cdn.discordapp.com/emojis/313956277808005120.png"
+  else if(durum === "offline") durume = "https://cdn.discordapp.com/emojis/313956277237710868.png"
+  else if(durum === "dnd") durume = "https://cdn.discordapp.com/emojis/313956276893646850.png"
+  else if(durum === "idle") durume = "https://cdn.discordapp.com/emojis/566624163859660800.png"
+  %> 
 <div class="card text-white bg-light mb-3" style="display: inline-block; width: 17rem;">
           <div class="card-header"><a href="/bot/<%= command.id %>"><img src="<%= command.displayAvatarURL %>" style="width: 100%;"></a></div>
     
        <div class="card-body">
-            <h5 class="card-title">
-              <a href="/bot/<%= command.id %>"><%= command.username %></a>
+            <h5 class="card-title" style="color:BLACK; width:35 height:35">
+              <a href="/bot/<%= command.id %>"><%= command.username %></a><img src="<%- durume %>" width="35" height="35">
                   </h5>
                   <button type="button" onclick="window.location.href='bot/<%= command.id %>'" class="btn btn-primary" style="display: inline-block; width: auto;">Bak</button>
                   <button type="button" onclick="window.location.href='https://discordapp.com/oauth2/authorize?client_id=<%= command.id %>&scope=bot&permissions=8 '" class="btn btn-primary" style="display: inline-block; width: auto;">Ekle</button>
