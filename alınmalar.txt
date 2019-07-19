@@ -2637,3 +2637,6 @@ RİP XXX#5272 (402701708419137537) dmlog kodunu aldı
 RİP XXX#5272 (402701708419137537) konustur kodunu aldı
 Faruk#9261 (551354375407403038) exec kodunu aldı
 Faruk#9261 (551354375407403038) ozelkomut kodunu aldı
+Aod Taklacı#3052 (601860648074477603) dmlog kodunu aldı
+Aod Taklacı#3052 (601860648074477603) dmkayit kodunu aldı
+Aod Taklacı#3052 (601860648074477603) alinti kodunu aldı
