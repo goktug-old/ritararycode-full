@@ -2635,3 +2635,5 @@ osy#1402 (597495121298325507) ayarlanabilirdestek kodunu aldı
 osy#1402 (597495121298325507) sunucular kodunu aldı
 RİP XXX#5272 (402701708419137537) dmlog kodunu aldı
 RİP XXX#5272 (402701708419137537) konustur kodunu aldı
+Faruk#9261 (551354375407403038) exec kodunu aldı
+Faruk#9261 (551354375407403038) ozelkomut kodunu aldı
