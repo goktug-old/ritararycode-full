@@ -321,19 +321,34 @@ db.fetch(`açıklama_${id}`).then(async acikla => {
 db.fetch(`prefix_${id}`).then(async prefix => {
 db.fetch(`dil_${id}`).then(async dil => {
 db.fetch(`sertifika_${id}`).then(async sertifika => {
+db.fetch(`botlar_${id}.sunucusayi`).then(async swsay => {
+db.fetch(`botlar_${id}.shardid`).then(async shardd => {
+db.fetch(`botlar_${id}.shardcount`).then(async shardt => {
+var shard;
 if(!prefix) prefix = "Ayarlanmamış"
 if(!acikla) acikla = "Ayarlanmamış"
+if(!swsay) swsay = "Modülümüzü kullanmıyor"
+if(!shardd) shardd = "Modülümüzü kullanmıyor"
+if(!shardt) shardt = "Modülümüzü kullanmıyor"
+if(shardd === undefined) shardd = "Shard Yok"
 if(!dil) dil = "Ayarlanmamış"
 var sertifikadurum;
 if(sertifika === "aktif") sertifikadurum = `<button class="btn btn-success">Sertifikası bulunuyor</button>`
 else sertifikadurum = `<button class="btn btn-warning">Sertifikası bulunmuyor</button>`
+
+var shard;
+if(shard === "Shard Yok") shard = `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
+else if(shard === "Modülümüzü kullanmıyor") shard = `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
+else shard = `<button class="btn btn-info icbol">Shard ${shardd}/${shardt}</button>`
+
 const avatar = client.users.get(id).displayAvatarURL
 const botaı = client.users.get(id).username
 const sahipavatar = client.users.get(sahipp).displayAvatarURL
 
-   renderTemplate(res, req, "bot.ejs", {id , durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
+   renderTemplate(res, req, "bot.ejs", {swsay, shard, id , durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
   
-})})})})})})
+})})})})})})})})})
+
   var asd = ["495825025207894016"]
   
 
