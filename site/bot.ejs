@@ -1,4 +1,16 @@
-<%- include('ek/header', {bot, temp, user, path, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum}) %><br><br>
+<%- include('ek/header', {bot, temp, user, path, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum}) %><br><br>     
+<link rel="stylesheet" href="https://simsek.cf/api2/css/simple-sidebar.css">
+<link rel="stylesheet" href="https://simsek.cf/api2/vendor/bootstrap/css/bootstrap.min.css">
+<style type="text/css">
+#dis_bolme { 
+}
+
+.icbol{ 
+float:none;
+margin-bottom:  8px;
+margin-top: -360px;
+margin-left:1091px;
+</style>
 <div align="center">
 <img src="<%- avatar %>" width="275" height="275"><br><br>
 <p width="35" height="35" style="color: BLACK"><img src="<%- durum %>" width="35" height="35"><%- botaı %><br></p>
@@ -6,12 +18,19 @@
 <br><br>
 </div>
 
-<left class="btn-group-vertical">                         
+<div align="left" class="btn-group-vertical">                         
 <button class="btn btn-info">Prefix: <%- prefix %></button><br>
 <button class="btn btn-info">Dil: <%- dil %></button><br>
 <button class="btn btn-primary">Yapımcı: <img src="<%- sahipavatar %>" width="23" height="23"> <%- sahip %> </button><br>
 <%- sertifikadurum %>
-</left><br><br><br><br>
+</div>
+
+<div>
+<button class="btn btn-info icbol">asdas</button><br>
+<button class="btn btn-info icbol">Dil: </button><br><br>
+</div>
+
+<br><br><br><br>
 
 <div align="center">    
 <div class="jumbotron" style="color: rgb(149, 149, 149);">
