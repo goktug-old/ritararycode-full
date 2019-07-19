@@ -81,25 +81,23 @@ div.content {
 }
 </style>
   
-  <% var classs;
-  if(temp === template)
+  <% var class1,class2,class3,class4,class5 ;
+  if(temp === "anasayfa") class1 = "active"
+  else if(temp === "botlar") class2 = "active"
+  else if(temp === "basvur") class3 = "active"
+  else if(temp === "kodlar") class4 = "active"
+  %>
 
 <div class="sidebar">
-              <a id="anasayfa" class="active" href="/">Ana Sayfa</a>
-              <a id="botlar" href="/botlar">Sistemdeki Botlar</a>
+              <a id="anasayfa" class="<%= class1 %>" href="/">Ana Sayfa</a>
+              <a id="botlar" class="<%= class2 %>" href="/botlar">Sistemdeki Botlar</a>
       <% if (!user) { %>
               <a id="giris" href="/giris">Giriş Yap</a>
       <% } else { %>
-              <a id="kodlar" href="/kodlar">Kodlar</a>
-              <a id="basvuru" href="/b">Başvuru</a>
+              <a id="kodlar" class="<%= class4 %>" href="/kodlar">Kodlar</a>
+              <a id="basvuru" class="<%= class3 %>" href="/b">Başvuru</a>
               <a id="cikis" href="/cikis">Çıkış Yap</a>
       <% } %>   
 </div>
-  
-  <script>
-  $(document).ready(function() {
-    $("#basvuru").addClass("disabled");
-  });
-</script>
   
 <div class="content">

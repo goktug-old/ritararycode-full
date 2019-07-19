@@ -1,18 +1,13 @@
 <%- include("./ek/header", {bot, temp,user,path}) %>
-
-<br><br><br><br>
-
-<form name="form" method="post">
-  
       <b>Gerçek isminiz:</b><br>
-      <input type="text" required="true" name="isim"><br><br>
+      <input type="text" class="form-control" required="true" placeholder="Mert" name="isim"><br><br>
   
       <b>Js, Html veya Commando bilginiz:</b><br>
-      <input name="bilgi" required="true" type="text"><br><br>
+      <input name="bilgi" class="form-control" required="true" placeholder="Az/Orta/Çok" type="text"><br><br>
   
       <b>Discord Tag</b><br>
-      <%= user.username +"#" + user.discriminator %><br><br>
-
-  <input type="submit" name="gonder" value="Gönder"><br><br>
+      <input readonly class="form-control" required="true" placeholder="<%= user.username +"#" + user.discriminator %>" name="isim"><br><br>
+      
+  <input type="submit" name="gonder" value="Gönder">
 
 </form>
