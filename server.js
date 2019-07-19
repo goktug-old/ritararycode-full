@@ -107,10 +107,13 @@ res.redirect("/giris");
 }
 
 const renderTemplate = (res, req, template, data = {}) => {
+  var temp = template.split(".")[0]
 const baseData = {
 bot: client,
 path: req.path,
 db: db,
+temp: temp,
+  
 user: req.isAuthenticated() ? req.user : null
 };try {
 res.render(path.resolve(`${templateDir}${path.sep}${template}`), Object.assign(baseData, data));
@@ -333,15 +336,6 @@ const sahipavatar = client.users.get(sahipp).displayAvatarURL
 })})})})})})
   var asd = ["495825025207894016"]
   
-app.get("/kodpaylas", checkAuth, (req,res) => {
-  if(asd.some(a => req.user.id === a)) return res.redirect("/")
-  renderTemplate(res, req, "paylas.ejs")
-})
-
-app.get("/panel", checkAuth, (req,res) => {
-  if(asd.some(a => req.user.id === a)) return res.redirect("/")
-  renderTemplate( res, req, "panel.ejs", { db } )
-})
 
 const requesttt = require('node-superfetch');
 

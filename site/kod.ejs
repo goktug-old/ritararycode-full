@@ -1,4 +1,4 @@
-<%- include('ek/header', {logger ,fs, kod ,kodisim, bot, user, path})  %>
+<%- include('ek/header', {logger, temp ,fs, kod ,kodisim, bot, user, path})  %>
 <%
 logger.send(user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim + " kodunu aldı")
 fs.appendFile('././alınmalar.txt', user.username + "#" + user.discriminator + " (" + user.id + ") "+ kodisim + " kodunu aldı\n", function (err) {
