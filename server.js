@@ -327,25 +327,28 @@ db.fetch(`botlar_${id}.shardcount`).then(async shardt => {
 var shard;
 if(!prefix) prefix = "Ayarlanmamış"
 if(!acikla) acikla = "Ayarlanmamış"
-if(!swsay) swsay = "Modülümüzü kullanmıyor"
 if(!shardd) shardd = "Modülümüzü kullanmıyor"
 if(!shardt) shardt = "Modülümüzü kullanmıyor"
-if(shardd === undefined) shardd = "Shard Yok"
+if(shardd === undefined) shardd = null
+if(shardt === undefined) shardd = null
 if(!dil) dil = "Ayarlanmamış"
 var sertifikadurum;
 if(sertifika === "aktif") sertifikadurum = `<button class="btn btn-success">Sertifikası bulunuyor</button>`
 else sertifikadurum = `<button class="btn btn-warning">Sertifikası bulunmuyor</button>`
 
 var shard;
-if(shard === "Shard Yok") shard = `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
-else if(shard === "Modülümüzü kullanmıyor") shard = `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
+if(!shardd && shardd === undefined) shard = `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
+else if(shardd === "Modülümüzü kullanmıyor") shard = `<button class="btn btn-warning icbol">Modül Bulunamadı!</button>`
 else shard = `<button class="btn btn-info icbol">Shard ${shardd}/${shardt}</button>`
+
+if(!swsay) swsay = `<button class="btn btn-warning icbol">Modül Bulunamadı!</button><br>`
+else swsay = `<button class="btn btn-info icbol">Sunucu Sayısı: ${swsay}</button><br>`
 
 const avatar = client.users.get(id).displayAvatarURL
 const botaı = client.users.get(id).username
 const sahipavatar = client.users.get(sahipp).displayAvatarURL
 
-   renderTemplate(res, req, "bot.ejs", {swsay, shard, id , durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
+   renderTemplate(res, req, "bot.ejs", {swsay, shard, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
   
 })})})})})})})})})
 

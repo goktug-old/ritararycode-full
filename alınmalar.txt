@@ -2631,3 +2631,5 @@ Küçük bir yusufçuk ふ#1718 (441254396207169536) capsengel kodunu aldı
 osy#1402 (597495121298325507) ayarlanabilirdestek kodunu aldı
 RUWQEIRSA#9948 (440976854514663444) etiketprefix kodunu aldı
 RUWQEIRSA#9948 (440976854514663444) ozelkomut kodunu aldı
+osy#1402 (597495121298325507) ayarlanabilirdestek kodunu aldı
+osy#1402 (597495121298325507) sunucular kodunu aldı
