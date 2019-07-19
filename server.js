@@ -329,15 +329,15 @@ if(!prefix) prefix = "Ayarlanmamış"
 if(!acikla) acikla = "Ayarlanmamış"
 if(!shardd) shardd = "Modülümüzü kullanmıyor"
 if(!shardt) shardt = "Modülümüzü kullanmıyor"
-if(shardd === undefined) shardd = null
-if(shardt === undefined) shardd = null
+if(shardd === "undefined") shardd = null
+if(shardt === "undefined") shardd = null
 if(!dil) dil = "Ayarlanmamış"
 var sertifikadurum;
 if(sertifika === "aktif") sertifikadurum = `<button class="btn btn-success">Sertifikası bulunuyor</button>`
 else sertifikadurum = `<button class="btn btn-warning">Sertifikası bulunmuyor</button>`
 
 var shard;
-if(!shardd && shardd === undefined) shard = `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
+if(!shardd) shard = `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
 else if(shardd === "Modülümüzü kullanmıyor") shard = `<button class="btn btn-warning icbol">Modül Bulunamadı!</button>`
 else shard = `<button class="btn btn-info icbol">Shard ${shardd}/${shardt}</button>`
 
@@ -448,7 +448,7 @@ if(!botid) return res.json({ durum: "Token girilmemiş"})
 db.set(`botlar_${botid}.sunucusayi`,sunucusayisi)
 db.set(`botlar_${botid}.shardid`,shardid)
 db.set(`botlar_${botid}.shardcount`,shardcount)
-
+res.json({ durum: "Başarılı!" })
 })})
 
 app.get('*', function(req, res){
