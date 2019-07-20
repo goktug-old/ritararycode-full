@@ -142,6 +142,12 @@ client.on('message', message => {
   }
 })
   
+client.on('guildMemberAdd', async member => { 
+if(member.user.bot) {
+  let rol = member.guild.roles.get("553222941488185345")
+  member.addRole(rol, "Bot otorol")
+}})
+  
 /*
   client.on("messageReactionAdd", (reaction,user) => {
     if(reaction.message.id !== "570234460142829608") return console.log("Testtir bu")
