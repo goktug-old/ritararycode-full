@@ -2695,3 +2695,5 @@ Kaan/17#1858 (525367537286774785) bot-uyeotorol kodunu aldı
 Kaan/17#1858 (525367537286774785) bot-uyeotorol kodunu aldı
 RUWQEIRSA#9948 (440976854514663444) bot-uyeotorol kodunu aldı
 RUWQEIRSA#9948 (440976854514663444) etiketprefix kodunu aldı
+Dogan#1988 (444009349166137344) bot-uyeotorol kodunu aldı
+Dogan#1988 (444009349166137344) prefix-calismakanal kodunu aldı
