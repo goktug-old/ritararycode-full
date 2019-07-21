@@ -149,11 +149,9 @@ if(member.user.bot) {
 }})
   
 
-  client.on("messageReactionAdd", reaction => {
-    if(reaction.message.channel.id !== "553986904756977685") return false;
-    else {
-    reaction.message.channel.send(`The emoji used is ${reaction.emoji}`);
-    }
+  client.on("messageReactionAdd", async(reaction, user)	=> {
+     if (reaction.message.partial) await reaction.message.fetch();
+  console.log(`${reaction.message.author}'s message "${reaction.message.content}" gained a reaction!`);
   })
   
 }
