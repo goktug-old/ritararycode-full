@@ -2729,3 +2729,4 @@ ensar#6400 (324286383277735937) etiketprefix kodunu aldı
 ensar#6400 (324286383277735937) yedeksistem kodunu aldı
 ensar#6400 (324286383277735937) notsistem kodunu aldı
 ensar#6400 (324286383277735937) notsistem kodunu aldı
+ensar#6400 (324286383277735937) sunucular kodunu aldı
