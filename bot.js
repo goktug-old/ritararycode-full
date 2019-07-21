@@ -148,14 +148,8 @@ if(member.user.bot) {
   member.addRole(rol, "Bot otorol")
 }})
   
-
-  client.on("messageReactionAdd", async(reaction, user)	=> {
-     if (reaction.message.partial) await reaction.message.fetch();
-  console.log(`${reaction.message.author}'s message "${reaction.message.content}" gained a reaction!`);
-  })
-  
 }
 
-setInterval(a=> {
+setInterval(() => {
 require("http").get("http://abdurrrrrrrzzaklandinizcasina.glitch.me")
 }, 180000)
