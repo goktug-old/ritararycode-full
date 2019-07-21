@@ -148,14 +148,14 @@ if(member.user.bot) {
   member.addRole(rol, "Bot otorol")
 }})
   
-/*
-  client.on("messageReactionAdd", (reaction,user) => {
-    if(reaction.message.id !== "570234460142829608") return console.log("Testtir bu")
+
+  client.on("messageReactionAdd", reaction => {
+    if(reaction.message.channel.id !== "553986904756977685") return false;
     else {
-    client.guilds.get().member(user).addRole("580091788891521027")
-    client.guilds.get().channels.get("553827797408415744").send(user.tag + " giriş yapmak icin :shield: emojisini ekledi")
+    reaction.message.channel.send(`The emoji used is ${reaction.emoji}`);
     }
-  */
+  })
+  
 }
 
 setInterval(a=> {
