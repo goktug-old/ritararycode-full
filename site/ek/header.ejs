@@ -86,6 +86,7 @@ div.content {
   else if(temp === "botlar") class2 = "active"
   else if(temp === "basvur") class3 = "active"
   else if(temp === "kodlar") class4 = "active"
+  else if(temp === "b") class5 = "active"
   %>
 
 <div class="sidebar">
@@ -95,6 +96,7 @@ div.content {
               <a id="giris" href="/giris">Giriş Yap</a>
       <% } else { %>
               <a id="kodlar" class="<%= class4 %>" href="/kodlar">Kodlar</a>
+              <a id="botekle" class="<%= class5 %>" href="/b">Bot Ekle</a>
               <a id="basvuru" class="<%= class3 %>" href="/b">Başvuru</a>
               <a id="cikis" href="/cikis">Çıkış Yap</a>
       <% } %>   

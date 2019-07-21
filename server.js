@@ -107,13 +107,12 @@ res.redirect("/giris");
 }
 
 const renderTemplate = (res, req, template, data = {}) => {
-  var temp = template.split(".")[0]
+var temp = template.split(".")[0]
 const baseData = {
 bot: client,
 path: req.path,
 db: db,
 temp: temp,
-  
 user: req.isAuthenticated() ? req.user : null
 };try {
 res.render(path.resolve(`${templateDir}${path.sep}${template}`), Object.assign(baseData, data));
