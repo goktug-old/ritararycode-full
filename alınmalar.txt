@@ -2746,3 +2746,8 @@ AdemCan#1413 (459054720938672139) dmkayit kodunu aldı
 AdemCan#1413 (459054720938672139) konustur kodunu aldı
 AdemCan#1413 (459054720938672139) notsistem kodunu aldı
 AdemCan#1413 (459054720938672139) kayıt kodunu aldı
+AdemCan#1413 (459054720938672139) jsrol kodunu aldı
+AdemCan#1413 (459054720938672139) otorol kodunu aldı
+AdemCan#1413 (459054720938672139) bot-uyeotorol kodunu aldı
+AdemCan#1413 (459054720938672139) ban kodunu aldı
+AdemCan#1413 (459054720938672139) dmkayit kodunu aldı
