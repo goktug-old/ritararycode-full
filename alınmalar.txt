@@ -2764,3 +2764,6 @@ Furkan#0055 (320854493128425472) alinti kodunu aldı
 Furkan#0055 (320854493128425472) alinti kodunu aldı
 Furkan#0055 (320854493128425472) bakim kodunu aldı
 Furkan#0055 (320854493128425472) bot-uyeotorol kodunu aldı
+Furkan#0055 (320854493128425472) etiketprefix kodunu aldı
+Furkan#0055 (320854493128425472) kanalduyuru kodunu aldı
+Furkan#0055 (320854493128425472) snipe kodunu aldı
