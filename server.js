@@ -219,10 +219,11 @@ var kodlar = {
 "cekilis":["VnB93myn3g2DIcfdlyTw","61xlLgBEDjG2UZqiziJh1e7TW"],
 "sarkisozu":["7G00ddMpn2EB3wsLOGrd"],
 "yedeksistem": ["https://glitch.com/edit/#!/yedekbotu"],
-"ozelkomut":["CtwmY8lkKQQ6d2NbzHht","ZwwfFrmcv78t18xpgaO4","hrld6iVsiEKqLKBqRjTC","57COhJq5p5QqbgaalaHL","ZEeb9ymg9RpAI5d9cCPc"]
+"ozelkomut":["CtwmY8lkKQQ6d2NbzHht","ZwwfFrmcv78t18xpgaO4","hrld6iVsiEKqLKBqRjTC","57COhJq5p5QqbgaalaHL","ZEeb9ymg9RpAI5d9cCPc"],
+"askolcer": ["w0gs9iA5f5ll1PnmyhYE"]
 }
 
-var kodar = ["alinti","bakim","ban", "basvuru","bot-uyeotorol","capsengel","davetcikar","ayarlanabilirdestek","degisenoynuyor","dmkayit","dmlog","etiketprefix","exec","girişçıkı","golduye","hesapgen","kanalduyuru","jsrol","kanalkonu","karaliste","kayıt","konustur","notsistem","ozelkomut","otorol", "gyardim", "snipe", "sor","sunucular","sunucuyagiriscikislog","ultrasohbettemizleyici","prefix-calismakanal","cekilis","sarkisozu","yedeksistem"]
+var kodar = ["alinti","askolcer","bakim","ban", "basvuru","bot-uyeotorol","capsengel","davetcikar","ayarlanabilirdestek","degisenoynuyor","dmkayit","dmlog","etiketprefix","exec","girişçıkı","golduye","hesapgen","kanalduyuru","jsrol","kanalkonu","karaliste","kayıt","konustur","notsistem","ozelkomut","otorol", "gyardim", "snipe", "sor","sunucular","sunucuyagiriscikislog","ultrasohbettemizleyici","prefix-calismakanal","cekilis","sarkisozu","yedeksistem"]
 
 const fs = require('fs')
 
