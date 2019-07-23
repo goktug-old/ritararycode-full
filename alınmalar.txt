@@ -2832,3 +2832,8 @@ Bobzillaa#6844 (274551537139712001) prefix-calismakanal kodunu aldı
 ensar#6400 (324286383277735937) sor kodunu aldı
 ensar#6400 (324286383277735937) yedeksistem kodunu aldı
 By SkeErOsVatanTr#7440 (576102767832334356) ozelkomut kodunu aldı
+! LAST#2147 (584830726910902286) etiketprefix kodunu aldı
+! LAST#2147 (584830726910902286) girişçıkış kodunu aldı
+! LAST#2147 (584830726910902286) kanalkonu kodunu aldı
+Chucko †#6261 (396663805456809988) bot-uyeotorol kodunu aldı
+Chucko †#6261 (396663805456809988) prefix-calismakanal kodunu aldı
