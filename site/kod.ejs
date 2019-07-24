@@ -12,9 +12,12 @@ fs.appendFile('././alınmalar.txt', user.username + "#" + user.discriminator + "
         <div class="row">
           <div class="col-lg-8 mx-auto"><br>
             <ul> 
-              <% kod.forEach(aa => { %>
-              <p><a href="<%- "https://paste.ritararycode.tk/kod/" + aa %>"><%- "https://paste.ritararycode.tk/kod/" + aa %></a></p>
-              <% }) %>
+              <% kod.forEach(aa => {
+                if(aa.startsWith("https://")) { %>
+              <p><a href="<%- aa %>"><%- aa %></a></p>
+              <% } else { %> 
+              <p><a href="<%- "https://paste.ritararycode.tk/kod/" + aa %>"><%- "https://paste.ritararycode.tk/kod/" + aa %></a></p>              
+              <% }}) %>
             </ul>
             <br>
           </div>
