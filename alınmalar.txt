@@ -2918,3 +2918,7 @@ FazilPatronn#0899 (364769923123380225) ayarlanabilirdestek kodunu aldı
 FazilPatronn#0899 (364769923123380225) dilsistem kodunu aldı
 ensar#6400 (324286383277735937) bakim kodunu aldı
 Schyro#6995 (325260517256069121) dilsistem kodunu aldı
+ensar#6400 (324286383277735937) ban kodunu aldı
+goktug#5027 (554038221374226453) yedeksistem kodunu aldı
+goktug#5027 (554038221374226453) dilsistem kodunu aldı
+ensar#6400 (324286383277735937) ban kodunu aldı
