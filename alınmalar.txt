@@ -2922,3 +2922,5 @@ ensar#6400 (324286383277735937) ban kodunu aldı
 goktug#5027 (554038221374226453) yedeksistem kodunu aldı
 goktug#5027 (554038221374226453) dilsistem kodunu aldı
 ensar#6400 (324286383277735937) ban kodunu aldı
+ensar#6400 (324286383277735937) cekilis kodunu aldı
+goktug#5027 (554038221374226453) ban kodunu aldı
