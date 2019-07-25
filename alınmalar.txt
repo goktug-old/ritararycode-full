@@ -2941,3 +2941,5 @@ ensar#6400 (324286383277735937) basvuru kodunu aldı
 Death Breath#3965 (490588736707624961) dilsistem kodunu aldı
 f4atliy5x(let) </>#3683 (451988054065020958) sunucuyagiriscikislog kodunu aldı
 f4atliy5x(let) </>#3683 (451988054065020958) gyardim kodunu aldı
+f4atliy5x(let) </>#3683 (451988054065020958) otorol kodunu aldı
+f4atliy5x(let) </>#3683 (451988054065020958) dmlog kodunu aldı
