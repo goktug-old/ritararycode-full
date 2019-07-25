@@ -309,7 +309,7 @@ const emojiler = {
 
 app.get("/bot/:id", async(req,res) => {
 var id = req.params.id
-if(!client.users.get(id)) return res.status(404)
+if(!client.users.get(id)) return res.redirect("/404")
 var durume = client.users.get(id).presence.status
 var durum; 
 if(durume === "online") durum = emojiler.online
@@ -318,7 +318,7 @@ else if(durume === "dnd") durum = emojiler.dnd
 else if(durume === "idle") durum = emojiler.idle
 db.fetch(`sahip_${id}`).then(async sahipp => {
 const sahippp = client.users.get(sahipp)
-if(!sahippp) return res.status(404)
+if(!sahippp) return res.redirect("/404")
 const sahip = sahippp.tag
 db.fetch(`açıklama_${id}`).then(async acikla => {
 db.fetch(`prefix_${id}`).then(async prefix => {
