@@ -85,8 +85,8 @@ function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
 if(!client.guilds.get("530744872328626197").member(req.user.id)) {// return res.send('<a href="https://discord.gg/kmccxMG">Sunucuya gel</a>')
-
 client.guilds.get("530744872328626197").addMember(req.user.id, { accessToken: req.user.accessToken })
+if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send('Otomatik giriş sağlamadı. Sunucuya manuel olarak giriş yapınız. <a href="https://discord.gg/kmccxMG">Tıkla</a>')
 }
 return next();
 }
