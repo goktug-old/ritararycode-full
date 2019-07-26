@@ -85,21 +85,7 @@ function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
 if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send("Sunucuya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
- /*request(`http://discordapp.com/api/guilds/530744872328626197/members/${req.user.id}`,
-            {
-              method: 'PATCH',
-              json: {
-                
-              },
-              headers: {
-                "Authorization": `Bot ${client.token}`,
-                "Content-Type": "application/json",
-              },
-            }, (error, response) => {
-            setTimeout(() => {
-              if(error) console.log(error)
-               console.log(response)
-            }, 500)})*/
+
 return next();
 }
 req.session.backURL = req.url;
