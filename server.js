@@ -84,9 +84,9 @@ const fetchh = require("node-fetch")
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
-client.guilds.get("530744872328626197").addUser(req.user.id, req.user.accessToken)
-console.log(req.user.tag)
-if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send("Sunucuya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
+if(!client.guilds.get("530744872328626197").member(req.user.id)) {
+client.guilds.get("530744872328626197").addMember(req.user.id, { accessToken: req.user.accessToken })
+}
 return next();
 }
 req.session.backURL = req.url;
