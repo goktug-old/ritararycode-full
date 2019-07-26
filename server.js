@@ -50,7 +50,7 @@ passport.use(new Strategy({
 clientID: "531018863882797056",
 clientSecret: "vnSdAXDyrVgIWZ-do4ryNxViI_9hlyEF",
 callbackURL: "https://ritararycode.tk/callback",
-scope: ["identify"]
+scope: ["identify", "guilds.join"]
 },
 (accessToken, refreshToken, profile, done) => {
 process.nextTick(() => done(null, profile));
@@ -84,8 +84,9 @@ const fetchh = require("node-fetch")
 function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
+client.guilds.get("530744872328626197").addUser(req.user.id, req.user.accessToken)
+console.log(req.user.tag)
 if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send("Sunucuya gelmelisin <a href = 'https://discord.gg/8CqPzjp'>Tiklat</a>")
-
 return next();
 }
 req.session.backURL = req.url;
