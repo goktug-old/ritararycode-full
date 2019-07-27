@@ -145,7 +145,7 @@ client.on('message', message => {
 client.on('guildMemberAdd', async member => { 
 if(member.user.bot) {
   let rol = member.guild.roles.get("553222941488185345")
-  member.addRole(rol, "Bot otorol")
+  member.addRole(rol, "Bot otorol").catch(e => { return; })
 }})
   
 }
