@@ -31,17 +31,22 @@ if(message.content.toLowerCase().includes('js')) {
 }})
   
   
-
+var reklam = ["discordbots.org", "discord.gg", "discord.me", "discordapp.com/invite/"]
+  
 client.on('message', message => {
 if(message.author.bot) return;
 if(reklam.some( a => message.content.toLowerCase().includes(a))) {
-  message.channel.send(`Hey **${message.author.username}**,\nReklam Yapmaya devam edersen atılacaksın. ${uyari}/5`)
-}})
-  
-  client.on("message", message => {
-if(message.author.bot) return;
-if(message.content.toLowerCase().includes("api") || message.content.toLowerCase().match("key")) { message.reply("Simsek api bilgileri <#598245477955403829> kanalında") }
-})
+  if(client.elevation(message) >= 6) return;
+  message.delete(1000)
+  db.fetch(`uyarilar.${message.author.id}`).then(uyari => {
+  if(!uyari) uyari = 0
+  if(uyari + 1 >= "5") {
+  message.guild.member(message.author).kick(`${uyari + 1}/5 uyarı aldı!`)
+  db.delete(`uyarilar.${message.author.id}`)
+  } else {
+  db.add(`uyarilar.${message.author.id}`, 1)
+  message.channel.send(`Hey **${message.author.username}**,\nReklam Yapmaya devam edersen atılacaksın. ${uyari + 1}/5`)
+}})}})
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -58,12 +63,12 @@ fs.readdir('./komutlar/', (err, files) => {
   log(`${files.length} komut yüklenecek.`);
   files.forEach(f => {
     let props = require(`./komutlar/${f}`);
-    log(`Yüklenen komut: ${props.help.name}.`);
     client.commands.set(props.help.name, props);
     props.conf.aliases.forEach(alias => {
       client.aliases.set(alias, props.help.name);
     });
   });
+  log(`Yüklenen komut sayısı: ${files.length}.`);
 });
 
 client.reload = command => {
@@ -122,8 +127,6 @@ client.unload = command => {
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 client.elevation = message => {
-  if(!message.guild) {
-    return; }
   let permlvl = 0;
   if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 6;
   if (message.author.id === ayarlar.sahip) permlvl = 31; //SAHİP
