@@ -29,8 +29,16 @@ if(message.author.bot) return;
 if(message.content.toLowerCase().includes('js')) {
   return message.channel.send(`Hey **${message.author.username}**,\nKodlara Erişim Sağlamak İçin <#553544585872277505> kanalına bir göz at!`).then(msg => msg.delete(10000))
 }})
+  
+  
 
-client.on("message", message => {
+client.on('message', message => {
+if(message.author.bot) return;
+if(reklam.some( a => message.content.toLowerCase().includes(a))) {
+  message.channel.send(`Hey **${message.author.username}**,\nReklam Yapmaya devam edersen atılacaksın. ${uyari}/5`)
+}})
+  
+  client.on("message", message => {
 if(message.author.bot) return;
 if(message.content.toLowerCase().includes("api") || message.content.toLowerCase().match("key")) { message.reply("Simsek api bilgileri <#598245477955403829> kanalında") }
 })

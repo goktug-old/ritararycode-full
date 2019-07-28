@@ -7,7 +7,7 @@ const db = require('quick.db')
 app.use(express.static('public'));    
 
 const Discord = require('discord.js')
-const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL'], disableEveryone: true})
+const client = new Discord.Client({ disableEveryone: true})
 client.login("NTMxMDE4ODYzODgyNzk3MDU2.XORRJQ.skLIuH9KXrwWRVFAgkUxZdkXxhc").catch(e => {
   if(!e) return;
   else console.log(e)
