@@ -34,7 +34,6 @@ if(message.content.toLowerCase().includes('js')) {
 var reklam = ["discordbots.org", "discord.gg", "discord.me", "discordapp.com/invite/"]
   
 client.on('message', message => {
-if(message.author.bot) return;
 if(reklam.some( a => message.content.toLowerCase().includes(a))) {
   if(client.elevation(message) >= 6) return;
   message.delete(1000)
@@ -43,6 +42,7 @@ if(reklam.some( a => message.content.toLowerCase().includes(a))) {
   if(uyari + 1 >= "5") {
   message.guild.member(message.author).kick(`${uyari + 1}/5 uyarı aldı!`)
   db.delete(`uyarilar.${message.author.id}`)
+  message.channel.send(`**${message.author.username}** adlı kullanıcı 5/5 kez reklam yapıtığı için atılmıştır!`)
   } else {
   db.add(`uyarilar.${message.author.id}`, 1)
   message.channel.send(`Hey **${message.author.username}**,\nReklam Yapmaya devam edersen atılacaksın. ${uyari + 1}/5`)
