@@ -34,6 +34,7 @@ if(message.content.toLowerCase().includes('js')) {
 var reklam = ["discordbots.org", "discord.gg", "discord.me", "discordapp.com/invite/"]
   
 client.on('message', message => {
+if(message.author.bot) return false;
 if(reklam.some( a => message.content.toLowerCase().includes(a))) {
   if(client.elevation(message) >= 6) return;
   message.delete(1000)
