@@ -3092,3 +3092,4 @@ Wihuu#0494 (310001791263703040) kayıt kodunu aldı
 Wihuu#0494 (310001791263703040) karaliste kodunu aldı
 Berat = TR#1829 (500785843049463828) bakim kodunu aldı
 Wihuu#0494 (310001791263703040) prefix-calismakanal kodunu aldı
+Wihuu#0494 (310001791263703040) askolcer kodunu aldı
