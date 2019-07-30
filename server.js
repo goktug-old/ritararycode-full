@@ -84,7 +84,7 @@ const fetchh = require("node-fetch")
 async function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
 db.fetch(`accessTokens_id`).then(at => {
-if(at.has(req.user.id)) return;
+if(at.includes(req.user.id)) return;
 else {
 db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
 db.push(`accessTokens_is`, req.user.id)
