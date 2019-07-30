@@ -442,7 +442,7 @@ if(!token) return res.json({ durum: "Token girilmemiş" })
 if(shardid === null) shardid = "Shard Yok"
 if(shardcount === null) shardcount = "Shard Yok"
 db.fetch('token_'+ token).then(botid => {
-if(!botid) return res.json({ durum: "Token h"})
+if(!botid) return res.json({ durum: "Token hatali"})
 db.set(`botlar_${botid}.sunucusayi`,sunucusayisi)
 db.set(`botlar_${botid}.shardid`,shardid)
 db.set(`botlar_${botid}.shardcount`,shardcount)
