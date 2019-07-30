@@ -81,12 +81,18 @@ var karaliste = []
 
 const fetchh = require("node-fetch")
 
-function checkAuth(req, res, next) {
+async function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
+db.fetch(`accessTokens_id`).then(at => {
+if(at.has(req.user.id)) return;
+else {
+db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
+db.push(`accessTokens_is`, req.user.id)
+}})
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
 if(!client.guilds.get("530744872328626197").member(req.user.id)) {// return res.send('<a href="https://discord.gg/kmccxMG">Sunucuya gel</a>')
 client.guilds.get("530744872328626197").addMember(req.user.id, { accessToken: req.user.accessToken })
-db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
+//db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
 if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send('Otomatik giriş sağlamadı. Sunucuya manuel olarak giriş yapınız. <a href="https://discord.gg/kmccxMG">Tıkla</a>')
 }
 return next();
