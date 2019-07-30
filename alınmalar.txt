@@ -3077,3 +3077,8 @@ Wihuu#0494 (310001791263703040) konustur kodunu aldı
 Wihuu#0494 (310001791263703040) sunucuyagiriscikislog kodunu aldı
 Wihuu#0494 (310001791263703040) kayıt kodunu aldı
 Wihuu#0494 (310001791263703040) karaliste kodunu aldı
+Wihuu#0494 (310001791263703040) dilsistem kodunu aldı
+Wihuu#0494 (310001791263703040) dmlog kodunu aldı
+Wihuu#0494 (310001791263703040) kanalduyuru kodunu aldı
+Wihuu#0494 (310001791263703040) hesapgen kodunu aldı
+Wihuu#0494 (310001791263703040) notsistem kodunu aldı
