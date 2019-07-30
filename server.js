@@ -335,8 +335,8 @@ if(sertifika === "aktif") sertifikadurum = `<button class="btn btn-success">Sert
 else sertifikadurum = `<button class="btn btn-warning">Sertifikası bulunmuyor</button>`
 
 var shard;
-if(!shardd) shard = `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
-else if(shardd === "Modülümüzü kullanmıyor") shard = `<button class="btn btn-warning icbol">Modül Bulunamadı!</button>`
+if(!shardd) shard = ``// `<button class="btn btn-warning icbol">Shard Bulunmuyor!</button>`
+else if(shardd === "Modülümüzü kullanmıyor") shard = ``//`<button class="btn btn-warning icbol">Modül Bulunamadı!</button>`
 else shard = `<button class="btn btn-info icbol">Shard ${shardd}/${shardt}</button>`
 
 if(!swsay) swsay = `<button class="btn btn-warning icbol">Modül Bulunamadı!</button><br>`
@@ -442,7 +442,7 @@ if(!token) return res.json({ durum: "Token girilmemiş" })
 if(shardid === null) shardid = "Shard Yok"
 if(shardcount === null) shardcount = "Shard Yok"
 db.fetch('token_'+ token).then(botid => {
-if(!botid) return res.json({ durum: "Token girilmemiş"})
+if(!botid) return res.json({ durum: "Token h"})
 db.set(`botlar_${botid}.sunucusayi`,sunucusayisi)
 db.set(`botlar_${botid}.shardid`,shardid)
 db.set(`botlar_${botid}.shardcount`,shardcount)
