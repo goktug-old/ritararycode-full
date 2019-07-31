@@ -83,12 +83,7 @@ const fetchh = require("node-fetch")
 
 async function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-var at = db.fetch(`accessTokens_id`)
-if(at.includes(req.user.id)) return;
-else {
 db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
-db.push(`accessTokens_is`, req.user.id)
-}
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
 if(!client.guilds.get("530744872328626197").member(req.user.id)) {// return res.send('<a href="https://discord.gg/kmccxMG">Sunucuya gel</a>')
 client.guilds.get("530744872328626197").addMember(req.user.id, { accessToken: req.user.accessToken })
@@ -162,7 +157,10 @@ client.on("ready", () => {
 setInterval(() => {
 client.guilds.get("530744872328626197").members.forEach(command => {
  var ab = db.fetch(`sertifika_${command.user.id}`)
-  if(ab === "aktif") { a.push(command.user.id) }
+  if(ab === "aktif") {
+    if(a.includes(command.user.id)) return;
+    else return a.push(command.user.id)
+  }
 })}, 15000)})
 
 app.get("/", (req,res) => {
