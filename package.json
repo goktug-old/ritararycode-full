@@ -31,7 +31,7 @@
     "enmap": "^4.8.6",
     "chalk": "^2.4.2",
     "jimp": "^0.6.4",
-    "quick.db": "^7.0.0-b22",
+    "quick.db": "7.0.0-b22",
     "node-superfetch": "^0.1.9",
     "canvas": "^2.6.0",
     "canvas-constructor": "^3.0.0",
