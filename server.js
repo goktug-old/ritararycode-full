@@ -19,7 +19,7 @@ app.listen(process.env.PORT)
 const url = require("url");
 
 client.on('ready', () => {
-  console.log('EĞEĞEĞEĞEĞEĞEĞEĞ')
+  console.log(client.user.username)
   require('./bot.js')(client)
 })
 
@@ -310,7 +310,7 @@ else if(durume === "offline") durum = emojiler.offline
 else if(durume === "dnd") durum = emojiler.dnd
 else if(durume === "idle") durum = emojiler.idle
 var sahipp = db.fetch(`sahip_${id}`)
-const sahippp = client.users.get(sahipp)
+const sahippp = await client.users.get(sahipp)
 if(!sahippp) return res.redirect("/404")
 const sahip = sahippp.tag
 var acikla = db.fetch(`açıklama_${id}`)
