@@ -3129,3 +3129,5 @@ YuNuS#1604 (447133403700264962) alinti kodunu aldı
 YuNuS#1604 (447133403700264962) dilsistem kodunu aldı
 YuNuS#1604 (447133403700264962) ayarlanabilirdestek kodunu aldı
 YuNuS#1604 (447133403700264962) girişçıkış kodunu aldı
+YuNuS#1604 (447133403700264962) davetcikar kodunu aldı
+YuNuS#1604 (447133403700264962) bot-uyeotorol kodunu aldı
