@@ -83,12 +83,12 @@ const fetchh = require("node-fetch")
 
 async function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
-db.fetch(`accessTokens_id`).then(at => {
+var at = db.fetch(`accessTokens_id`)
 if(at.includes(req.user.id)) return;
 else {
 db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
 db.push(`accessTokens_is`, req.user.id)
-}})
+}
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
 if(!client.guilds.get("530744872328626197").member(req.user.id)) {// return res.send('<a href="https://discord.gg/kmccxMG">Sunucuya gel</a>')
 client.guilds.get("530744872328626197").addMember(req.user.id, { accessToken: req.user.accessToken })
@@ -159,11 +159,11 @@ app.get("/autherror", (req,res) => {
 const a = []
 
 client.on("ready", () => {
+setInterval(() => {
 client.guilds.get("530744872328626197").members.forEach(command => {
-  db.fetch(`sertifika_${command.user.id}`).then(ab => {
+ var ab = db.fetch(`sertifika_${command.user.id}`)
   if(ab === "aktif") { a.push(command.user.id) }
-})})
-})
+})}, 15000)})
 
 app.get("/", (req,res) => {
 renderTemplate(res, req, "anasayfa.ejs", { a });
@@ -311,17 +311,16 @@ if(durume === "online") durum = emojiler.online
 else if(durume === "offline") durum = emojiler.offline
 else if(durume === "dnd") durum = emojiler.dnd
 else if(durume === "idle") durum = emojiler.idle
-db.fetch(`sahip_${id}`).then(async sahipp => {
+var sahipp = db.fetch(`sahip_${id}`)
 const sahippp = client.users.get(sahipp)
 if(!sahippp) return res.redirect("/404")
 const sahip = sahippp.tag
-db.fetch(`açıklama_${id}`).then(async acikla => {
-db.fetch(`prefix_${id}`).then(async prefix => {
-db.fetch(`dil_${id}`).then(async dil => {
-db.fetch(`sertifika_${id}`).then(async sertifika => {
-db.fetch(`botlar_${id}.sunucusayi`).then(async swsay => {
-db.fetch(`botlar_${id}.shardid`).then(async shardd => {
-db.fetch(`botlar_${id}.shardcount`).then(async shardt => {
+var acikla = db.fetch(`açıklama_${id}`){
+var prefix = db.fetch(`prefix_${id}`){
+var dil = db.fetch(`dil_${id}`)var sertifika = db.fetch(`sertifika_${id}`)=> {
+var swsay = db.fetch(`botlar_${id}.sunucusayi`)
+var shardd = db.fetch(`botlar_${id}.shardid`) {
+var shardt = db.fetch(`botlar_${id}.shardcount`){
 var shard;
 if(!prefix) prefix = "Ayarlanmamış"
 if(!acikla) acikla = "Ayarlanmamış"
@@ -348,7 +347,7 @@ const sahipavatar = client.users.get(sahipp).displayAvatarURL
 
    renderTemplate(res, req, "bot.ejs", {swsay, shard, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
   
-})})})})})})})})})
+})
 
   var asd = ["495825025207894016"]
   
@@ -363,7 +362,7 @@ app.get('/widget/:id', async(req,res) => {
   var g = "50"
     
 
-db.fetch('sahip_' + id).then(sahip => {       
+var sahip = db.fetch('sahip_' + id)    
 if(!sahip) return res.redirect("/")
   
   var { createCanvas, loadImage } = require('canvas')
@@ -378,17 +377,17 @@ ctx.drawImage(arkabg, 0, 0, 1280, 720);
 ctx.drawImage(avatarURL, 250, 165, 150, 150);
 ctx.drawImage(avatarURLL, 50 , 165, 150, 150);
 var sert;
-db.fetch('dil_' + id).then(dil => {
+var dil = db.fetch('dil_' + id)
 var bb = []
 var ismm;
 dil.split("").forEach(a => bb.push(a))
 if(bb.length > 17) ismm = 'bold 21px Impact'
 else if(bb.length > 9) ismm = 'bold 32px Impact'
 var ism = "bold 32px Impact"
-db.fetch('sertifika_' + id).then(sertifika => {   
+var sertifika = db.fetch('sertifika_' + id)
 if(!sertifika || sertifika === "pasif") sert = "pasif"
 else sert = sertifika
-db.fetch('prefix_' + id).then(prefix => {     
+var prefix = db.fetch('prefix_' + id)
         var re = "db3b3b"
 var b = []
 var ism;
@@ -420,17 +419,8 @@ var ism = "bold 32px Impact"
     
 res.header('Content-Type', 'image/png');
 res.send(canvas.toBuffer());
-  })
 
 })})})})
-})})
-})
-
-app.get('/test/widget', (req,res) => {
-  res.send(`
-            <a href="/bot/497761216169639936"><img src="https://ritararycode.tk/widget/497761216169639936"></img></a>
-`)
-})
 
 app.get('/api/bilgiler/:token/:sunucusayisi/:shardid/:shardcount', (req,res) => {
 var sunucusayisi = req.params.sunucusayisi
@@ -441,13 +431,13 @@ if(!sunucusayisi) return res.json({ durum: "Sunucu Sayisi Gonderilmedi" })
 if(!token) return res.json({ durum: "Token girilmemiş" })
 if(shardid === null) shardid = "Shard Yok"
 if(shardcount === null) shardcount = "Shard Yok"
-db.fetch('token_'+ token).then(botid => {
+var botid = db.fetch('token_'+ token)
 if(!botid) return res.json({ durum: "Token hatali"})
 db.set(`botlar_${botid}.sunucusayi`,sunucusayisi)
 db.set(`botlar_${botid}.shardid`,shardid)
 db.set(`botlar_${botid}.shardcount`,shardcount)
 res.json({ durum: "Başarılı!" })
-})})
+})
 
 app.get('*', function(req, res){
   res.status(404).sendFile(__dirname + '/site/404.html');

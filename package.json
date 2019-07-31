@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server.js"
+    "start": "node baktım.js"
   },
   "engines": {
     "node": "8.4.0"
