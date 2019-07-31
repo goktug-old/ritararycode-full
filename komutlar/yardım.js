@@ -2,14 +2,11 @@ const Discord = require('discord.js')
 
 exports.run = (client, msg, args) => {
  msg.channel.send(new Discord.RichEmbed()
-                  .addField("rc!sertifikabilgi","Sertifika Programımız Hakkında Bilgi Alırsınız")
+                  .addField("rc!sertifikabilgi","Sertifika Hakkında Bilgi Alırsınız")
                   .addField("rc!botlar @Kişi","Kullanıcının Sunucudaki botlarını görürsünüz")
                   .addField("rc!sahip @bot","Botun Sahibini Bulursunuz")
                   .addBlankField()
-                  .addField("Sitemize Gitmek İçin","[TIKLA](https://www.ritararycode.cf)")
-                  .setColor('#FFFFFF')
-                  .setTitle('Ritatary Code Yardım')
-                  .setFooter(msg.author.username + ' tarafından istendi.')
+                  .addField("Sitemize Gitmek İçin","[TIKLA](https://www.ritararycode.tk)")
                  )
 }
   

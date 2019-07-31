@@ -12,9 +12,8 @@ exports.run = async (client, message, args) => {
       if(isNaN(args[0])) return message.channel.send(':warning: | Bir ID Girmeli yada bot etiketlemelisin!')
       bot = args[0];
     }
-  
-if(!bot) return message.channel.send(':warning: | Bir ID Girmeli yada bot etiketlemelisin!')  
-if(!member) return message.channel.send(':x: | Bir Kullanıcı Etiketlemelisin')
+  var member = bot
+if(!bot) return message.channel.send(':warning: | Bir ID Girmeli yada kullanıcı etiketlemelisin!')  
 if(client.users.get(member).bot) return message.reply(':x: | **Normal** Bir kullanıcı etiketlemelisin')
 var bots = db.fetch(`botlar_${member}`)
 if(!bots) return message.channel.send("**Hata:** Bu Kullanıcının Sistemde Hiçbir Botu Yok!")

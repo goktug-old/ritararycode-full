@@ -2,20 +2,23 @@ const Discord = require('discord.js');
 const db = require('quick.db')
 
 exports.run = function(client, message, args) {
-  
   let bot;
+    
     if (message.mentions.users.first()) {
+      if(message.mentions.users.first().bot) {
       bot = message.mentions.users.first().id;
-    } else {
-        bot = args[0];
+    }} else {
+      if(isNaN(args[0])) return message.channel.send(':warning: | Bir ID Girmeli yada bot etiketlemelisin!')
+      bot = args[0];
     }
   
-    var sebep = args.slice(1).join(' ');
-    db.fetch(`sahip_${bot}`).then(i => {
-    
-    
-    if (!bot) return message.reply("Reddedilecek Kişiyi Belirtmelisin. Örnek Kullanım : `rc!bot-ret <bot-id>`");
+if(!bot) return message.channel.send(':warning: | Bir ID Girmeli yada bot etiketlemelisin!')  
     else if (!sebep) return message.reply('Bir Sebep Girmelisin')
+  
+    var sebep = args.slice(1).join(' ');
+    var i = db.fetch(`sahip_${bot}`)
+    
+    
   
         var embed = new Discord.RichEmbed()
             .setTimestamp()
@@ -30,7 +33,7 @@ exports.run = function(client, message, args) {
         client.channels.get('553542376887681025').send(embed);
         message.reply("Ret Mesajı Gönderildi.");
     
-    })}
+    }
 
 
 exports.conf = {

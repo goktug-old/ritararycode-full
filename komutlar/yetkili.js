@@ -27,12 +27,12 @@ if(message.guild.member(user).hasPermission("BAN_MEMBERS")) return message.chann
     log.send(`${message.author.tag} adlı kullanıcı tarafından ${user.tag} adlı kullanıcı ${reason} sebebi ile atıldı!`)
     message.guild.member(user).kick(reason + " | " + message.author.tag)
   } else {
-db.fetch(`sahip_${user.id}`).then(sahip => {
+var sahip = db.fetch(`sahip_${user.id}`)
     client.users.get(sahip).send(`${user.tag} adlı botun ${reason} sebebi ile atıldı!`)
     message.guild.channels.find(x => x.name === "kayıtlar").send(`${user.tag} adlı bot ${reason} sebebi ile atıldı! [<@${sahip}>]`)    
     log.send(`${message.author.tag} tarafından ${user.tag} adlı bot ${reason} sebebi ile atıldı!`)    
     message.guild.member(user).kick(`${reason} || ${message.author.tag}`)
-})}
+}
 } if(args[0] === "sustur") {
 const user = message.mentions.users.first()  
 //var reason = args.slice(3).join(" ")

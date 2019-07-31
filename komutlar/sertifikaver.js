@@ -14,7 +14,7 @@ exports.run = function(client, message, args) {
   
   db.set(`sertifika_${bot}`, "aktif")
   
-    db.fetch(`sahip_${bot}`).then(i => {
+    var i = db.fetch(`sahip_${bot}`)
     
     
     if (!bot) return message.reply("Kabul Kişiyi Belirtmelisin. Örnek Kullanım : `rc!bot-ret <bot-id>`");
@@ -34,7 +34,7 @@ exports.run = function(client, message, args) {
         client.channels.get('553542376887681025').send(embed);
         message.reply("Kabul Mesajı Gönderildi.");
     
-    })}
+    }
 
 exports.conf = {
   enabled: true,

@@ -22,8 +22,6 @@ const help = {};
 </center>
 	<% for (const kategori in help) { %>
 			<% for (const command of help[kategori]) { %>
-  <% var sert; %>
-  <% db.fetch(`sertifika_${command.user.id}`).then(async sertfika => {  sert = sertfika }) %>
   <% var durum = command.presence.status %>
   <% var durume; 
   if(durum === "online") durume = "https://cdn.discordapp.com/emojis/313956277808005120.png"

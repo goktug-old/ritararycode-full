@@ -6,17 +6,17 @@ exports.run = async (client, message, args) => {
 message.guild.members.forEach(function(yarrak) {
  if(!yarrak.user.bot) return; 
  else {
-  db.fetch(`sahip_${yarrak.user.id}`).then(sahip => {
-  db.fetch(`botlar_${sahip}`).then(bottanimli => {
+  var sahip = db.fetch(`sahip_${yarrak.user.id}`)
+  var bottanimli = db.fetch(`botlar_${sahip}`)
   if(bottanimli) return;
     if(!sahip) return;
     else {
      db.push(`botlar_${sahip}`,`${yarrak.user.id}`)
     }
- })})
-
  }
-})
+
+ })
+
 message.reply('Ok')
 }
 
