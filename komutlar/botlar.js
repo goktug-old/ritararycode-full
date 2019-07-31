@@ -2,21 +2,27 @@ const Discord = require('discord.js')
 const db = require("quick.db")
 
 exports.run = async (client, message, args) => {
-
-
   
-var member = message.mentions.users.first().id
+  let bot;
+    
+    if (message.mentions.users.first()) {
+      if(message.mentions.users.first().bot) {
+      bot = message.mentions.users.first().id;
+    }} else {
+      if(isNaN(args[0])) return message.channel.send(':warning: | Bir ID Girmeli yada bot etiketlemelisin!')
+      bot = args[0];
+    }
+  
+if(!bot) return message.channel.send(':warning: | Bir ID Girmeli yada bot etiketlemelisin!')  
 if(!member) return message.channel.send(':x: | Bir Kullanıcı Etiketlemelisin')
 if(client.users.get(member).bot) return message.reply(':x: | **Normal** Bir kullanıcı etiketlemelisin')
-db.fetch(`botlar_${member}`).then(bots => {
+var bots = db.fetch(`botlar_${member}`)
 if(!bots) return message.channel.send("**Hata:** Bu Kullanıcının Sistemde Hiçbir Botu Yok!")
 var annn = bots.join('>,<@')
   message.channel.send(new Discord.RichEmbed()
                       .setDescription(`**${client.users.get(member).tag}** adlı kullanıcının botları : <@${annn}>`)
                       .setColor('BLUE')
-                      .setFooter(`Ritarary Code`))
-  
-})
+                      )
   
 }
 

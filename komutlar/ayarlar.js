@@ -7,7 +7,7 @@ var bott = message.mentions.users.first()
 if(!bott) return message.channel.send(":x: | Bir Bot Etiketle!")
 if(!bott.bot) return message.channel.send(":x: | Bir Bot Etiketle!")
 var bot = bott.id
-db.fetch(`sahip_${bot}`).then(sahip => {
+var sahip = db.fetch(`sahip_${bot}`)
 if(message.author.id !== sahip && message.author.id !== "495825025207894016") return message.channel.send(":x: | Bu Komutu Sadece Botun Sahibi Kullanabilir. Bot Sahibi: " + client.users.get(sahip).tag )
 else {
   if(!args[1]) return message.channel.send(":x: | Lütfen Ne Yapacağını Belirt!\nYapabileceklerin: açıklama,dil")
@@ -45,7 +45,7 @@ numbers: true
   
   else if(args[1] !== "dil" && args[1] !== "açıklama" && args[1] !== "sertifika" && args[1] !== "prefix" ) return message.channel.send(":x: | Lütfen Ne Yapacağını Belirt!\nYapabileceklerin: açıklama,dil")
 }
-})}
+}
 
 exports.conf = {
     enabled: true,

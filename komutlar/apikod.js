@@ -60,7 +60,7 @@ if(bilgiler.resim) resimm = bilgiler.cikti[0]
 else resimm = bilgiler.cikti.toString()
 
 if(resimm.length === "1") embed = `new Discord.RichEmbed().setImage('${resimm}').setDescription('Veriler [https://simsekapi.cf](https://simsekapi.cf) sitesinden çekilmektedir. Siteye erişim sağlamak için [bot destek sunucusundan](https://simsek.cf/destek) api key almalısınız.')`
-else embed = `new Discord.RichEmbed().setDescription('${resimm}\n\n\nVeriler [https://simsekapi.cf](https://simsekapi.cf) sitesinden çekilmektedir. Siteye erişim sağlamak için [bot destek sunucusundan](https://simsek.cf/destek) api key almalısınız.')`
+else embed = `new Discord.RichEmbed().setDescription('${resimm} Veriler [https://simsekapi.cf](https://simsekapi.cf) sitesinden çekilmektedir. Siteye erişim sağlamak için [bot destek sunucusundan](https://simsek.cf/destek) api key almalısınız.')`
 
 if(!bilgiler.gereklilikisim) doma = domain + bilgiler.isim
 else {

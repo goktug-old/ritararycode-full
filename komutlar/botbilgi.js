@@ -9,24 +9,27 @@ else bot = args[0]
 
 if(!client.users.get(bot).bot) return message.channel.send(":x: | Bir Bot Etiketlemelesin!")
 
-db.fetch(`sahip_${bot}`).then(sahipid => {
-db.fetch(`prefix_${bot}`).then(prefix => {
-db.fetch(`açıklama_${bot}`).then(aciklama => {
-db.fetch(`dil_${bot}`).then(dil => {
+var sahipid = db.fetch(`sahip_${bot}`)
+var prefix = db.fetch(`prefix_${bot}`)
+var aciklama = db.fetch(`açıklama_${bot}`)
+var dil = db.fetch(`dil_${bot}`)
+var ssay = db.fetch(`botlar_${bot}.sunucusayi`)
+if(!ssay) ssay = "Modül bulunamadı"
 if(!aciklama) aciklama = "Ayarlanmamış"
 if(!dil) dil = "Ayarlanmamış"
 if(!prefix) prefix = "Ayarlanmamış Lütfen Bir Yetkiliye Bildirin"
 message.channel.send(new Discord.RichEmbed()
     .addField('Sahip:', "**" + client.users.get(sahipid).tag + "**")
     .addField('Prefix:', "**" + prefix + "**")
+    .addField('Sunucu Sayısı:', "**" + ssay + "**")
     .addField('Açıklama:', "**" + aciklama + "**")
     .addField('Dil:', "**" + dil + "**")
-    .addField("Bot Sayfasına Ulaşmak İçin: ", "[TIKLA](https://www.ritararycode.cf/bot/" + bot + ")")
+    .addField("Bot Sayfasına Ulaşmak İçin: ", "[TIKLA](https://www.ritararycode.tk/bot/" + bot + ")")
     .setColor('RANDOM')
     .setThumbnail(client.users.get(bot).avatarURL)
     )
 
-})})})})}
+}
 
 exports.conf = {
     enabled: true,

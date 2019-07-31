@@ -315,12 +315,13 @@ var sahipp = db.fetch(`sahip_${id}`)
 const sahippp = client.users.get(sahipp)
 if(!sahippp) return res.redirect("/404")
 const sahip = sahippp.tag
-var acikla = db.fetch(`açıklama_${id}`){
-var prefix = db.fetch(`prefix_${id}`){
-var dil = db.fetch(`dil_${id}`)var sertifika = db.fetch(`sertifika_${id}`)=> {
+var acikla = db.fetch(`açıklama_${id}`)
+var prefix = db.fetch(`prefix_${id}`)
+var dil = db.fetch(`dil_${id}`)
+var sertifika = db.fetch(`sertifika_${id}`)
 var swsay = db.fetch(`botlar_${id}.sunucusayi`)
-var shardd = db.fetch(`botlar_${id}.shardid`) {
-var shardt = db.fetch(`botlar_${id}.shardcount`){
+var shardd = db.fetch(`botlar_${id}.shardid`)
+var shardt = db.fetch(`botlar_${id}.shardcount`)
 var shard;
 if(!prefix) prefix = "Ayarlanmamış"
 if(!acikla) acikla = "Ayarlanmamış"
