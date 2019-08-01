@@ -3140,3 +3140,4 @@ Erensi_28#4498 (518663926779740216) kanalduyuru kodunu aldı
 Erensi_28#4498 (518663926779740216) alinti kodunu aldı
 Erensi_28#4498 (518663926779740216) exec kodunu aldı
 YuNuS#1604 (447133403700264962) golduye kodunu aldı
+Woody.JS#3028 (506027136604176405) bot-uyeotorol kodunu aldı
