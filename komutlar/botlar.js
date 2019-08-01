@@ -6,7 +6,7 @@ exports.run = async (client, message, args) => {
   let bot;
     
     if (message.mentions.users.first()) {
-      if(message.mentions.users.first().bot) {
+      if(!message.mentions.users.first().bot) {
       bot = message.mentions.users.first().id;
     }} else {
       if(isNaN(args[0])) return message.channel.send(':warning: | Bir ID Girmeli yada bot etiketlemelisin!')
@@ -14,7 +14,6 @@ exports.run = async (client, message, args) => {
     }
   var member = bot
 if(!bot) return message.channel.send(':warning: | Bir ID Girmeli yada kullanıcı etiketlemelisin!')  
-if(client.users.get(member).bot) return message.reply(':x: | **Normal** Bir kullanıcı etiketlemelisin')
 var bots = db.fetch(`botlar_${member}`)
 if(!bots) return message.channel.send("**Hata:** Bu Kullanıcının Sistemde Hiçbir Botu Yok!")
 var annn = bots.join('>,<@')
