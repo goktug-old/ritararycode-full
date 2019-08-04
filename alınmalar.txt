@@ -3200,3 +3200,9 @@ LastLively#2289 (607302306207236231) etiketprefix kodunu aldı
 LastLively#2289 (607302306207236231) golduye kodunu aldı
 LastLively#2289 (607302306207236231) golduye kodunu aldı
 ensar#6400 (324286383277735937) etiketprefix kodunu aldı
+STARKTOM#0013 (292294635697471488) bot-uyeotorol kodunu aldı
+STARKTOM#0013 (292294635697471488) dilsistem kodunu aldı
+STARKTOM#0013 (292294635697471488) hesapgen kodunu aldı
+STARKTOM#0013 (292294635697471488) otorol kodunu aldı
+STARKTOM#0013 (292294635697471488) sunucuyagiriscikislog kodunu aldı
+STARKTOM#0013 (292294635697471488) ultrasohbettemizleyici kodunu aldı
