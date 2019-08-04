@@ -3263,3 +3263,7 @@ borever#7512 (554193902786183209) notsistem kodunu aldı
 borever#7512 (554193902786183209) kayıt kodunu aldı
 borever#7512 (554193902786183209) sunucular kodunu aldı
 borever#7512 (554193902786183209) kayıt kodunu aldı
+borever#7512 (554193902786183209) prefix-calismakanal kodunu aldı
+borever#7512 (554193902786183209) yedeksistem kodunu aldı
+borever#7512 (554193902786183209) dilsistem kodunu aldı
+borever#7512 (554193902786183209) davetcikar kodunu aldı
