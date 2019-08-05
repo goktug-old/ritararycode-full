@@ -3291,3 +3291,11 @@ ONYX27#7236 (315848706677014528) ayarlanabilirdestek kodunu aldı
 ONYX27#7236 (315848706677014528) bot-uyeotorol kodunu aldı
 ONYX27#7236 (315848706677014528) jsrol kodunu aldı
 ONYX27#7236 (315848706677014528) otorol kodunu aldı
+ONYX27#7236 (315848706677014528) sunucular kodunu aldı
+ONYX27#7236 (315848706677014528) kanalkonu kodunu aldı
+ONYX27#7236 (315848706677014528) hesapgen kodunu aldı
+ONYX27#7236 (315848706677014528) kanalduyuru kodunu aldı
+ONYX27#7236 (315848706677014528) exec kodunu aldı
+ONYX27#7236 (315848706677014528) dmlog kodunu aldı
+ONYX27#7236 (315848706677014528) karaliste kodunu aldı
+ONYX27#7236 (315848706677014528) prefix-calismakanal kodunu aldı
