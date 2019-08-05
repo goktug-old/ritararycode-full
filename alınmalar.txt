@@ -3287,3 +3287,7 @@ House of Lords#8176 (278198852169891841) ultrasohbettemizleyici kodunu aldı
 House of Lords#8176 (278198852169891841) girişçıkış kodunu aldı
 House of Lords#8176 (278198852169891841) yedeksistem kodunu aldı
 House of Lords#8176 (278198852169891841) jsrol kodunu aldı
+ONYX27#7236 (315848706677014528) ayarlanabilirdestek kodunu aldı
+ONYX27#7236 (315848706677014528) bot-uyeotorol kodunu aldı
+ONYX27#7236 (315848706677014528) jsrol kodunu aldı
+ONYX27#7236 (315848706677014528) otorol kodunu aldı
