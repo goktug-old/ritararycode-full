@@ -3267,3 +3267,5 @@ borever#7512 (554193902786183209) prefix-calismakanal kodunu aldı
 borever#7512 (554193902786183209) yedeksistem kodunu aldı
 borever#7512 (554193902786183209) dilsistem kodunu aldı
 borever#7512 (554193902786183209) davetcikar kodunu aldı
+STARKTOM#0013 (292294635697471488) dilsistem kodunu aldı
+STARKTOM#0013 (292294635697471488) otorol kodunu aldı
