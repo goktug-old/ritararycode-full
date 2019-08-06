@@ -3301,3 +3301,4 @@ ONYX27#7236 (315848706677014528) karaliste kodunu aldı
 ONYX27#7236 (315848706677014528) prefix-calismakanal kodunu aldı
 ONYX27#7236 (315848706677014528) bot-uyeotorol kodunu aldı
 ONYX27#7236 (315848706677014528) otorol kodunu aldı
+Faruk#9261 (551354375407403038) bot-uyeotorol kodunu aldı
