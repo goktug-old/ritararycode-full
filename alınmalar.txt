@@ -3344,3 +3344,7 @@ YAGIZ#4739 (489407646487805952) cekilis kodunu aldı
 YAGIZ#4739 (489407646487805952) yedeksistem kodunu aldı
 YAGIZ#4739 (489407646487805952) davetcikar kodunu aldı
 Önder' ふ#0003 (298465194491904002) capsengel kodunu aldı
+Önder' ふ#0003 (298465194491904002) kanalduyuru kodunu aldı
+Önder' ふ#0003 (298465194491904002) konustur kodunu aldı
+Önder' ふ#0003 (298465194491904002) yedeksistem kodunu aldı
+Önder' ふ#0003 (298465194491904002) kanalkonu kodunu aldı
