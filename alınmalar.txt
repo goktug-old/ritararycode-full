@@ -3342,3 +3342,4 @@ YAGIZ#4739 (489407646487805952) notsistem kodunu aldı
 YAGIZ#4739 (489407646487805952) sarkisozu kodunu aldı
 YAGIZ#4739 (489407646487805952) cekilis kodunu aldı
 YAGIZ#4739 (489407646487805952) yedeksistem kodunu aldı
+YAGIZ#4739 (489407646487805952) davetcikar kodunu aldı
