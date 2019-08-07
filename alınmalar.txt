@@ -3348,3 +3348,5 @@ YAGIZ#4739 (489407646487805952) davetcikar kodunu aldı
 Önder' ふ#0003 (298465194491904002) konustur kodunu aldı
 Önder' ふ#0003 (298465194491904002) yedeksistem kodunu aldı
 Önder' ふ#0003 (298465194491904002) kanalkonu kodunu aldı
+Önder' ふ#0003 (298465194491904002) sunucuyagiriscikislog kodunu aldı
+Önder' ふ#0003 (298465194491904002) ban kodunu aldı
