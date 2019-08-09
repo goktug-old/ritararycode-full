@@ -87,12 +87,14 @@ async function checkAuth(req, res, next) {
 if (req.isAuthenticated()) { 
 //db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
 if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
-if(!client.guilds.get("530744872328626197").member(req.user.id)) {// return res.send('<a href="https://discord.gg/kmccxMG">Sunucuya gel</a>')
+client.guilds.get("530744872328626197").fetchMember(req.user).then(member => {
+if(!member) {// return res.send('<a href="https://discord.gg/kmccxMG">Sunucuya gel</a>')
 client.guilds.get("530744872328626197").addMember(req.user.id, { accessToken: req.user.accessToken })
 //db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
+if(!member) return res.send(`Sunucuya eklenmede hata. Manuel olarak <a href="https://discord.gg/kmccxMG">Sunucuya gelmelisiniz</a>`)
 }
 return next();
-}
+})}
 req.session.backURL = req.url;
 res.redirect("/giris");
 }
