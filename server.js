@@ -88,7 +88,6 @@ if(karaliste.some(a => req.user.id === a)) return res.send('Karalistedesin Sie')
 if(!client.guilds.get("530744872328626197").member(req.user.id)) {// return res.send('<a href="https://discord.gg/kmccxMG">Sunucuya gel</a>')
 client.guilds.get("530744872328626197").addMember(req.user.id, { accessToken: req.user.accessToken })
 //db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
-if(!client.guilds.get("530744872328626197").member(req.user.id)) return res.send('Otomatik giriş sağlamadı. Sunucuya manuel olarak giriş yapınız. <a href="https://discord.gg/kmccxMG">Tıkla</a>')
 }
 return next();
 }
@@ -286,6 +285,45 @@ var çen = client.channels.get("530756322040479754")
 res.redirect('/')  
 client.users.get(req.user.id).send(`${ID} ID'li Botunuz Görevlilere Iletilmiştir`) 
 }})
+
+//var oylogs = new Discord.WebhookClient("", "")
+
+app.get('/bot/:id/oyver',  checkAuth, (req,res) => {
+var id = req.params.id
+var oybot = client.users.get(id)
+if(!oybot) return res.redirect('/404')
+renderTemplate(res, req, "oyver.ejs", { oybot })
+})
+
+app.post('/bot/:id/oyver',  checkAuth, (req,res) => {
+    var id = req.params.id
+    var od = db.fetch(`kullanici.${req.user.id}.oy.${id}`)
+    if(od) { 
+        res.json({ hata: "Zaten oy vermişsin!" })
+           }
+    else {
+    res.redirect('/')
+    db.add(`oylar_${id}`, 1)
+    db.set(`kullanici.${req.user.id}.oy.${id}`, "evet")
+ //   oylogs.send(`${req.user.username + "#" + req.user.discriminator} adlı kullanıcı ${client.users.get('id').tag} adlı bota oy verdi`)
+    setTimeout(() => {
+    db.delete(`kullanici.${req.user.id}.oy.${id}`)
+    }, 432000000)
+    }
+})
+
+app.get('/api/oy/:token/:id', (req,res) => {
+var token = req.params.token
+var id = req.params.id
+var bid = db.fetch('token_' + token)
+if(!bid) return res.json({ durum:"Token hatali" })
+var oydurum = db.fetch(`kullanici.${id}.oy.${bid}`)
+if(oydurum) {
+res.json({ durum: "true"})
+} else {
+res.json({ durum: "null"})
+}
+})
 
 app.get('/gizli/dosyalar/kodlarr', checkAuth, async(req,res) => {
   var kodlarr = require('./kods.json')
