@@ -3,10 +3,12 @@ const express = require('express');
 const app = express();
 var request = require('request');
 const db = require('quick.db')
+const Discord = require('discord.js')
+
+var oylogs = new Discord.WebhookClient("", "")  // İD ve TOKEN  OLARAK GİR
 
 app.use(express.static('public'));    
 
-const Discord = require('discord.js')
 const client = new Discord.Client({ disableEveryone: true})
 client.login("NTMxMDE4ODYzODgyNzk3MDU2.XORRJQ.skLIuH9KXrwWRVFAgkUxZdkXxhc").catch(e => {
   if(!e) return;
@@ -286,7 +288,6 @@ res.redirect('/')
 client.users.get(req.user.id).send(`${ID} ID'li Botunuz Görevlilere Iletilmiştir`) 
 }})
 
-//var oylogs = new Discord.WebhookClient("", "")
 
 app.get('/bot/:id/oyver',  checkAuth, (req,res) => {
 var id = req.params.id
@@ -305,7 +306,7 @@ app.post('/bot/:id/oyver',  checkAuth, (req,res) => {
     res.redirect('/')
     db.add(`oylar_${id}`, 1)
     db.set(`kullanici.${req.user.id}.oy.${id}`, "evet")
- //   oylogs.send(`${req.user.username + "#" + req.user.discriminator} adlı kullanıcı ${client.users.get('id').tag} adlı bota oy verdi`)
+    oylogs.send(`${req.user.username + "#" + req.user.discriminator} adlı kullanıcı ${client.users.get('id').tag} adlı bota oy verdi`)
     setTimeout(() => {
     db.delete(`kullanici.${req.user.id}.oy.${id}`)
     }, 432000000)
@@ -353,6 +354,8 @@ if(!sahippp) return res.redirect("/404")
 const sahip = sahippp.tag
 var acikla = db.fetch(`açıklama_${id}`)
 var prefix = db.fetch(`prefix_${id}`)
+var oysayi= db.fetch(`oylar_${id}`)
+if(!oysayi) oysayi = "0"
 var dil = db.fetch(`dil_${id}`)
 var sertifika = db.fetch(`sertifika_${id}`)
 var swsay = db.fetch(`botlar_${id}.sunucusayi`)
@@ -382,7 +385,7 @@ const avatar = client.users.get(id).displayAvatarURL
 const botaı = client.users.get(id).username
 const sahipavatar = client.users.get(sahipp).displayAvatarURL
 
-   renderTemplate(res, req, "bot.ejs", {swsay, shard, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
+   renderTemplate(res, req, "bot.ejs", {swsay,oysayi, shard, id, durum, prefix, sahip, avatar, botaı, acikla, dil, sahipavatar, sertifikadurum})
   
 })
 
