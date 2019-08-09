@@ -92,9 +92,9 @@ if(!member) {// return res.send('<a href="https://discord.gg/kmccxMG">Sunucuya g
 client.guilds.get("530744872328626197").addMember(req.user.id, { accessToken: req.user.accessToken })
 //db.push(`accessTokens`, `{"id":"${req.user.id}","token":"${req.user.accessToken}"}`)
 if(!member) return res.send(`Sunucuya eklenmede hata. Manuel olarak <a href="https://discord.gg/kmccxMG">Sunucuya gelmelisiniz</a>`)
-}
+}})
 return next();
-})}
+}
 req.session.backURL = req.url;
 res.redirect("/giris");
 }
