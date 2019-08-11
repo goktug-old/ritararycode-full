@@ -3398,3 +3398,5 @@ var kerim = "a...."#6400 (324286383277735937) ayarlanabilirdestek kodunu aldı
 var kerim = "a...."#6400 (324286383277735937) ayarlanabilirdestek kodunu aldı
 var kerim = "a...."#6400 (324286383277735937) kayıt kodunu aldı
 var kerim = "a...."#6400 (324286383277735937) ozelkomut kodunu aldı
+var kerim = "a...."#6400 (324286383277735937) alinti kodunu aldı
+var kerim = "a...."#6400 (324286383277735937) ayarlanabilirdestek kodunu aldı
