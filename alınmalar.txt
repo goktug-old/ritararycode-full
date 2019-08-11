@@ -3392,3 +3392,5 @@ Alperen#2468 (543531424704364564) dilsistem kodunu aldı
 | Mert |#5628 (270912081887232000) alinti kodunu aldı
 Yiğit#3680 (304347029046558721) ozelkomut kodunu aldı
 var kerim = "a...."#6400 (324286383277735937) davetcikar kodunu aldı
+var kerim = "a...."#6400 (324286383277735937) ozelkomut kodunu aldı
+var kerim = "a...."#6400 (324286383277735937) ozelkomut kodunu aldı
