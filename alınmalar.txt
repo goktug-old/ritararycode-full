@@ -3394,3 +3394,7 @@ Yiğit#3680 (304347029046558721) ozelkomut kodunu aldı
 var kerim = "a...."#6400 (324286383277735937) davetcikar kodunu aldı
 var kerim = "a...."#6400 (324286383277735937) ozelkomut kodunu aldı
 var kerim = "a...."#6400 (324286383277735937) ozelkomut kodunu aldı
+var kerim = "a...."#6400 (324286383277735937) ayarlanabilirdestek kodunu aldı
+var kerim = "a...."#6400 (324286383277735937) ayarlanabilirdestek kodunu aldı
+var kerim = "a...."#6400 (324286383277735937) kayıt kodunu aldı
+var kerim = "a...."#6400 (324286383277735937) ozelkomut kodunu aldı
