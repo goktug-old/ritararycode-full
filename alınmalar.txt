@@ -3436,3 +3436,7 @@ Yusuf#6896 (610516063091949580) etiketprefix kodunu aldı
 Geldim aga#0974 (610573062890324057) golduye kodunu aldı
 Geldim aga#0974 (610573062890324057) golduye kodunu aldı
 Yusuf#6896 (610516063091949580) notsistem kodunu aldı
+SerhatAYDIN#3593 (353482513399676928) bakim kodunu aldı
+SerhatAYDIN#3593 (353482513399676928) golduye kodunu aldı
+SerhatAYDIN#3593 (353482513399676928) notsistem kodunu aldı
+SerhatAYDIN#3593 (353482513399676928) yedeksistem kodunu aldı
