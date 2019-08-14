@@ -3468,3 +3468,5 @@ hxx#8250 (610974813997236254) dilsistem kodunu aldı
 .dll#2166 (593080754523602987) dmkayit kodunu aldı
 .dll#2166 (593080754523602987) golduye kodunu aldı
 .dll#2166 (593080754523602987) yedeksistem kodunu aldı
+borever#7512 (554193902786183209) prefix-calismakanal kodunu aldı
+borever#7512 (554193902786183209) sunucular kodunu aldı
