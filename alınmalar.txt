@@ -3471,3 +3471,4 @@ hxx#8250 (610974813997236254) dilsistem kodunu aldı
 borever#7512 (554193902786183209) prefix-calismakanal kodunu aldı
 borever#7512 (554193902786183209) sunucular kodunu aldı
 Tatlişka#9400 (458535406741487616) sunucular kodunu aldı
+Tatlişka#9400 (458535406741487616) sunucular kodunu aldı
