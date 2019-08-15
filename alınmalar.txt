@@ -3513,3 +3513,9 @@ ThePack#3045 (543732381782114304) alinti kodunu aldı
 ThePack#3045 (543732381782114304) alinti kodunu aldı
 ThePack#3045 (543732381782114304) basvuru kodunu aldı
 ThePack#3045 (543732381782114304) ban kodunu aldı
+ThePack#3045 (543732381782114304) hesapgen kodunu aldı
+ThePack#3045 (543732381782114304) ozelkomut kodunu aldı
+ThePack#3045 (543732381782114304) bakim kodunu aldı
+ThePack#3045 (543732381782114304) capsengel kodunu aldı
+ThePack#3045 (543732381782114304) dilsistem kodunu aldı
+ThePack#3045 (543732381782114304) ayarlanabilirdestek kodunu aldı
