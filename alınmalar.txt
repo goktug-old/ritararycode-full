@@ -3521,3 +3521,4 @@ ThePack#3045 (543732381782114304) dilsistem kodunu aldı
 ThePack#3045 (543732381782114304) ayarlanabilirdestek kodunu aldı
 ThePack#3045 (543732381782114304) dilsistem kodunu aldı
 ThePack#3045 (543732381782114304) alinti kodunu aldı
+ThePack#3045 (543732381782114304) exec kodunu aldı
